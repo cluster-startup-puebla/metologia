@@ -1,0 +1,1292 @@
+{
+  "questions": [
+    {
+      "id": "N1-01",
+      "sourceId": "F0.1",
+      "level": "n1",
+      "sectorId": null,
+      "block": "perfilado",
+      "indexId": null,
+      "section": "Módulo 0",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Tamaño de la empresa",
+      "prompt": "¿En qué estrato de tamaño y personal ocupado total se clasifica su unidad económica?",
+      "note": null,
+      "options": [
+        {
+          "value": "M1",
+          "label": "Microempresa: 1 a 10 colaboradores directos.",
+          "score": null
+        },
+        {
+          "value": "M2",
+          "label": "Pequeña empresa: 11 a 50 colaboradores directos.",
+          "score": null
+        },
+        {
+          "value": "M3",
+          "label": "Mediana empresa: 51 a 250 colaboradores directos.",
+          "score": null
+        },
+        {
+          "value": "M4",
+          "label": "Grande empresa: más de 250 colaboradores directos.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-02",
+      "sourceId": "F0.2",
+      "level": "n1",
+      "sectorId": null,
+      "block": "enrutamiento",
+      "indexId": null,
+      "section": "Módulo 0",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Sector económico",
+      "prompt": "¿En cuál de los siguientes 12 sectores económicos especializados concentra su empresa la mayor proporción de su facturación bruta anual en la región Puebla-Tlaxcala?",
+      "note": "Esta respuesta abre un solo instrumento de Nivel 2. No es una pantalla previa al Nivel 1.",
+      "options": [
+        {
+          "value": "automotriz",
+          "label": "Sector 01: Industria Automotriz, Autopartes, BIW y Electrónica SDV",
+          "score": null
+        },
+        {
+          "value": "agroindustria",
+          "label": "Sector 02: Agroindustria, Procesamiento de Alimentos y Bebidas",
+          "score": null
+        },
+        {
+          "value": "plasticos",
+          "label": "Sector 03: Plásticos, Polímeros Técnicos y Envase Sustentable",
+          "score": null
+        },
+        {
+          "value": "metalmecanica",
+          "label": "Sector 04: Metalmecánica, Maquinado CNC de Precisión y Pailería",
+          "score": null
+        },
+        {
+          "value": "textil",
+          "label": "Sector 05: Textil, Confección y Textiles Técnicos Industriales",
+          "score": null
+        },
+        {
+          "value": "muebles",
+          "label": "Sector 06: Muebles, Madera e Ingeniería RTA",
+          "score": null
+        },
+        {
+          "value": "turismo",
+          "label": "Sector 07: Turismo, Gastronomía y Servicios de Hospitalidad",
+          "score": null
+        },
+        {
+          "value": "medico-hospitalario",
+          "label": "Sector 08: Dispositivos Médicos, Material Quirúrgico y Salud",
+          "score": null
+        },
+        {
+          "value": "construccion",
+          "label": "Sector 09: Construcción, Prefabricados e Infraestructura",
+          "score": null
+        },
+        {
+          "value": "logistica",
+          "label": "Sector 10: Logística, Transporte de Carga y Cadena de Suministro",
+          "score": null
+        },
+        {
+          "value": "artes-graficas",
+          "label": "Sector 11: Artes Gráficas, Impresión y Empaque Estructural",
+          "score": null
+        },
+        {
+          "value": "tics-startups",
+          "label": "Sector 12: Startups, Soluciones TICs y Software (KISA / Deep Tech)",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-03",
+      "sourceId": "F0.3",
+      "level": "n1",
+      "sectorId": null,
+      "block": "perfilado",
+      "indexId": null,
+      "section": "Módulo 0",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Actividad principal",
+      "prompt": "¿Cuál es la actividad económica principal?",
+      "note": "El documento dice que esta respuesta cambia la redacción de los módulos 2, 3 y 4. Esos módulos no traen doble texto.",
+      "options": [
+        {
+          "value": "MAN",
+          "label": "Manufactura / producción física.",
+          "score": null
+        },
+        {
+          "value": "SER",
+          "label": "Servicios intensivos en conocimiento (KISA).",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-04",
+      "sourceId": "F0.4",
+      "level": "n1",
+      "sectorId": null,
+      "block": "perfilado",
+      "indexId": null,
+      "section": "Módulo 0",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Modelo de negocio",
+      "prompt": "¿Cuál es su modelo de negocio y canal dominante?",
+      "note": null,
+      "options": [
+        {
+          "value": "B2B",
+          "label": "Empresa a empresa.",
+          "score": null
+        },
+        {
+          "value": "B2C",
+          "label": "Empresa a consumidor.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-05",
+      "sourceId": "F0.5",
+      "level": "n1",
+      "sectorId": null,
+      "block": "perfilado",
+      "indexId": null,
+      "section": "Módulo 0",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Alcance geográfico",
+      "prompt": "¿Cuál es el alcance geográfico actual y la meta a 24 meses?",
+      "note": "El documento anuncia preguntas de aranceles que no están en el formulario.",
+      "options": [
+        {
+          "value": "LOC",
+          "label": "Mercado local, regional o nacional.",
+          "score": null
+        },
+        {
+          "value": "EXP",
+          "label": "Exportación / cadenas globales.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-06",
+      "sourceId": "D1",
+      "level": "n1",
+      "sectorId": null,
+      "block": "fricciones",
+      "indexId": null,
+      "section": "Módulo 1",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Obstáculo principal",
+      "prompt": "¿Cuál fue el principal obstáculo en los últimos 12 meses?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Falta de demanda, pérdida de clientes o ventas insuficientes.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Falta de liquidez, cobro lento (60 a 120 días) o falta de crédito.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Escasez de técnicos u operarios, o alta rotación.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Maquinaria obsoleta o falta de digitalización.",
+          "score": null
+        },
+        {
+          "value": "opt5",
+          "label": "Costo, fallas o falta de energía eléctrica o agua.",
+          "score": null
+        },
+        {
+          "value": "opt6",
+          "label": "Inseguridad en carreteras, robo a transporte o sobrecostos de custodia.",
+          "score": null
+        },
+        {
+          "value": "opt7",
+          "label": "Falta de certificaciones, permisos o trabas de inspección.",
+          "score": null
+        },
+        {
+          "value": "opt8",
+          "label": "Competencia desleal de informales o importados de bajo costo.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-07",
+      "sourceId": "D2",
+      "level": "n1",
+      "sectorId": null,
+      "block": "fricciones",
+      "indexId": null,
+      "section": "Módulo 1",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Costo del obstáculo",
+      "prompt": "¿Cuál fue el costo o la pérdida por ese obstáculo, como proporción de la facturación?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Menos del 1% de las ventas.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Entre 1% y 3%.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Entre 3% y 5%.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Más del 5%.",
+          "score": null
+        },
+        {
+          "value": "opt5",
+          "label": "Hay pérdida clara, no cuantificada contablemente.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-08",
+      "sourceId": "D3",
+      "level": "n1",
+      "sectorId": null,
+      "block": "fricciones",
+      "indexId": null,
+      "section": "Módulo 1",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Plazo para resolverlo",
+      "prompt": "¿En qué plazo espera resolverlo?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Menos de 3 meses.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Entre 3 y 12 meses.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Entre 1 y 2 años.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Problema crónico, sin plazo.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-09",
+      "sourceId": "D4",
+      "level": "n1",
+      "sectorId": null,
+      "block": "fricciones",
+      "indexId": null,
+      "section": "Módulo 1",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Proyectos de inversión",
+      "prompt": "¿Qué pasó con los proyectos de inversión en los últimos 24 meses?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Se ejecutaron conforme a lo planeado.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Se ejecutaron a menor escala o presupuesto.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Están detenidos por incertidumbre o liquidez.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Fueron cancelados.",
+          "score": null
+        },
+        {
+          "value": "opt5",
+          "label": "No se contempló ningún proyecto.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-10",
+      "sourceId": "D5",
+      "level": "n1",
+      "sectorId": null,
+      "block": "fricciones",
+      "indexId": null,
+      "section": "Módulo 1",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Siguiente inversión",
+      "prompt": "¿Qué condición activaría la siguiente inversión?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Contrato u orden de compra en firme.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Crédito o factoraje accesible.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Certificación técnica indispensable para cotizar.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Seguridad física en traslados y certidumbre en tarifas de energía.",
+          "score": null
+        },
+        {
+          "value": "opt5",
+          "label": "Simplificación de permisos.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-11",
+      "sourceId": "EN1",
+      "level": "n1",
+      "sectorId": null,
+      "block": "entorno",
+      "indexId": "SEN",
+      "section": "Módulo 2",
+      "type": "likert_7",
+      "title": "Las normas fiscales, ambientales, laborales y de zonificación en mi entidad son claras, estables y permiten planear inversiones a largo plazo sin sorpresas intempestivas.",
+      "prompt": "Las normas fiscales, ambientales, laborales y de zonificación en mi entidad son claras, estables y permiten planear inversiones a largo plazo sin sorpresas intempestivas.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Totalmente en desacuerdo / obstáculo severo",
+      "maxLabel": "Totalmente de acuerdo / facilitador excelente",
+      "scaleTo100": "((value - 1) / 6) * 100"
+    },
+    {
+      "id": "N1-12",
+      "sourceId": "EN2",
+      "level": "n1",
+      "sectorId": null,
+      "block": "entorno",
+      "indexId": "SEN",
+      "section": "Módulo 2",
+      "type": "likert_7",
+      "title": "El marco legal y los juzgados locales son imparciales, confiables y rápidos para hacer cumplir contratos.",
+      "prompt": "El marco legal y los juzgados locales son imparciales, confiables y rápidos para hacer cumplir contratos.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Totalmente en desacuerdo / obstáculo severo",
+      "maxLabel": "Totalmente de acuerdo / facilitador excelente",
+      "scaleTo100": "((value - 1) / 6) * 100"
+    },
+    {
+      "id": "N1-13",
+      "sourceId": "EN3",
+      "level": "n1",
+      "sectorId": null,
+      "block": "entorno",
+      "indexId": "SEN",
+      "section": "Módulo 2",
+      "type": "likert_7",
+      "title": "Los costos de seguridad (guardias, cámaras, GPS, seguros) no representan un sobrecosto excesivo.",
+      "prompt": "Los costos de seguridad (guardias, cámaras, GPS, seguros) no representan un sobrecosto excesivo.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Totalmente en desacuerdo / obstáculo severo",
+      "maxLabel": "Totalmente de acuerdo / facilitador excelente",
+      "scaleTo100": "((value - 1) / 6) * 100"
+    },
+    {
+      "id": "N1-14",
+      "sourceId": "EN4",
+      "level": "n1",
+      "sectorId": null,
+      "block": "entorno",
+      "indexId": "SEN",
+      "section": "Módulo 2",
+      "type": "likert_7",
+      "title": "La empresa opera sin inspecciones discrecionales, clausuras arbitrarias ni pagos informales.",
+      "prompt": "La empresa opera sin inspecciones discrecionales, clausuras arbitrarias ni pagos informales.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Totalmente en desacuerdo / obstáculo severo",
+      "maxLabel": "Totalmente de acuerdo / facilitador excelente",
+      "scaleTo100": "((value - 1) / 6) * 100"
+    },
+    {
+      "id": "N1-15",
+      "sourceId": "EN5",
+      "level": "n1",
+      "sectorId": null,
+      "block": "entorno",
+      "indexId": "SEN",
+      "section": "Módulo 2",
+      "type": "likert_7",
+      "title": "Los trámites estatales y municipales están digitalizados y se resuelven con agilidad.",
+      "prompt": "Los trámites estatales y municipales están digitalizados y se resuelven con agilidad.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Totalmente en desacuerdo / obstáculo severo",
+      "maxLabel": "Totalmente de acuerdo / facilitador excelente",
+      "scaleTo100": "((value - 1) / 6) * 100"
+    },
+    {
+      "id": "N1-16",
+      "sourceId": "EN6",
+      "level": "n1",
+      "sectorId": null,
+      "block": "entorno",
+      "indexId": "SEN",
+      "section": "Módulo 2",
+      "type": "likert_7",
+      "title": "El clima institucional incentiva a reinvertir utilidades aquí en lugar de mudarse.",
+      "prompt": "El clima institucional incentiva a reinvertir utilidades aquí en lugar de mudarse.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Totalmente en desacuerdo / obstáculo severo",
+      "maxLabel": "Totalmente de acuerdo / facilitador excelente",
+      "scaleTo100": "((value - 1) / 6) * 100"
+    },
+    {
+      "id": "N1-17",
+      "sourceId": "ECO1",
+      "level": "n1",
+      "sectorId": null,
+      "block": "ecosistema",
+      "indexId": "SEI",
+      "section": "Módulo 3",
+      "type": "likert_7",
+      "title": "Las universidades y escuelas técnicas preparan el personal que la empresa necesita y facilitan educación dual o estadías.",
+      "prompt": "Las universidades y escuelas técnicas preparan el personal que la empresa necesita y facilitan educación dual o estadías.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Nula o inexistente",
+      "maxLabel": "Excelente y continua",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-18",
+      "sourceId": "ECO2",
+      "level": "n1",
+      "sectorId": null,
+      "block": "ecosistema",
+      "indexId": "SEI",
+      "section": "Módulo 3",
+      "type": "likert_7",
+      "title": "Hay laboratorios de prueba, metrología o plantas piloto accesibles.",
+      "prompt": "Hay laboratorios de prueba, metrología o plantas piloto accesibles.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Nula o inexistente",
+      "maxLabel": "Excelente y continua",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-19",
+      "sourceId": "ECO3",
+      "level": "n1",
+      "sectorId": null,
+      "block": "ecosistema",
+      "indexId": "SEI",
+      "section": "Módulo 3",
+      "type": "likert_7",
+      "title": "Hay fondos, subsidios o estímulos fiscales disponibles para modernización o equipo.",
+      "prompt": "Hay fondos, subsidios o estímulos fiscales disponibles para modernización o equipo.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Nula o inexistente",
+      "maxLabel": "Excelente y continua",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-20",
+      "sourceId": "ECO4",
+      "level": "n1",
+      "sectorId": null,
+      "block": "ecosistema",
+      "indexId": "SEI",
+      "section": "Módulo 3",
+      "type": "likert_7",
+      "title": "Cámaras o clústeres generan negocio, compras consolidadas y transferencia entre asociados.",
+      "prompt": "Cámaras o clústeres generan negocio, compras consolidadas y transferencia entre asociados.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Nula o inexistente",
+      "maxLabel": "Excelente y continua",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-21",
+      "sourceId": "ECO5",
+      "level": "n1",
+      "sectorId": null,
+      "block": "ecosistema",
+      "indexId": "SEI",
+      "section": "Módulo 3",
+      "type": "likert_7",
+      "title": "En los últimos 2 años hubo proyectos tecnológicos conjuntos con universidades o centros que mejoraron procesos o productos.",
+      "prompt": "En los últimos 2 años hubo proyectos tecnológicos conjuntos con universidades o centros que mejoraron procesos o productos.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Nula o inexistente",
+      "maxLabel": "Excelente y continua",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-22",
+      "sourceId": "ECO6",
+      "level": "n1",
+      "sectorId": null,
+      "block": "ecosistema",
+      "indexId": "SEI",
+      "section": "Módulo 3",
+      "type": "likert_7",
+      "title": "La empresa puede o quiere colaborar, contratar o comprar a emprendedores o empresas de base tecnológica local.",
+      "prompt": "La empresa puede o quiere colaborar, contratar o comprar a emprendedores o empresas de base tecnológica local.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Nula o inexistente",
+      "maxLabel": "Excelente y continua",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-23",
+      "sourceId": "R01",
+      "level": "n1",
+      "sectorId": null,
+      "block": "traccion",
+      "indexId": "ITC",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Barrera para cerrar ventas",
+      "prompt": "¿Cuál es la principal barrera para cerrar ventas?",
+      "note": "El documento lista cuatro textos condicionados a manufactura, servicios, B2B y B2C. No dice si se muestra uno solo. Aquí se ven los cuatro.",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Manufactura: no cumplir tolerancias, pruebas de laboratorio o capacidad de planta.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Servicios: falta de ISO 27001, experiencia demostrable o tiempos de respuesta.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "B2B: costo y burocracia de portales de homologación.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "B2C: costo de adquisición de clientes o saturación de canales.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-24",
+      "sourceId": "R02",
+      "level": "n1",
+      "sectorId": null,
+      "block": "traccion",
+      "indexId": "ITC",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Cotizaciones perdidas",
+      "prompt": "¿Qué porcentaje de cotizaciones se pierde por certificación o plazo?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Menos del 5%.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Entre 6% y 15%.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Entre 16% y 30%.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Más del 30%.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-25",
+      "sourceId": "R03",
+      "level": "n1",
+      "sectorId": null,
+      "block": "traccion",
+      "indexId": "ITC",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Primera orden",
+      "prompt": "¿Cuánto tiempo pasa hasta la primera orden en firme?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Menos de 1 mes.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "De 1 a 3 meses.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "De 4 a 6 meses.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Más de 6 meses.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-26",
+      "sourceId": "R04",
+      "level": "n1",
+      "sectorId": null,
+      "block": "traccion",
+      "indexId": "ITC",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Concentración de clientes",
+      "prompt": "¿Qué porcentaje de las ventas está en los tres principales clientes?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Menos del 25%.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Entre 26% y 50%.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Entre 51% y 75%.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Más del 75%.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-27",
+      "sourceId": "R05",
+      "level": "n1",
+      "sectorId": null,
+      "block": "traccion",
+      "indexId": "ITC",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Base de competencia",
+      "prompt": "¿Sobre qué base compite la empresa?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Guerra de precios.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Diferenciación y calidad.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-28",
+      "sourceId": "R06",
+      "level": "n1",
+      "sectorId": null,
+      "block": "norma",
+      "indexId": "IMN",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Dominio de normas",
+      "prompt": "¿Cuál es el dominio de las normas del mercado objetivo?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Desconocimiento total.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Conocimiento reactivo, solo cuando un cliente condiciona la orden.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Dominio proactivo, con auditorías internas.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-29",
+      "sourceId": "R07",
+      "level": "n1",
+      "sectorId": null,
+      "block": "norma",
+      "indexId": "IMN",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Certificaciones",
+      "prompt": "¿Cuál es el estatus de las certificaciones de tercera parte?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Certificaciones vigentes.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "En proceso, avance superior al 50%.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Calidad empírica, sin certificado oficial.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Sin certificación y sin capacidad de costearla.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-30",
+      "sourceId": "R08",
+      "level": "n1",
+      "sectorId": null,
+      "block": "norma",
+      "indexId": "IMN",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Trazabilidad",
+      "prompt": "¿Cómo es la trazabilidad del origen de insumos?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Automatizada (ERP / código de barras).",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Documental o manual.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Débil o nula.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-31",
+      "sourceId": "R09",
+      "level": "n1",
+      "sectorId": null,
+      "block": "norma",
+      "indexId": "IMN",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Insumos importados",
+      "prompt": "¿Cuál es la dependencia de insumos importados?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin vulnerabilidad: insumos locales y proveedores diversificados.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Moderada: 1 o 2 insumos importados con sustituto nacional.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Crítica: un freno en aduana detiene la empresa.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-32",
+      "sourceId": "R10",
+      "level": "n1",
+      "sectorId": null,
+      "block": "norma",
+      "indexId": "IMN",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Apoyo de cumplimiento",
+      "prompt": "¿Dónde rendiría más un apoyo de cumplimiento?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Pruebas de laboratorio y ensayos.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Consultoría en planta para no conformidades y auditorías.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Marcas, patentes o códigos de barras en el mercado destino.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Capacitación en sustentabilidad, huella de carbono y ESG.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-33",
+      "sourceId": "R11",
+      "level": "n1",
+      "sectorId": null,
+      "block": "absorcion",
+      "indexId": "ICA",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Capacidad de volumen",
+      "prompt": "Si un cliente ofrece duplicar el volumen en 90 días, ¿qué pasaría?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Aceptación inmediata: hay capacidad ociosa.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Aceptación con ajustes: subcontrato u horas extra.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Rechazo: la planta está al 100%.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-34",
+      "sourceId": "R12",
+      "level": "n1",
+      "sectorId": null,
+      "block": "absorcion",
+      "indexId": "ICA",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Digitalización",
+      "prompt": "¿Cómo está digitalizada la operación?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "ERP/CRM en la nube, EDI y pagos SPEI.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Software en silos, desconectado de planta y de clientes.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Control en hojas de cálculo o papel.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-35",
+      "sourceId": "R13",
+      "level": "n1",
+      "sectorId": null,
+      "block": "absorcion",
+      "indexId": "ICA",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Talento",
+      "prompt": "¿Dónde está la escasez de talento?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin problema.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Operadores técnicos y maquinistas.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Automatización y datos.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Ventas técnicas y comercio exterior.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-36",
+      "sourceId": "R14",
+      "level": "n1",
+      "sectorId": null,
+      "block": "absorcion",
+      "indexId": "ICA",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Barrera financiera",
+      "prompt": "¿Cuál es la barrera financiera para contratos mayores?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Ninguna: hay flujo o líneas bancarias.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Falta de factoraje para plazos de 60 a 120 días.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Falta de garantías colaterales.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Tasas de interés que hacen inviable el equipo.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-37",
+      "sourceId": "R15",
+      "level": "n1",
+      "sectorId": null,
+      "block": "absorcion",
+      "indexId": "ICA",
+      "section": "Módulo 4",
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "title": "Salto a 6 meses",
+      "prompt": "¿Cuál sería el proyecto de mayor salto en 6 meses?",
+      "note": null,
+      "options": [
+        {
+          "value": "opt1",
+          "label": "ERP/CRM modular.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Lean manufacturing.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Cerrar la auditoría de la certificación indispensable.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Encuentro de negocios con compradores ancla.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N1-38",
+      "sourceId": "COL1",
+      "level": "n1",
+      "sectorId": null,
+      "block": "colaboracion",
+      "indexId": "IPC",
+      "section": "Módulo 5",
+      "type": "likert_7",
+      "title": "Compras conjuntas y fletes consolidados.",
+      "prompt": "Compras conjuntas y fletes consolidados.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Rechazo total / desconfianza absoluta",
+      "maxLabel": "Totalmente dispuesto / prioridad estratégica",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-39",
+      "sourceId": "COL2",
+      "level": "n1",
+      "sectorId": null,
+      "block": "colaboracion",
+      "indexId": "IPC",
+      "section": "Módulo 5",
+      "type": "likert_7",
+      "title": "Cuota para un laboratorio, centro de maquinado o sala limpia compartida.",
+      "prompt": "Cuota para un laboratorio, centro de maquinado o sala limpia compartida.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Rechazo total / desconfianza absoluta",
+      "maxLabel": "Totalmente dispuesto / prioridad estratégica",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-40",
+      "sourceId": "COL3",
+      "level": "n1",
+      "sectorId": null,
+      "block": "colaboracion",
+      "indexId": "IPC",
+      "section": "Módulo 5",
+      "type": "likert_7",
+      "title": "Sustituir compra de maquinaria o licencias por pago por uso.",
+      "prompt": "Sustituir compra de maquinaria o licencias por pago por uso.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Rechazo total / desconfianza absoluta",
+      "maxLabel": "Totalmente dispuesto / prioridad estratégica",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-41",
+      "sourceId": "COL4",
+      "level": "n1",
+      "sectorId": null,
+      "block": "colaboracion",
+      "indexId": "IPC",
+      "section": "Módulo 5",
+      "type": "likert_7",
+      "title": "Sumar capacidad a una marca o consorcio para contratos que no puede surtir sola.",
+      "prompt": "Sumar capacidad a una marca o consorcio para contratos que no puede surtir sola.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Rechazo total / desconfianza absoluta",
+      "maxLabel": "Totalmente dispuesto / prioridad estratégica",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-42",
+      "sourceId": "COL5",
+      "level": "n1",
+      "sectorId": null,
+      "block": "colaboracion",
+      "indexId": "IPC",
+      "section": "Módulo 5",
+      "type": "likert_7",
+      "title": "Operar eso bajo fideicomiso neutral con mediación de universidades o clústeres.",
+      "prompt": "Operar eso bajo fideicomiso neutral con mediación de universidades o clústeres.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Rechazo total / desconfianza absoluta",
+      "maxLabel": "Totalmente dispuesto / prioridad estratégica",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-43",
+      "sourceId": "EXP1",
+      "level": "n1",
+      "sectorId": null,
+      "block": "expansion",
+      "indexId": "IPC",
+      "section": "Módulo 6",
+      "type": "likert_7",
+      "title": "Tiene identificados productos más complejos fabricables en menos de 12 meses con la maquinaria actual.",
+      "prompt": "Tiene identificados productos más complejos fabricables en menos de 12 meses con la maquinaria actual.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Sin capacidad / totalmente descartado",
+      "maxLabel": "Totalmente preparado / estrategia diseñada",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-44",
+      "sourceId": "EXP2",
+      "level": "n1",
+      "sectorId": null,
+      "block": "expansion",
+      "indexId": "IPC",
+      "section": "Módulo 6",
+      "type": "likert_7",
+      "title": "Si hubiera financiamiento y laboratorios, podría reconvertirse a industrias de alta tecnología.",
+      "prompt": "Si hubiera financiamiento y laboratorios, podría reconvertirse a industrias de alta tecnología.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Sin capacidad / totalmente descartado",
+      "maxLabel": "Totalmente preparado / estrategia diseñada",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-45",
+      "sourceId": "EXP3",
+      "level": "n1",
+      "sectorId": null,
+      "block": "expansion",
+      "indexId": "IPC",
+      "section": "Módulo 6",
+      "type": "likert_7",
+      "title": "Tiene estrategia para vender en mercados internacionales o e-commerce transfronterizo.",
+      "prompt": "Tiene estrategia para vender en mercados internacionales o e-commerce transfronterizo.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Sin capacidad / totalmente descartado",
+      "maxLabel": "Totalmente preparado / estrategia diseñada",
+      "scaleTo100": null
+    },
+    {
+      "id": "N1-46",
+      "sourceId": "EXP4",
+      "level": "n1",
+      "sectorId": null,
+      "block": "expansion",
+      "indexId": "IPC",
+      "section": "Módulo 6",
+      "type": "likert_7",
+      "title": "Tiene estados financieros auditados y gobierno corporativo listos para capital privado o coinversión extranjera.",
+      "prompt": "Tiene estados financieros auditados y gobierno corporativo listos para capital privado o coinversión extranjera.",
+      "note": null,
+      "min": 1,
+      "max": 7,
+      "minLabel": "Sin capacidad / totalmente descartado",
+      "maxLabel": "Totalmente preparado / estrategia diseñada",
+      "scaleTo100": null
+    }
+  ]
+}

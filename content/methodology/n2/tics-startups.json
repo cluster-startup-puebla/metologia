@@ -1,0 +1,594 @@
+{
+  "sectorId": "tics-startups",
+  "moduleCode": "MOD-TIC-N2",
+  "questions": [
+    {
+      "id": "N2-TIC-01",
+      "sourceId": "TC-01",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "MÓDULO 0: PERFILADO DEL MODELO TECNOLÓGICO Y UBICACIÓN",
+      "title": "Modelo Principal de Negocio y Entrega de Tecnología",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿En cuál de las siguientes modalidades de producto o servicio tecnológico se concentra la mayor proporción de sus ingresos?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Desarrollo de Software a la Medida / Software Factory: Proyectos bajo demanda (time & materials o precio cerrado) para clientes corporativos o gobierno.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Producto Software como Servicio (SaaS B2B / B2C): Plataforma propietaria en la nube con cobro recurrente por suscripción o uso.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Servicios Administrados de TI e Infraestructura (IT MSP / Ciberseguridad): Administración de servidores, soporte cloud, redes y servicios gestionados de seguridad (SOC).",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Startup Deep Tech / IA Aplicada / Biotech / IoT: Empresa basada en investigación científica avanzada, algoritmos propietarios de IA, visión artificial o sensores IoT.",
+          "score": null
+        },
+        {
+          "value": "opt5",
+          "label": "Consultoría Tecnológica e Integración de Sistemas (KISA): Implementación de ERPs corporativos (SAP, Oracle), CRM, Business Intelligence y transformación digital.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-TIC-02",
+      "sourceId": "TC-02",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "MÓDULO 0: PERFILADO DEL MODELO TECNOLÓGICO Y UBICACIÓN",
+      "title": "Ubicación del Hub de Operaciones y Mapeo de Talento",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿En qué nodo urbano o parque tecnológico de la región Puebla - Tlaxcala se localiza la sede operativa o centro de ingeniería de su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Corredor Universitario Cholula - San Andrés / UDLAP: Ecosistema de startups, agencias digitales y espacio de coworking en la zona metropolitana.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Distrito de Innovación Puebla Capital (Angelópolis / Centro Histórico / BUAP): Oficinas corporativas, centros de I+D y desarrollo de software urbano.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Parques Tecnológicos e Industriales (Cuautlancingo / Huejotzingo / FINSA): Desarrollo de software embebido e integración de sistemas para sector automotriz/industrial.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Nodo Tlaxcala (Capital / Apizaco / CIX Huamantla): Empresas de desarrollo de software, automatización e integración industrial en Tlaxcala.",
+          "score": null
+        },
+        {
+          "value": "opt5",
+          "label": "Operación 100% Remota / Distribución Geográfica: Empresa nativa digital sin oficina física fija, con equipo distribuido en la región.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-TIC-03",
+      "sourceId": "R00-TIC-PROD",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "SECCIÓN I: ROMPEHIELOS DE JERARQUIZACIÓN DE IMPACTO (MÉTODO DE BORDA)",
+      "title": "Jerarquización de Fricciones en Desarrollo y Operación (DevOps / Producto) (Rompehielos de Jerarquización)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: Ordene del 1 al 8 los siguientes problemas operativos según el impacto negativo que generan en el crecimiento de su empresa de software/TI",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 8",
+      "factorCount": 8,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Rotación constante y fuga de desarrolladores sénior atraídos por ofertas remotas en USD."
+        },
+        {
+          "id": "f2",
+          "label": "Atrasos en entregas de sprints y despliegues con errores de código a producción."
+        },
+        {
+          "id": "f3",
+          "label": "Deuda técnica acumulada por código monolítico difícil de escalar o refactorizar."
+        },
+        {
+          "id": "f4",
+          "label": "Vulnerabilidades de ciberseguridad e incidentes de fuga o ataque a datos de clientes."
+        },
+        {
+          "id": "f5",
+          "label": "Altos costos operativos en infraestructura cloud (AWS / Azure) sin optimización (FinOps)."
+        },
+        {
+          "id": "f6",
+          "label": "Falta de validación de encaje producto-mercado (Product-Market Fit) y ciclos de venta B2B muy largos."
+        },
+        {
+          "id": "f7",
+          "label": "Dificultad para formalizar la propiedad intelectual (registro de software / patentes)."
+        },
+        {
+          "id": "f8",
+          "label": "Desconocimiento de instrumentos legales para levantar capital de riesgo (SAFE / ESOP)."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-TIC-04",
+      "sourceId": "R00-TIC-SOURCING-MAT",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "SECCIÓN I: ROMPEHIELOS DE JERARQUIZACIÓN DE IMPACTO (MÉTODO DE BORDA)",
+      "title": "Jerarquización de Riesgos en Sourcing de Infraestructura y Licencias (Rompehielos de Jerarquización)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: Ordene del 1 al 6 los principales riesgos y sobrecostos en la adquisición de infraestructura digital y herramientas de desarrollo",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Carga financiera por licencias de software de desarrollo, monitoreo y APIs especializadas."
+        },
+        {
+          "id": "f2",
+          "label": "Facturación en dólares de proveedores cloud (AWS/GCP/Azure) expuesta a volatilidad cambiaria."
+        },
+        {
+          "id": "f3",
+          "label": "Escasez o sobrecosto de servidores dedicados y GPUs para entrenamiento de modelos de IA."
+        },
+        {
+          "id": "f4",
+          "label": "Dependencia de APIs de terceros (OpenAI, Stripe, Twilio) con cambios de tarifas sin previo aviso."
+        },
+        {
+          "id": "f5",
+          "label": "Falta de infraestructura local de Data Centers certificados TIER III/IV en la región."
+        },
+        {
+          "id": "f6",
+          "label": "Costos elevados de herramientas avanzadas de ciberseguridad (SAST/DAST/SIEM)."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-TIC-05",
+      "sourceId": "R00-TIC-SOURCING-SERV",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "SECCIÓN I: ROMPEHIELOS DE JERARQUIZACIÓN DE IMPACTO (MÉTODO DE BORDA)",
+      "title": "Jerarquización de Deficiencias en Servicios Especializados del Ecosistema (Rompehielos de Jerarquización)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: Ordene del 1 al 6 las mayores deficiencias de servicios especializados e infraestructura de soporte en Puebla-Tlaxcala",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Escasez de firmas locales de auditoría e implementación de cumplimiento ISO 27001 / SOC 2."
+        },
+        {
+          "id": "f2",
+          "label": "Falta de despachos legales especializados en derecho informático, patentes y contratos SAFE/ESOP."
+        },
+        {
+          "id": "f3",
+          "label": "Red de ángeles inversionistas y fondos de Venture Capital locales prácticamente inexistente."
+        },
+        {
+          "id": "f4",
+          "label": "Escasos programas de aceleración corporativa vinculados a la industria tradicional (VW, Audi, Agro)."
+        },
+        {
+          "id": "f5",
+          "label": "Deficiencias de conectividad de fibra óptica redundante de alta velocidad en zonas de oficinas."
+        },
+        {
+          "id": "f6",
+          "label": "Falta de mentores con experiencia real escalando empresas SaaS B2B a nivel global."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-TIC-06",
+      "sourceId": "TC-TECH-01",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: AUDITORÍA TÉCNICA DE ARQUITECTURA CLOUD, DEVSECOPS, CIBERSEGURIDAD e IA",
+      "title": "Arquitectura de Software, Nube y Escalabilidad (Cloud-Native)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Cuál es el nivel de madurez y escalabilidad de la arquitectura de infraestructura y software de sus aplicaciones?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Monolito Servidor Local / VPS Básico: Aplicación monolítica alojada en servidor físico local o VPS sin balanceo de carga ni autoescalado.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Servidores en Nube con Migración Directa (Lift & Shift): Uso de máquinas virtuales en AWS/Azure/GCP, pero con administración manual y sin contenedores.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Arquitectura Cloud-Native / Contenedores (Docker / Kubernetes): Aplicación desacoplada en microservicios o contenedores, con bases de datos gestionadas en nube y autoescalado dinámico.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Serverless / Arquitectura Event-Driven y Multi-Region: Infraestructura como Código (Terraform/CloudFormation), arquitectura serverless/microservicios e hiper-escalabilidad distribuida.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TIC-07",
+      "sourceId": "TC-TECH-02",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: AUDITORÍA TÉCNICA DE ARQUITECTURA CLOUD, DEVSECOPS, CIBERSEGURIDAD e IA",
+      "title": "Prácticas DevSecOps, Integración Continua (CI/CD) y Pruebas Automatizadas",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Cómo gestiona su equipo de ingeniería los despliegues de código, las pruebas de calidad y la seguridad en el ciclo de desarrollo?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Despliegue Manual por FTP/SSH: Compilación y subida manual de archivos al servidor directamente por el desarrollador; sin pruebas automatizadas.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Control de Versiones Git y Despliegue Semiautomático: Uso de repositorios (GitHub/GitLab), con scripts de despliegue pero pruebas manuales en ambiente de staging.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Tubería CI/CD Automatizada y Pruebas Unitarias: Flujo CI/CD completo (GitHub Actions/Jenkins) con ejecución automatizada de pruebas unitarias/integración previo al merge.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "DevSecOps Pleno / Análisis de Código SAST/DAST y Monitoreo APM: Seguridad automatizada integrada en la tubería (escaneo de vulnerabilidades en código y dependencias) y APM (Datadog/Sentry) en producción.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TIC-08",
+      "sourceId": "TC-TECH-03",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: AUDITORÍA TÉCNICA DE ARQUITECTURA CLOUD, DEVSECOPS, CIBERSEGURIDAD e IA",
+      "title": "Ciberseguridad, Gobernanza de Datos (ISO 27001 / SOC 2) y Ley LFPDPPP",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Qué estándares de ciberseguridad, encriptación y protección de datos personales de clientes/usuarios aplica su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Seguridad Básica / Contraseñas Simples: Antivirus comercial básico, sin políticas formales de contraseñas, sin encriptación de base de datos ni aviso de privacidad.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Cumplimiento Legal Básico LFPDPPP: Aviso de Privacidad formalizado y encriptación SSL/TLS en tránsito, pero sin auditorías de vulnerabilidad ni cifrado en reposo.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Encriptación Avanzada, WAF y Pruebas de Penetración: Cifrado en tránsito y en reposo (AES-256), cortafuegos WAF, autenticación MMF obligatoria y pentesting anual.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Certificación ISO/IEC 27001 / Reporte SOC 2 Type II / GDPR: Sistema de Gestión de Seguridad de la Información (SGSI) certificado, cumplimiento SOC 2 / GDPR y equipo SOC/SIEM de respuesta a incidentes 24/7.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TIC-09",
+      "sourceId": "TC-TECH-04",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: AUDITORÍA TÉCNICA DE ARQUITECTURA CLOUD, DEVSECOPS, CIBERSEGURIDAD e IA",
+      "title": "Integración de Inteligencia Artificial (IA), MLOps y Analítica de Datos",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿De qué manera su producto o plataforma incorpora capacidades de Inteligencia Artificial, Machine Learning o procesamiento de datos?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin Capacidades de IA / Reportes Estáticos: Sistema transaccional tradicional sin algoritmos predictivos ni análisis avanzado de datos.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Integración de APIs de IA de Terceros: Uso de APIs externas (OpenAI / Claude / Google AI) para funciones auxiliares de chatbot o generación de texto básico.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Modelos de Machine Learning Propietarios y Analítica Predictiva: Desarrollo de modelos de ML entrenados con datos propios para clasificación, visión artificial o analítica predictiva.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Canalización MLOps / Fine-Tuning Propietario e IA Generativa Core: Flujo MLOps automatizado para re-entrenamiento continuo de modelos, arquitectura RAG propia y protección de datos sin filtrado a modelos públicos.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TIC-10",
+      "sourceId": "CP-TC-01",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "SECCIÓN III: SOFISTICACIÓN PRODUCTIVA Y SALTO EN EL ESPACIO DE SERVICIOS INTENSIVOS EN CONOCIMIENTO",
+      "title": "Reconversión hacia la 'Fruta Madura' Digital (Alta Densidad ω_j > 0.65)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: Considerando su equipo técnico actual, ¿hacia cuál solución tecnológica adyacente tiene mayor viabilidad de reconversión comercial en < 12 meses?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Verticalización SaaS B2B para la Industria Tradicional Regional: Software especializado en la nube para la gestión de la cadena automotriz, textil, agroindustrial o logística de Puebla-Tlaxcala.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Plataformas de Ciberseguridad e Identidad Digital (IAM): Soluciones para autenticación segura, biometría y prevención de fraude en transacciones comerciales.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Soluciones IoT e Industria 4.0 para Piso de Planta: Sensores y software de monitoreo de maquinaria (OEE, mantenimiento predictivo) integrados a líneas de producción.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Sistemas de HealthTech y Telemedicina B2B: Software certificado para gestión médica, expediente clínico electrónico (NOM-024) e interpretación de imágenes con IA.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TIC-11",
+      "sourceId": "CP-TC-02",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "SECCIÓN III: SOFISTICACIÓN PRODUCTIVA Y SALTO EN EL ESPACIO DE SERVICIOS INTENSIVOS EN CONOCIMIENTO",
+      "title": "Apuestas Estratégicas Deep Tech y Valoración de Propiedad Intelectual (Alto ICPO)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: En un horizonte de 2 a 3 años, ¿en cuál segmento de tecnología de frontera tiene visión de desarrollar activos de propiedad intelectual protegidos?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Registro de Software (INDAUTOR) y Marcas Comerciales (IMPI): Registro formal del código fuente de aplicaciones y marcas registradas ante instituciones oficiales.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Patentes de Algoritmos Propietarios y Secretos Industriales: Modelos matemáticos o procesos de procesamiento de datos protegidos bajo patente internacional o secreto industrial estructurado.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Algoritmos Quantum-Ready y Criptografía Poscuántica: Desarrollo de soluciones de cifrado y optimización preparadas para la era de la computación cuántica.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Bioinformática y Descubrimiento de Materiales con IA: Modelación computacional para la aceleración de síntesis química, biopolímeros o fármacos en alianza con laboratorios.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TIC-12",
+      "sourceId": "CP-TC-03",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "SECCIÓN III: SOFISTICACIÓN PRODUCTIVA Y SALTO EN EL ESPACIO DE SERVICIOS INTENSIVOS EN CONOCIMIENTO",
+      "title": "Estructura Corporativa, Gobernanza y Preparación para Levantamiento de Capital",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Qué nivel de formalización legal, gobernanza corporativa e instrumentos de inversión (SAFE / ESOP) tiene implementados la empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Empresa Persona Física o S.A. Tradicional Sin Gobernanza: Estructura legal básica sin separación entre fundadores y empresa; sin plan de opciones de acciones (ESOP).",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "S.A.P.I. de C.V. Formalizada con Cap Table Ordenado: Sociedad Anónima Promotora de Inversión constituida, con libro de socios limpio y contabilidad auditada.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Implementación de Instrumentos SAFE / Nota Convertible y ESOP: Uso de acuerdos SAFE (Simple Agreement for Future Equity) estandarizados para inversión ángel y plan ESOP para talentos clave.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Holding Internacional (Delaware / C-Corp) y Gobernanza Institucional: Estructura de holding internacional lista para recibir capital de fondos de Venture Capital institucionales con Consejo de Administración.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TIC-13",
+      "sourceId": "COL-TC01",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "SECCIÓN IV: SOLUCIONES COLABORATIVAS ANTE LA FALLA DE ESCALA (BIENES DE CLUB)",
+      "title": "Centro Regional de Ciberseguridad, SOC Comunitario y Nube Privada",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Cuál sería la disposición de su empresa para utilizar o cofinanciar un Centro de Operaciones de Seguridad (SOC) y nube regional compartida bajo esquema Pay-per-Use?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Desinterés u Operación Aislada: Prefiere continuar contratando servicios de nube y seguridad comercial de forma individual.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Esquema Pay-per-Use de SOC y Pentesting Compartido: Interés en contratar servicios de monitoreo de ciberseguridad y auditorías de vulnerabilidades con descuento colectivo.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Coinversión en Laboratorio de Pruebas ISO 27001 / SOC 2: Disposición a aportar cuotas para equipar un centro de auditoría de ciberseguridad y certificación acelerada.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Fideicomiso Tecnológico para Nube Sovereign Regional: Participación fiduciaria para operar un Data Center regional de alta seguridad para datos críticos industriales y de gobierno.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TIC-14",
+      "sourceId": "COL-TC02",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "SECCIÓN IV: SOLUCIONES COLABORATIVAS ANTE LA FALLA DE ESCALA (BIENES DE CLUB)",
+      "title": "Hub de Entrenamiento de Inteligencia Artificial y Compute Cluster (GPUs)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Cómo participaría su empresa en una alianza de Cuádruple Hélice para acceder a un cluster comunitario de procesamiento con supercomputadoras/GPUs para IA?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Uso Exclusivo de Nube Pública Comercial: Continuar pagando cómputo de GPU a tarifas comerciales en AWS/GCP sin subsidio ni cluster local.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Reserva de Horas de Cómputo en Cluster Universitario: Integrar una bolsa regional de horas de GPU en supercomputadoras universitarias (BUAP / UDLAP) para entrenamiento de modelos.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Hub Regional de Inteligencia Artificial Aplicada: Alianza formal (Empresas TICs - Universidad - Gobierno) para cofinanciar servidores GPU dedicados para startups locales.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Consorcio de Co-Innovación MLOps e IA Soberana: Participación activa en un consorcio tecnológico que desarrolle modelos fundacionales de IA adaptados a las industrias de la región.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TIC-15",
+      "sourceId": "COL-TC03",
+      "level": "n2",
+      "sectorId": "tics-startups",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "SECCIÓN IV: SOLUCIONES COLABORATIVAS ANTE LA FALLA DE ESCALA (BIENES DE CLUB)",
+      "title": "Red de Inversión Ángel, Fondo de Venture Capital Regional y Matchmaking B2B",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Qué grado de apertura e interés tiene su empresa para asociarse en un consorcio de comercialización B2B y participar en una Red de Inversión Ángel regional?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Ventas e Inversión Independientes: Mantener estrategia comercial propia sin participar en redes de aceleración ni fondos colectivos.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Participación en Eventos de Matchmaking B2B / Demo Days: Asistir a encuentros de vinculación comercial con industrias locales y presentación ante inversionistas.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Integración al Catálogo Regional KISA y Red Ángel: Formar parte del catálogo verificado de soluciones TICs para la industria de Puebla-Tlaxcala y recibir mentoría de inversión.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Co-Fundación de Fondo de Venture Capital Tecnológico: Participar como socio industrial en un fondo de capital de riesgo para co-invertir en la aceleración de startups regionales.",
+          "score": 100
+        }
+      ]
+    }
+  ]
+}

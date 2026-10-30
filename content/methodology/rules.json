@@ -1,0 +1,22 @@
+{
+  "ismsWeights": {
+    "technical": 0.6,
+    "borda": 0.4
+  },
+  "bordaActive": null,
+  "bordaAggregation": null,
+  "technicalQuestionIds": null,
+  "senQuestionIds": ["N1-11", "N1-12", "N1-13", "N1-14", "N1-15", "N1-16"],
+  "quadrants": [
+    { "id": "I", "min": 0, "max": 39, "label": "Trampa de básico / commodity" },
+    { "id": "II", "min": 40, "max": 59, "label": "Vulnerabilidad operativa / cuello de botella" },
+    { "id": "III", "min": 60, "max": 79, "label": "Especialista en riesgo de transición" },
+    { "id": "IV", "min": 80, "max": 100, "label": "Líder de frontera e integrador global" }
+  ],
+  "notes": {
+    "isms": "ISMS = 0.60 * Score_Tecnico + 0.40 * Borda_Score. Borda_Score no tiene regla de agregación en el tabulador.",
+    "sen": "SEN = ((promedio de EN1 a EN6 - 1) / 6) * 100. Cada respuesta es un entero de 1 a 7.",
+    "emptyAnswer": "El documento no define imputar 0 ni sacar la pregunta del máximo. El cálculo se detiene.",
+    "bordaSense": "La fórmula suma severidad. No está escrita la inversión 100 - severidad."
+  }
+}

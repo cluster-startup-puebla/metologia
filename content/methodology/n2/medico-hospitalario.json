@@ -1,0 +1,543 @@
+{
+  "sectorId": "medico-hospitalario",
+  "moduleCode": "MOD-MED-N2",
+  "questions": [
+    {
+      "id": "N2-MED-01",
+      "sourceId": "MED-01",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Eslabón Dominante en la Cadena de Dispositivos Médicos y Salud",
+      "prompt": "Pregunta de Evaluación: ¿En cuál de los siguientes eslabones se concentra la mayor proporción de la facturación y actividad operativa de su establecimiento?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "M1 pts",
+          "label": "Material de Curación y Dispositivos de Consumo: Gasas, jeringas, suturas, batas estériles, cubrebocas y empaque biomédico.",
+          "score": null
+        },
+        {
+          "value": "M2 pts",
+          "label": "Equipamiento, Mobiliario e Instrumental Quirúrgico: Camas hospitalarias, lámparas de quirófano, mesas de exploración e instrumental de acero quirúrgico.",
+          "score": null
+        },
+        {
+          "value": "M3 pts",
+          "label": "Implantes, Osteosíntesis y Dispositivos de Alto Riesgo: Prótesis ortopédicas, tornillos de osteosíntesis, catéteres vasculares e implantes dentales.",
+          "score": null
+        },
+        {
+          "value": "M4 pts",
+          "label": "Reactivos IVD, Biotecnología y Software Médico (SaMD): Diagnosticadores in vitro, reactivos de laboratorio, sistemas de monitoreo y software médico.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-MED-02",
+      "sourceId": "MED-02",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Cuenca Territorial y Micro-Región de Operación",
+      "prompt": "Pregunta de Evaluación: ¿En qué corredor industrial o municipio de la región Puebla - Tlaxcala se localiza la principal planta o centro de distribución de su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "R1 pts",
+          "label": "Zona Metropolitana Puebla-Cholula (ZMPT): Clúster de salud, parques industriales (FINSA, 2000) y cercanía a hospitales de alta especialidad.",
+          "score": null
+        },
+        {
+          "value": "R2 pts",
+          "label": "Corredor San Martín Texmelucan - Huejotzingo: Parques industriales de empaque, plásticos de ingeniería y textiles biomédicos.",
+          "score": null
+        },
+        {
+          "value": "R3 pts",
+          "label": "Tlaxcala (CIX I Tetla, CIX II Huamantla, CIX III Tlaxco): Fabricación de componentes plásticos, metálicos y textiles hospitalarios.",
+          "score": null
+        },
+        {
+          "value": "R4 pts",
+          "label": "Tehuacán y Atlixco: Fabricación de mobiliario, calzado clínico, uniformes quirúrgicos y distribución regional.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-MED-03",
+      "sourceId": "R00-MED-PROD",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Fricciones en Producción Biomédica y Planta (Rompehielos de Jerarquizamiento Borda)",
+      "prompt": "Pregunta de Evaluación: Ordene del 1 al 8 los siguientes problemas operativos según el impacto económico negativo y gravedad que generan en su planta o taller",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 8",
+      "factorCount": 8,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Trámite y tiempos de resolución de Registro Sanitario COFEPRIS / Licencia Sanitaria de Planta."
+        },
+        {
+          "id": "f2",
+          "label": "Costo de operación y mantenimiento de Cuartos Limpios (Clasificación ISO 14644 Clase 7 u 8)."
+        },
+        {
+          "id": "f3",
+          "label": "Cuellos de botella y costos en servicios de esterilización por contrato (Óxido de Etileno / Rayos Gamma / Vapor)."
+        },
+        {
+          "id": "f4",
+          "label": "Descalibración y falta de validación de sistemas metrológicos e instrumentos bajo ISO 13485."
+        },
+        {
+          "id": "f5",
+          "label": "Dificultad para implementar la norma de trazabilidad y marcado único de dispositivos (UDI - Unique Device Identification)."
+        },
+        {
+          "id": "f6",
+          "label": "Mermas y sellado defectuoso en empaque primario estéril (Tyvek / Bolsas Grado Médico)."
+        },
+        {
+          "id": "f7",
+          "label": "Variaciones de energía eléctrica o falta de gases de proceso que interrumpen celdas de ensamble."
+        },
+        {
+          "id": "f8",
+          "label": "Escasez y alta rotación de ingenieros biomédicos, biotecnólogos y técnicos de calidad acreditados."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-MED-04",
+      "sourceId": "R00-MED-SOURCING-MAT",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Riesgos en Sourcing de Materias Primas Biomédicas (Rompehielos de Jerarquizamiento Borda)",
+      "prompt": "Pregunta de Evaluación: Ordene del 1 al 6 los principales riesgos y cuellos de botella en la compra e importación de insumos médicos de producción",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Dependencia de resinas plásticas grado médico certificadas (USP Clase VI / ISO 10993)."
+        },
+        {
+          "id": "f2",
+          "label": "Escasez y costo de acero inoxidable quirúrgico (316L / 420) y aleaciones de Titanio (Ti6Al4V)."
+        },
+        {
+          "id": "f3",
+          "label": "Tiempos de entrega prolongados (> 12 semanas) en componentes electrónicos y sensores biomédicos."
+        },
+        {
+          "id": "f4",
+          "label": "Volatilidad de precios en papel y película de empaque estéril (Tyvek de DuPont / Pouches)."
+        },
+        {
+          "id": "f5",
+          "label": "Volúmenes Mínimos de Compra (MOQ) impagables en distribuidores globales de materia prima."
+        },
+        {
+          "id": "f6",
+          "label": "Trámites aduanales lentos y retención de insumos biomédicos por permisos de importación."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-MED-05",
+      "sourceId": "R00-MED-SOURCING-SERV",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Deficiencias en Servicios Especializados Externos (Rompehielos de Jerarquizamiento Borda)",
+      "prompt": "Pregunta de Evaluación: Ordene del 1 al 6 las mayores deficiencias de infraestructura y servicios externos en la región Puebla-Tlaxcala",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Carencia de laboratorios regionales acreditados ISO 17025 para pruebas de Biocompatibilidad (ISO 10993)."
+        },
+        {
+          "id": "f2",
+          "label": "Ausencia de plantas locales de esterilización industrial por contrato (obligación de enviar a CDMX/Estado de México)."
+        },
+        {
+          "id": "f3",
+          "label": "Falta de laboratorios de validación de empaque estéril y vida de anaquel (ISO 11607)."
+        },
+        {
+          "id": "f4",
+          "label": "Escasez de firmas de consultoría acreditadas para auditorías de preparación COFEPRIS / FDA 21 CFR 820."
+        },
+        {
+          "id": "f5",
+          "label": "Deficiencias en empresas autorizadas para la recolección y tratamiento de residuos biológico-infecciosos (RPBI)."
+        },
+        {
+          "id": "f6",
+          "label": "Sobrecostos de fletes dedicados con temperatura y humedad controlada hacia hospitales/distribuidores."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-MED-06",
+      "sourceId": "MD-01",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Madurez del Sistema de Gestión de Calidad para Dispositivos Médicos (ISO 13485 / COFEPRIS)",
+      "prompt": "Pregunta de Evaluación: ¿Cuál es el estatus de certificación formal y cumplimiento regulatorio del sistema de calidad de su planta?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Cumplimiento Sanitario Básico: Aviso de Funcionamiento COFEPRIS y Buenas Prácticas de Fabricación empíricas.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Licencia Sanitaria y NOM-241-SSA1 Vigente: Buenas Prácticas de Fabricación auditadas por COFEPRIS con Registro Sanitario de productos.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Certificación ISO 13485:2016 Vigente: Sistema de Gestión de Calidad específico para dispositivos médicos certificado por Organismo Notificado.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Acreditación Internacional Avanzada (FDA / CE Mark / MDSAP): Cumplimiento de FDA 21 CFR 820, Marcado CE (MDR) o MDSAP para exportación global.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MED-07",
+      "sourceId": "MD-02",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Control de Áreas Limpias y Monitoreo Ambiental (ISO 14644)",
+      "prompt": "Pregunta de Evaluación: ¿Con qué tipo de infraestructura de control ambiental y cuartos limpios cuenta su planta para ensamble o empaque biomédico?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Ensamble en Área Convencional: Mantenimiento de limpieza estándar sin filtración HEPA ni control de presión diferencial.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Área Controlada No Certificada: Inyección de aire filtrado y control de polvo básico, pero sin clasificación ISO formal.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Cuarto Limpio Certificado (ISO 14644 Clase 7 u 8 / Grado C-D): Filtración HEPA, flujo laminar, presión positiva y monitoreo de partículas/gérmenes.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Área Estéril de Alta Purificación (ISO 14644 Clase 5 / Grado A-B): Aislamiento automatizado para llenado aséptico o ensamble implantable.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MED-08",
+      "sourceId": "MD-03",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Validación del Proceso de Esterilización y Empaque Primario (ISO 11607)",
+      "prompt": "Pregunta de Evaluación: ¿Cómo valida y garantiza la esterilidad y vida de anaquel de sus productos médicos hasta el punto de uso clínico?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin Proceso de Esterilización / Empaque Básico: Venta de producto no estéril en bolsas de polietileno convencionales.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Esterilización Externa sin Validación de Empaque: Contratación de maquila de esterilización por vapor/EtO pero sin estudios ISO 11607 de sellado.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Proceso Validado con Pouch Tyvek/Papel Grado Médico: Protocolos de esterilización validados (EtO/Gamma) y empaque primario con indicador químico/biológico.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "In-house / Validación de Envejecimiento Acelerado: Esterilización con trazabilidad en lote, pruebas de integridad de burbuja (ASTM F2096) y envejecimiento en tiempo real.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MED-09",
+      "sourceId": "MD-04",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Trazabilidad Unitaria, Marcado UDI y Gestión de Tecnovigilancia",
+      "prompt": "Pregunta de Evaluación: ¿Con qué nivel de automatización rastrea los dispositivos médicos e informa eventos adversos a la autoridad sanitaria?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Registros Manuales por Lote: Bitácoras en papel por lote de producción; rastreo hacia hospital toma más de 24 horas.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Registro Semiautomatizado en ERP: Trazabilidad de lote en software contable/ERP, pero sin código único impreso en pieza.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Marcado UDI Serializado (Código DataMatrix / GS1): Código DataMatrix impreso por láser o etiqueta que identifica dispositivo, lote y caducidad.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Tecnovigilancia Integrada e IoT: Sistema automatizado de tecnovigilancia conectado con hospitales y notificación en tiempo real a COFEPRIS/FDA.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MED-10",
+      "sourceId": "CP-MED-01",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Reconversión hacia la 'Fruta Madura' Biomédica (Alta Densidad ω_j > 0.65)",
+      "prompt": "Pregunta de Evaluación: Considerando su capacidad actual de moldeo, maquinado o ensamble, ¿hacia cuál dispositivo de mayor margen tiene viabilidad técnica de reconversión en < 12 meses?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_sin_puntaje_markup_checkbox",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Kitting y Ensamble de Bolsas / Sistemas de Drenaje / Ostomía: Ensamble de tubos de silicona, conectores y bolsas de grado médico.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Material de Curación Avanzado e Hidrogeles: Apósitos con plata nanocristalina, colágeno y vendajes especializados.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Mobiliario Hospitalario Inteligente y Electromecánico: Camas con control digital, grúas de transferencia y carros de paro.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Instrumental Quirúrgico de Precisión: Tijeras, pinzas y separadores en acero 420/316L con recubrimiento nitruro de titanio.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-MED-11",
+      "sourceId": "CP-MED-02",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Apuestas Estratégicas y Dispositivos de Alta Complejidad (Alto ICPO)",
+      "prompt": "Pregunta de Evaluación: En un horizonte de 2 a 3 años con apoyo de coinversión y vinculación universitaria, ¿en cuál segmento de alta sofisticación tiene visión de incursionar?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_sin_puntaje_markup_checkbox",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Implantes Ortopédicos y Placas de Osteosíntesis: Placas y tornillos de Titanio Ti6Al4V o PEEK impresos en 3D/CNC 5 ejes.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Dispositivos de Diagnóstico In Vitro (IVD) y Biosensores: Tiras reactivas, casetes de prueba rápida microfluídicos e in vitro.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Software como Dispositivo Médico (SaMD) e Inteligencia Artificial: Algoritmos de análisis de imágenes médicas (PACS/RIS) y monitoreo telemático.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Equipamiento Biomédico Electrónico: Desfibriladores, oxímetros de pulso, monitores de signos vitales y bombas de infusión.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-MED-12",
+      "sourceId": "COL-MED01",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Planta Regional de Esterilización por Contrato (EtO / Gamma) y Cuartos Limpios Comunitarios",
+      "prompt": "Pregunta de Evaluación: ¿Cuál sería la disposición de su empresa para utilizar una planta común de esterilización industrial y cuartos limpios compartidos bajo esquema Pay-per-Use?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin Interés: Mantiene esquemas de esterilización propia o envío tradicional a CDMX/Estado de México.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Contratación de Maquila de Esterilización en Región: Interés en utilizar una planta local acreditada pagando por lote/m3.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Arrendamiento de Espacio en Cuarto Limpio Comunitario: Uso de módulos de ensamble estéril ISO Clase 7 para corridas piloto.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Coinversión y Gobernanza Fiduciaria: Aportación de capital o cuotas fijas para cofinanciar un parque biomédico regional.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MED-13",
+      "sourceId": "COL-MED02",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Laboratorio Regional de Biocompatibilidad y Ensayos Biomédicos (Cuádruple Hélice)",
+      "prompt": "Pregunta de Evaluación: ¿Cómo participaría su empresa en una alianza regional (Empresas - Universidad - Gobierno) para equipar un laboratorio acreditado ISO 17025 para ISO 10993?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Mantenimiento de Contratación Externa Remota: Continuar enviando muestras a laboratorios extranjeros o comerciales.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Bolsa Regional de Muestras: Agrupar ensayos de biocompatibilidad para obtener tarifas preferenciales.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Alianza con Centros de Investigación Locales: Convenio con laboratorios de la BUAP, UDLAP, UPAEP o IPN para uso de equipos.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Acreditación de Laboratorio Comunitario in situ: Aportación activa a un fondo fiduciario para acreditar el laboratorio ante EMA y FDA.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MED-14",
+      "sourceId": "COL-MED03",
+      "level": "n2",
+      "sectorId": "medico-hospitalario",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Mesa de Compra Consolidada de Resinas USP VI, Acero Surgical y Tyvek",
+      "prompt": "Pregunta de Evaluación: ¿Qué grado de apertura tiene su empresa para asociarse en un comité de compras agrupadas de materias primas biomédicas para alcanzar los MOQ de distribuidoras globales?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Operación Individual Aislar: Compra independiente asumiendo sobreprecio y mínimos de compra.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Consolidación de Pedidos de Empaque y Resinas: Agrupar volumen de compra de bolsas Tyvek, resinas USP VI y empaque.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Consorcio Exportador y Compras de Insumos Quirúrgicos: Consorcio formal para importación directa de acero 316L, Titanio y componentes SMT biomédicos.",
+          "score": 100
+        }
+      ]
+    }
+  ]
+}

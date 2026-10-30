@@ -1,0 +1,625 @@
+{
+  "sectorId": "construccion",
+  "moduleCode": "MOD-CONST-N2",
+  "questions": [
+    {
+      "id": "N2-CONST-01",
+      "sourceId": "CN-01",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Eslabón Dominante en la Cadena de Construcción e Infraestructura",
+      "prompt": "Pregunta de Evaluación Directa: ¿En cuál de los siguientes eslabones se concentra la mayor proporción de la facturación y actividad operativa de su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Edificación Residencial y Comercial: Vivienda vertical/horizontal, plazas comerciales, desarrollos de uso mixto e infraestructura urbana de servicios.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Obra Civil e Infraestructura Pesada: Carreteras, puentes, redes de agua/drenaje, cimentaciones profundas, naves industriales y obras hidráulicas.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Prefabricados y Materiales de Construcción: Extracción de agregados pétreos, plantas de concreto premezclado, bloques, tubos y elementos pretensados/postensados.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Servicios de Ingeniería, Supervisión y BIM: Proyectos ejecutivos, gerencia de obra, modelado BIM, topografía con drones y verificación estructural DRO.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-CONST-02",
+      "sourceId": "CN-02",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Cuenca Territorial y Micro-Región de Operación Principal",
+      "prompt": "Pregunta de Evaluación Directa: ¿En qué cuenca productiva o corredor de la región Puebla - Tlaxcala se localiza la principal base de operaciones o patio de maquinaria de su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Zona Metropolitana Puebla-Tlaxcala (ZMPT): Puebla, San Andrés/San Pedro Cholula, Amozoc, Cuautlancingo, Tlaxcala Capital, San Pablo del Monte.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Corredor Industrial Huejotzingo - San Martín Texmelucan - Natívitas: Zona de alto desarrollo de naves industriales y logística.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Valle de Tehuacán (ZMTH) y Mixteca: Obras de edificación regional, infraestructura hídrica y materiales pétreos del sur.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Sierra Norte y Nororiental (Zacatlán, Chignahuapan, Teziutlán): Obras de contención de laderas, infraestructura vial de montaña y caminos rurales.",
+          "score": 4
+        },
+        {
+          "value": "opt5",
+          "label": "Altiplano de Tlaxcala (Huamantla, Apizaco, Tlaxco, CIX I, II, III): Desarrollo de infraestructura industrial, ferroviaria y parques logísticos.",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "id": "N2-CONST-03",
+      "sourceId": "CN-03",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Regulación Ambiental, Manifestación de Impacto Ambiental (MIA) y Licencias",
+      "prompt": "Pregunta de Evaluación Directa: ¿Cuál es la situación operativa de su empresa respecto a autorizaciones de impacto ambiental, licencias municipales y manejo de RCD?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Cumplimiento Informal / En Tramite Inicial: Operación con licencias municipales básicas pero sin Manifestación de Impacto Ambiental (MIA) ni plan formal de RCD.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Licencias Vigentes con Gestión Reactiva: MIA aprobada para obras específicas y licencias de construcción en regla, pero con demoras en renovaciones.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Cumplimiento Normativo Pleno: MIA estatal/federal vigente, permisos CONAGUA para extracción/descarga y plan de manejo de RCD registrado en la autoridad ambiental.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Certificación de Sustentabilidad y Reciclaje: Obras bajo estándares de edificación sustentable (LEED / EDGE) con reutilización in situ >40% de residuos RCD.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-CONST-04",
+      "sourceId": "R00-CONST-PROD",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Fricciones en Obra y Planta (ROMPEHIELOS DE BORDA)",
+      "prompt": "Pregunta de Evaluación Directa: Ordene del 1 al 8 los siguientes problemas operativos según el impacto económico negativo y la frecuencia con que afectan el avance de sus obras",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 8",
+      "factorCount": 8,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Paros de obra por condiciones climáticas, lluvias imprevistas o bloqueos sociales de acceso."
+        },
+        {
+          "id": "f2",
+          "label": "Mermas excesivas y desperdicio de concreto premezclado, acero de refuerzo o cimbra."
+        },
+        {
+          "id": "f3",
+          "label": "Retrabajos y costos de corrección por vicios ocultos o inconsistencias en planos ejecutivos."
+        },
+        {
+          "id": "f4",
+          "label": "Atrasos en la conciliación y cobro de estimaciones con clientes públicos o privados."
+        },
+        {
+          "id": "f5",
+          "label": "Escasez, alta rotación y falta de capacitación de oficiales de albañilería y operadores de maquinaria pesada."
+        },
+        {
+          "id": "f6",
+          "label": "Retrasos o cuellos de botella en la entrega de reportes de laboratorio de ensayos de concreto y suelos."
+        },
+        {
+          "id": "f7",
+          "label": "Trámites burocráticos y lentitud en la obtención de licencias de construcción y alineamiento municipal."
+        },
+        {
+          "id": "f8",
+          "label": "Sobrecostos no contemplados por consumo de diésel e ineficiencia en el rendimiento de maquinaria pesada."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-CONST-05",
+      "sourceId": "R00-CONST-SOURCING-MAT",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Riesgos en Sourcing de Materiales (ROMPEHIELOS DE BORDA)",
+      "prompt": "Pregunta de Evaluación Directa: Ordene del 1 al 6 los principales riesgos y cuellos de botella que enfrenta su empresa en la compra y suministro de materiales de construcción",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Volatilidad extrema de precios en acero de refuerzo (varilla, mallas), cemento y asfalto."
+        },
+        {
+          "id": "f2",
+          "label": "Desabasto o falta de calidad uniforme en agregados pétreos (grava, arena) con ensayos ONNCCE."
+        },
+        {
+          "id": "f3",
+          "label": "Atrasos en las entregas de aditivos químicos para fraguado y acelerantes de concreto."
+        },
+        {
+          "id": "f4",
+          "label": "Escasez o tiempos largos de entrega de elementos prefabricados especiales o viguetas pretensadas."
+        },
+        {
+          "id": "f5",
+          "label": "Exigencia de volúmenes mínimos de compra (MOQ) y condiciones de pago rigurosas por cemexeras/acereras."
+        },
+        {
+          "id": "f6",
+          "label": "Sobrecostos de flete y transporte para el traslado de triturados y concreto desde plantas alejadas."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-CONST-06",
+      "sourceId": "R00-CONST-SOURCING-SERV",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Deficiencias en Servicios Extermos (ROMPEHIELOS DE BORDA)",
+      "prompt": "Pregunta de Evaluación Directa: Ordene del 1 al 6 las mayores deficiencias de servicios especializados e infraestructura externa en la región Puebla-Tlaxcala",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Escasez de laboratorios locales acreditados ISO 17025 / ONNCCE para ensayos de concreto, acero y mecánica de suelos."
+        },
+        {
+          "id": "f2",
+          "label": "Falta de servicios especializados de topografía con levantamiento LiDAR o fotogrametría con drones."
+        },
+        {
+          "id": "f3",
+          "label": "Deficiente oferta de talleres locales para mantenimiento mayor de sistemas hidráulicos y motores de maquinaria pesada."
+        },
+        {
+          "id": "f4",
+          "label": "Escasez de peritos Directores Responsables de Obra (DRO) y corresponsables de seguridad estructural calificados."
+        },
+        {
+          "id": "f5",
+          "label": "Inseguridad y riesgos de robo en el traslado de maquinaria pesada y materiales en la Autopista 150D y Arco Norte."
+        },
+        {
+          "id": "f6",
+          "label": "Falta de sitios autorizados de tiro y plantas de trituración/reciclaje de RCD en la zona metropolitana."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-CONST-07",
+      "sourceId": "CN-TECH-01",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Control de Calidad de Materiales y Ensayos Mecánicos ONNCCE / EMA",
+      "prompt": "Pregunta de Evaluación Directa: ¿Cómo valida y garantiza su empresa la resistencia a la compresión del concreto y las propiedades mecánicas del acero de refuerzo?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Pruebas Empíricas / Sin Laboratorio: Confianza exclusiva en el certificado del proveedor sin muestreo de revenimiento ni ensamble de cilindros/probetas.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Pruebas Básicas de Campo: Muestreo de revenimiento y elaboración de cilindros de concreto, pero con envío a laboratorios no acreditados por la EMA/ONNCCE.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Control de Calidad Acreditado Externo: Muestreo sistemático e informes de laboratorio acreditado ISO 17025 / ONNCCE para compresión, tensión de acero y compactación de suelos.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Laboratorio de Control propio e Informes Digitales: Laboratorio de calidad propio en obra con prensa calibrada, curado normado e integración digital de reportes de resistencia a 7, 14 y 28 días.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-CONST-08",
+      "sourceId": "CN-TECH-02",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Digitalización, Metodología BIM y Control de Estimaciones",
+      "prompt": "Pregunta de Evaluación Directa: ¿Qué nivel de tecnología digital y metodología de modelado utiliza su empresa para el diseño, cuantificación y control de avance de obra?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Dibujo 2D Convencional / Hojas de Cálculo: Manejo de planos en AutoCAD 2D estático y cuantificación manual en Excel con alto riesgo de imprecisiones.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Modelado 3D Básico / Control Software de Costos: Uso de modelado 3D comercial (SketchUp/Revit básico) combinado con software especializado de precios unitarios (Neodata/Opus).",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "BIM Nivel 2 / Detección de Interferencias: Modelado colaborativo BIM 3D (Revit/Navisworks) con detección automática de choque entre ingenierías antes de la ejecución.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Integración BIM 4D / 5D y Control ERP en Tiempo Real: Modelado 4D (tiempo/cronograma) y 5D (costos) vinculado a un ERP de obra para control en tiempo real de estimaciones e inventarios.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-CONST-09",
+      "sourceId": "CN-TECH-03",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Seguridad Industrial (NOM-031-STPS) y Gestión de Residuos (RCD)",
+      "prompt": "Pregunta de Evaluación Directa: ¿Cómo gestiona su empresa la seguridad y salud ocupacional en obra y el manejo de los residuos de la construcción y demolición (RCD)?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Prácticas Informales / Sin Protocolo Escrito: Entrega de equipo EPP básico sin supervisión continua, plan de protección civil ni protocolo de manejo de RCD.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Protocolo de Seguridad Básico: Comisión de Seguridad e Higiene integrada, señalética NOM-031-STPS en obra y retiro de escombros mediante transportistas locales autorizados.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Sistema de Gestión de Seguridad NOM-031 y Plan RCD: Analistas de riesgo en obra, análisis de trabajo seguro (ATS) en alturas/excavaciones y separación primaria de RCD.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Certificación OHSAS / ISO 45001 y Reciclaje RCD in situ: Sistema de gestión de seguridad certificado, tasa de siniestralidad cero y trituración/reutilización in situ de RCD.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-CONST-10",
+      "sourceId": "CN-TECH-04",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Eficiencia de Maquinaria Pesada, Telemetría y Mantenimiento",
+      "prompt": "Pregunta de Evaluación Directa: ¿Cómo gestiona y monitorea su empresa el rendimiento, consumo de combustible y mantenimiento de su flota de maquinaria pesada?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Mantenimiento Reactivo / Bitácora Manual: Reparaciones mecánicas al presentarse fallas y control de horómetro/diésel en notas en papel sin verificación.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Mantenimiento Preventivo por Horómetro: Programa de servicios mecánicos por kilometraje/horómetro y control periódico de consumo de combustible por obra.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Monitoreo por GPS / TPM de Flota: Sistema de rastreo GPS en unidades, control estricto de cargas de diésel con tarjeta electrónica y mantenimiento preventivo planificado.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Telemetría IoT en Tiempo Real y Diagnóstico Predictivo: Maquinaria equipada con telemetría telemática IoT (Caterpillar VisionLink, Komtrax, JD Link) para monitoreo de consumo, códigos de falla y eficiencia.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-CONST-11",
+      "sourceId": "CP-CN-01",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Reconversión hacia la 'Fruta Madura' de Construcción (Alta Densidad ω_j > 0.65)",
+      "prompt": "Pregunta de Evaluación Directa: Considerando su equipamiento y capacidad de planta/obra, ¿hacia cuál producto o sistema constructivo adyacente tiene mayor viabilidad de reconversión en menos de 12 meses?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_sin_puntaje_markup_checkbox",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Prefabricados de concreto estructural (muros Tilt-Up, trabes AASTHO, losas alveolares pretensadas).",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Adoquines, bloques y adoquines ecológicos fabricados con sustitución de agregados reciclados de RCD.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Morteros secos, estucos y adhesivos cerámicos premezclados de alta adherencia envasados en saco.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Elementos pretensados de edificación rápida (sistemas de vigueta y bovedilla de poliestireno o alma abierta).",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-CONST-12",
+      "sourceId": "CP-CN-02",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Apuestas Estratégicas y Edificación de Alta Complejidad (Alto ICPO)",
+      "prompt": "Pregunta de Evaluación Directa: En un horizonte de 2 a 3 años con apoyo de coinversión pública-privada y financiamiento verde, ¿en cuál segmento de alta sofisticación técnica tiene visión de incursionar?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_sin_puntaje_markup_checkbox",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Edificación sustentable con certificación LEED / EDGE y sistemas de eficiencia energética pasiva.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Sistemas constructivos industrializados 3D / Construcción Off-site modular volumétrica en taller.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Concretos autorreparables, geopolímeros de bajo carbono y materiales con captura de CO2.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Obras de infraestructura hídrica avanzada, plantas de tratamiento de agua y túneles de drenaje profundo.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-CONST-13",
+      "sourceId": "CP-CN-03",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Economía Circular, Reciclaje de RCD y Concreto Ecológico",
+      "prompt": "Pregunta de Evaluación Directa: ¿Qué destino y nivel de aprovechamiento otorga actualmente su empresa a los escombros y residuos de construcción (RCD) generados en obra?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Tiro Clandestino / Disposición Informal: Retiro de escombros mediante fletes particulares sin comprobante de tiro autorizado, con riesgo de sanciones.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Tiro Autorizado / Sin Procesamiento: Transporte de RCD a tiraderos o rellenos sanitarios autorizados por la autoridad ambiental pero sin reciclaje.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Reutilización Rústica en Obra: Uso de escombros seleccionados para rellenos, nivelación de terrenos o terracerías secundarias en la misma obra.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Trituración Clasificada y Concreto Ecológico: Trituración y cribado in situ o en planta especializada de RCD para elaboración de agregados reciclados normados.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-CONST-14",
+      "sourceId": "COL-CN01",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Pool Comunitario de Maquinaria Pesada e Infraestructura de Trituración RCD",
+      "prompt": "Pregunta de Evaluación Directa: ¿Cuál sería la disposición de su empresa para utilizar o cofinanciar un parque comunitario de maquinaria especializada y plantas móviles de trituración RCD bajo esquema Pay-per-Use?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Operación Individual Exclusiva: Preferencia por operar únicamente con maquinaria propia o arrendamiento tradicional individual.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Esquema Pay-per-Use / Arrendamiento Compartido: Interés en rentar equipos especializados por hora/día desde un pool comunitario regional.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Co-inversión en Planta Móvil de RCD: Disposición a aportar capital o cuotas de uso para adquirir trituradoras móviles comunitarias.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Gobernanza Fiduciaria Completa: Participación en un fideicomiso de equipamiento de infraestructura operado por la cámara empresarial (CMIC) o parque logístico.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-CONST-15",
+      "sourceId": "COL-CN02",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Laboratorio Regional Acreditado ONNCCE / EMA de Ensayos Mecánicos y Suelos",
+      "prompt": "Pregunta de Evaluación Directa: ¿Cómo participaría su empresa en una alianza regional de Cuádruple Hélice para operar un laboratorio comunitario acreditado de concreto, acero y geotecnia?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Continuidad de Esquema Individual: Preferencia por continuar contratando laboratorios privados de forma independiente.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Bolsa Regional de Muestras: Disposición a integrar un convenio de volumen para negociar tarifas preferenciales con laboratorios acreditados.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Alianza Universitaria (Cuádruple Hélice): Participación en la acreditación ONNCCE/EMA de laboratorios en universidades locales (BUAP / UPAEP / UTT / UPT).",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Copropiedad y Certificación Digital in situ: Aportación activa a un fondo de equipamiento para la emisión de reportes digitales con validez oficial inmediata.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-CONST-16",
+      "sourceId": "COL-CN03",
+      "level": "n2",
+      "sectorId": "construccion",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Consorcio de Compras Consolidadas de Acero, Cemento y Licitaciones Colectivas",
+      "prompt": "Pregunta de Evaluación Directa: ¿Qué grado de apertura tiene su empresa para asociarse en un consorcio de compras de insumos básicos y participación conjunta en licitaciones de infraestructura?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Compras Independientes Tradicionales: Preferencia por comprar materiales de forma individual a distribuidores locales.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Compras Agrupadas por Proyecto: Disposición a consolidar pedidos de varilla, cemento y aditivos junto con otras constructoras de la región.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Consorcio de Licitación Abierta: Integración de alianzas estratégicas (Joint Venture) para participar colectivamente en licitaciones de gran escala.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Consorcio Legal Integrado con Bodega Central: Asociación formal con bodega de acopio y red logística compartida para insumos de construcción.",
+          "score": 4
+        }
+      ]
+    }
+  ]
+}

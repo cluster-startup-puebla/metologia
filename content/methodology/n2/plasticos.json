@@ -1,0 +1,620 @@
+{
+  "sectorId": "plasticos",
+  "moduleCode": "MOD-PLAST-N2",
+  "questions": [
+    {
+      "id": "N2-PLAST-01",
+      "sourceId": "PL-01",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Eslabón Dominante en la Cadena del Plástico y Polímeros",
+      "prompt": "Pregunta de Evaluación: ¿En cuál de los siguientes eslabones tecnológicos se concentra la mayor proporción de la facturación y capacidad instalada de su planta?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Inyección de Termoplásticos Técnicos y de Ingeniería: Componentes bajo cofre, interiores automotrices, carcasas electrónicas, conectores, artículos médicos o de consumo rígido con estrechas tolerancias dimensionales.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Extrusión y Soplado (Película, Tubería, Envases y Perfiles): Película agrícola, empaque flexible multicapa, botellas PET/HDPE, tubería de conducción hídrica o perfiles estructurales.",
+          "score": 20
+        },
+        {
+          "value": "opt3",
+          "label": "Termoformado, Espumado y Compuestos de Ingeniería: Bandejas industriales, empaques retornables ESD, componentes de poliuretano, poliestireno expandido (EPS) o fibra de vidrio.",
+          "score": 18
+        },
+        {
+          "value": "opt4",
+          "label": "Reciclaje Técnico, Peletizado y Compounding/Masterbatch: Recuperación de merma post-industrial (PIR) o post-consumo (PCR), lavadero, peletizado, formulación de masterbatch y cargas minerales.",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "id": "N2-PLAST-02",
+      "sourceId": "PL-02",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Cuenca Territorial y Micro-Región Productiva",
+      "prompt": "Pregunta de Evaluación: ¿En qué corredor o parque industrial de la región Puebla - Tlaxcala se localiza la principal planta de procesamiento de su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "ZMPT",
+          "label": "Zona Metropolitana Puebla - Valles Centrales (FINSA, Cuautlancingo, 2000, Resurrección, Amozoc): Alta concentración en proveeduría automotriz Tier 1/Tier 2 e industria de consumo urbano.",
+          "score": null
+        },
+        {
+          "value": "TEX-HUE",
+          "label": "Corredor Industrial Texmelucan - Huejotzingo - San Martín: Especialización en empaque flexible, bolsas, películas agrícolas y tubos de PVC/HDPE.",
+          "score": null
+        },
+        {
+          "value": "CIX-TLAX",
+          "label": "Parques Industriales Xicohténcatl Tlaxcala (CIX I Tetla, CIX II Huamantla, CIX III Tlaxco, San Pablo del Monte): Proveeduría mixta automotriz, electrodomésticos y envases plásticos.",
+          "score": null
+        },
+        {
+          "value": "TEH",
+          "label": "Tehuacán y Valles del Sur (ZMTH): Empaque plástico grado alimenticio, empaques retornables para avicultura/porcicultura y película para agricultura protegida.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-PLAST-03",
+      "sourceId": "PL-03",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Régimen Energético y Eficiencia de Moldeo",
+      "prompt": "Pregunta de Evaluación: ¿Cuál es la situación operativa de su planta respecto a la calidad del suministro eléctrico, factor de potencia y eficiencia energética en equipos de calentamiento y enfriamiento?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Alta Vulnerabilidad Energética: Tarifa de media tensión sin planta de emergencia; variaciones de voltaje frecuentes que desprograman pirómetros e inyectoras, provocando paros y purgas continuas de resina.",
+          "score": 5
+        },
+        {
+          "value": "opt2",
+          "label": "Suministro Estándar con Micro-Cortes: Subestación propia pero sin bancos de capacitores ni monitoreo de consumo por kg procesado; uso de chillers y compresores convencionales de alto consumo.",
+          "score": 12
+        },
+        {
+          "value": "opt3",
+          "label": "Monitoreo Energético y Chillers Inverter: Subestación con supresores de picos, monitoreo del consumo kWh/kg por máquina, chillers con variador de frecuencia y aislamiento térmico en cañones de inyección.",
+          "score": 20
+        },
+        {
+          "value": "opt4",
+          "label": "Gestión Energética Certificada / ISO 5001: Integración de servomotores híbridos/100% eléctricos en inyectoras, generación fotovoltaica en techos y recuperación de calor de proceso para agua de molde.",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "id": "N2-PLAST-04",
+      "sourceId": "R00-PLAST-PROD",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Fricciones en Procesamiento y Piso de Planta (Rompehielos de Jerarquización)",
+      "prompt": "Pregunta de Jerarquización: Ordene del 1 al 8 los siguientes problemas comunes de producción según el impacto económico negativo y la frecuencia con que afectan la rentabilidad de su planta (1 = Mayor impacto / Máxima gravedad; 8 = Menor impacto)",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 8",
+      "factorCount": 8,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Tiempos de enfriamiento prolongados e ineficiencia en ciclos de moldeo (Cooling time excesivo)."
+        },
+        {
+          "id": "f2",
+          "label": "Mermas elevadas de resina por purgas, arranque de máquina, rebaba (flash) o sobreinyección."
+        },
+        {
+          "id": "f3",
+          "label": "Defectos estéticos y estructurales recurrentes (rechupes, ráfagas, tiros cortos, alabeo o burbujas)."
+        },
+        {
+          "id": "f4",
+          "label": "Fallas o picos de temperatura en chillers, atemperadores de molde y torres de enfriamiento."
+        },
+        {
+          "id": "f5",
+          "label": "Tiempos prolongados de cambio de molde, purga de cañón y ajuste de parámetros (Set-up / SMED)."
+        },
+        {
+          "id": "f6",
+          "label": "Desgaste prematuro de husillos, válvulas antirretorno y cavidades por resinas con fibra de vidrio o cargas."
+        },
+        {
+          "id": "f7",
+          "label": "Paros no programados por variaciones de voltaje, parpadeos eléctricos o picos de presión hidráulica."
+        },
+        {
+          "id": "f8",
+          "label": "Escasez y rotación de operadores técnicos de inyección/extrusión y ajustadores de molde calificados."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-PLAST-05",
+      "sourceId": "R00-PLAST-SOURCING-MAT",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Riesgos en Abastecimiento de Resinas e Insumos (Rompehielos de Jerarquización)",
+      "prompt": "Pregunta de Jerarquización: Ordene del 1 al 6 los principales cuellos de botella que enfrenta su empresa en la compra y recepción de materias primas plásticas y aditivos (1 = Mayor impacto negativo / Máxima gravedad; 6 = Menor impacto)",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Dependencia de resina virgen de ingeniería importada (PA66, ABS, PC, POM) con lead times > 12 semanas."
+        },
+        {
+          "id": "f2",
+          "label": "Incapacidad de sustituir resina virgen por resinas recicladas (PCR/PIR) por falta de homologación y estabilidad."
+        },
+        {
+          "id": "f3",
+          "label": "Variaciones lote a lote en la concentración de masterbatch, pigmentos, dispersión de cargas o aditivos UV."
+        },
+        {
+          "id": "f4",
+          "label": "Alta volatilidad de precios en commodities petroquímicos (PP, PE, PET, PVC) que erosiona el margen congelado."
+        },
+        {
+          "id": "f5",
+          "label": "Exigencia de volúmenes mínimos de compra (MOQ) de distribuidoras globales inalcanzables para el flujo PyME."
+        },
+        {
+          "id": "f6",
+          "label": "Demoras en desaduanamiento y fletes marítimos/terrestres en puerto de Veracruz o aduanas de frontera."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-PLAST-06",
+      "sourceId": "R00-PLAST-SOURCING-SERV",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Deficiencias en Servicios Especializados e Infraestructura (Rompehielos de Jerarquización)",
+      "prompt": "Pregunta de Jerarquización: Ordene del 1 al 6 las mayores deficiencias de servicios externos e infraestructura que limitan la competitividad de su planta en Puebla-Tlaxcala (1 = Mayor impacto negativo / Máxima gravedad; 6 = Menor impacto)",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Falta de talleres locales especializados en pulido óptico, texturizado Mold-Tech y reparación de cavidades."
+        },
+        {
+          "id": "f2",
+          "label": "Inexistencia de servicios regionales de rectificado, nitrurado líquido/gaseoso y metalizado de husillos y cañones."
+        },
+        {
+          "id": "f3",
+          "label": "Carencia de laboratorios regionales acreditados ISO/IEC 17025 para caracterización de polímeros (MFI, DSC, FTIR)."
+        },
+        {
+          "id": "f4",
+          "label": "Descalibración o falta de laboratorios de calibración local para pirómetros, termocuplas y transductores de presión."
+        },
+        {
+          "id": "f5",
+          "label": "Sobrecostos y trámites burocráticos para la gestión ambiental de purgas, aceites usados y residuos peligrosos."
+        },
+        {
+          "id": "f6",
+          "label": "Inseguridad y robos de transporte de carga en los corredores carreteros Arco Norte y Autopista 150D México-Puebla."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-PLAST-07",
+      "sourceId": "PL-TECH-01",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Control de Proceso y Moldeo Científico (Scientific Molding)",
+      "prompt": "Pregunta de Evaluación: ¿Cuál es el grado de parametrización y control científico del proceso de inyección o extrusión en su planta?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Ajuste Empírico por Prueba y Error: Parámetros modificados libremente por operadores según su criterio visual; sin hojas de proceso estandarizadas ni registro de curvas de inyección.",
+          "score": 5
+        },
+        {
+          "value": "opt2",
+          "label": "Hojas de Proceso Estándar Fijas: Parámetros documentados en papel a pie de máquina; control por tiempo y presión de congelación de entrada (gate freeze) verificado manualmente.",
+          "score": 12
+        },
+        {
+          "value": "opt3",
+          "label": "Moldeo Científico Decoupled Molding (Etapas I, II y III): Desacoplamiento de llenado y compactación; cálculo de reología en máquina, estudio de viscosidad y hoja de proceso congelada con límites de control.",
+          "score": 20
+        },
+        {
+          "value": "opt4",
+          "label": "Monitoreo de Presión en Cavidad en Tiempo Real (RJG / Kistler): Sensores piezoeléctricos en cavidad que transfieren automáticamente la máquina de llenado a empaque y rechazan piezas fuera de ventana.",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "id": "N2-PLAST-08",
+      "sourceId": "PL-TECH-02",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Calidad, Tolerancias y Ensayos Fisicoquímicos",
+      "prompt": "Pregunta de Evaluación: ¿Cómo valida su empresa las propiedades fisicoquímicas de las resinas entrantes y las tolerancias dimensionales de las piezas terminadas?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin Inspección de Materia Prima: Aceptación de resina únicamente con certificado de calidad del proveedor; verificación dimensional con vernier manual sin estudios de repetibilidad (%R&R).",
+          "score": 5
+        },
+        {
+          "value": "opt2",
+          "label": "Pruebas Básicas de Taller: Plastómetro interno para Índice de Fluidez (MFI) y estufa de secado; reporte dimensional en brazo CMM o proyectores de perfiles tercerizado.",
+          "score": 12
+        },
+        {
+          "value": "opt3",
+          "label": "Laboratorio Interno de Calidad / CMM Propia: Medición MFI, humedad relativa por Karl Fischer, densidad y laboratorio metrológico CMM propio con estudios %R&R < 10% y GD&T.",
+          "score": 20
+        },
+        {
+          "value": "opt4",
+          "label": "Caracterización Térmica y Espectrocópica Completa: DSC (Calorimetría Diferencial de Barrido), TGA, FTIR y pruebas mecánicas de tracción/impacto Izod; cumplimiento pleno de FDA / VDA 6.3 / IATF.",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "id": "N2-PLAST-09",
+      "sourceId": "PL-TECH-03",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Homologación de Resinas Recicladas (PCR/PIR) y Sustentabilidad",
+      "prompt": "Pregunta de Evaluación: ¿En qué medida su planta ha incorporado resinas recicladas post-consumo (PCR) o post-industriales (PIR) en sus líneas garantizando estabilidad de proceso?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Procesamiento Exclusivo de Resina Virgen: Rechazo de resinas recicladas por variaciones extremas de viscosidad, olor o contaminación que tapan boquillas y dañan moldes.",
+          "score": 5
+        },
+        {
+          "value": "opt2",
+          "label": "Mezcla Rústica A pie de Máquina (PIR Interno): Molienda de coladas y piezas defectuosas mezcladas manualmente con resina virgen en proporciones menores al 15% sin filtrado.",
+          "score": 12
+        },
+        {
+          "value": "opt3",
+          "label": "Peletizado y Compounding Homologado (PCR/PIR): Uso de molinos con despolvado, extrusoras de peletizado con desgasificación al vacío y cambiadores de malla hidráulicos de doble placa.",
+          "score": 20
+        },
+        {
+          "value": "opt4",
+          "label": "Formulación de Compuestos Circulares Avanzados: Aditivación con compatibilizadores, alargadores de cadena y nano-cargas que permiten incorporar > 30% PCR cumpliendo normas alimentarias o automotrices.",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "id": "N2-PLAST-10",
+      "sourceId": "PL-TECH-04",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Mantenimiento, Gestión de Moldes y Colada Caliente (Hot Runner)",
+      "prompt": "Pregunta de Evaluación: ¿Cómo administra su empresa el ciclo de vida, mantenimiento preventivo y reparación de los moldes y sistemas de colada caliente?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Mantenimiento Reactivo Mínimo: Limpieza del molde únicamente cuando presenta rebaba excesiva o tiros cortos; sin registro de disparos ni taller interno.",
+          "score": 5
+        },
+        {
+          "value": "opt2",
+          "label": "Limpieza y Conservación Básica: Bitácora física de disparos por molde, limpieza manual de cavidades al desmontar y almacenamiento en rack con agente anticorrosivo.",
+          "score": 12
+        },
+        {
+          "value": "opt3",
+          "label": "Programa de Mantenimiento Preventivo por Disparos: Lavado ultrasónico de cavidades, revisión de canales de enfriamiento, mantenimiento a controladores de colada caliente y taller interno de moldes.",
+          "score": 20
+        },
+        {
+          "value": "opt4",
+          "label": "Gestión Integral de Herramental (Tool Management System): Monitoreo de sensores de temperatura en molde, mantenimiento interno con soldadura láser, micro-mecanizado y prueba de estanqueidad.",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "id": "N2-PLAST-11",
+      "sourceId": "CP-PL-01",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Reconversión hacia la 'Fruta Madura' de Polímeros (Alta Densidad ω_j > 0.65)",
+      "prompt": "Pregunta de Evaluación: Considerando su parque de inyectoras o extrusoras, ¿hacia cuál de los siguientes productos procesados adyacentes tiene mayor viabilidad técnica de reconversión en menos de 12 meses?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "FM-01",
+          "label": "Inyección Co-moldeada o Bimaterial (2K / Overmolding): Piezas rígido-flexible (PP+TPE, PA+TPU) para sellos integrados automotrices o mangos ergonómicos.",
+          "score": null
+        },
+        {
+          "value": "FM-02",
+          "label": "Envases Grado Alimenticio Multicapa con Barrera (MAP / EVOH): Botellas o bandejas de polipropileno/PET con capas de EVOH para extender vida de anaquel sin conservadores.",
+          "score": null
+        },
+        {
+          "value": "FM-03",
+          "label": "Tubería y Perfiles Estructurales de Alta Densidad (HDPE / PP-R): Sistemas de conducción de fluidos a presión para construcción e infraestructura industrial.",
+          "score": null
+        },
+        {
+          "value": "FM-04",
+          "label": "Contenedores Plásticos Agrícolas e Industriales Colapsables: Cajas retornables para cosecha y logística industrial que reemplazan empaques de madera.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-PLAST-12",
+      "sourceId": "CP-PL-02",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Apuestas Estratégicas y Productos de Alta Complejidad (Alto ICPO)",
+      "prompt": "Pregunta de Evaluación: En un horizonte de 2 a 3 años con apoyo de coinversión técnica y desarrollo de proveedores, ¿en cuál de los siguientes segmentos de alta sofisticación tiene visión estratégica de incursionar?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "AP-01",
+          "label": "Polímeros Bio-basados y Compostables Certificados (PLA / PHA / PBAT): Envases y empaques compostables que cumplen leyes de prohibición de plásticos de un solo uso.",
+          "score": null
+        },
+        {
+          "value": "AP-02",
+          "label": "Plásticos de Ingeniería para Electromovilidad y Baterías: Componentes de PA66-GF30 o PBT retardantes a la flama (UL94 V-0) para cajas de batería y conectores EV.",
+          "score": null
+        },
+        {
+          "value": "AP-03",
+          "label": "Dispositivos Médicos e Insumos de Grado Farmacéutico: Jeringas, sistemas de infusión y tubos médicos inyectados en cuartos limpios ISO Clase 7/8.",
+          "score": null
+        },
+        {
+          "value": "AP-04",
+          "label": "Compuestos Conductivos y Disipadores Electrostáticos (ESD): Polímeros aditivados con nanotubos de carbono o grafeno para empaque de microelectrónica.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-PLAST-13",
+      "sourceId": "CP-PL-03",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Valorización de Subproductos y Compounding Avanzado",
+      "prompt": "Pregunta de Evaluación: ¿Qué destino y nivel de procesamiento otorga actualmente su planta a los residuos, purgas, coladas y recortes de lámina plástica?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Venta a Mermeros / Tiradero: Venta de mermas y purgas a recolectores informales a precios rematados de chatarra plástica.",
+          "score": 5
+        },
+        {
+          "value": "opt2",
+          "label": "Molienda Interna para Reutilización Directa: Trituración en molinos de pie de máquina para reincorporar coladas inmediatamente al proceso.",
+          "score": 12
+        },
+        {
+          "value": "opt3",
+          "label": "Peletizado y Compounding con Cargas Minerales: Lavado, triturado, extrusión con desgasificación y adición de talco o carbonato de calcio para peletizado homogéneo.",
+          "score": 20
+        },
+        {
+          "value": "opt4",
+          "label": "Biorrefinería de Polímeros / Reciclaje Químico o Mecánico de Precisión: Formulación de masterbatch técnico comercializable con ficha técnica garantizada para terceros.",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "id": "N2-PLAST-14",
+      "sourceId": "COL-PL01",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Centro Comunitario de Mantenimiento y Modificación de Moldes (Tooling Hub)",
+      "prompt": "Pregunta de Evaluación: ¿Cuál sería la disposición de su empresa para utilizar o cofinanciar un centro regional compartido de pulido, texturizado, soldadura láser y modificación de moldes bajo esquema Pay-per-Use?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Desinterés o Operación Aislada: Prefiere continuar enviando moldes a reparar con talleres informales externos o importando refacciones.",
+          "score": 5
+        },
+        {
+          "value": "opt2",
+          "label": "Uso de Servicios por Evento (Pay-per-Use): Interés en contratar horas de soldadura láser, grabado o rectificado en una instalación común regional cuando surja una emergencia.",
+          "score": 12
+        },
+        {
+          "value": "opt3",
+          "label": "Coinversión y Membresía Técnica: Disposición a aportar cuotas para equipar un taller comunitario de moldes administrado por el clúster del plástico.",
+          "score": 20
+        },
+        {
+          "value": "opt4",
+          "label": "Gobernanza Fiduciaria Completa: Participación en un fideicomiso regional (Empresas - Gobierno - Universidad) para operar un Tooling Hub en un parque industrial clave (FINSA / CIX).",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "id": "N2-PLAST-15",
+      "sourceId": "COL-PL02",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Laboratorio Regional Compartido de Caracterización de Polímeros y Reología",
+      "prompt": "Pregunta de Evaluación: ¿Cómo participaría su empresa en una alianza regional de Cuádruple Hélice para operar un laboratorio comunitario acreditado de ensayos reológicos y térmicos (DSC, MFI, TGA, FTIR)?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Mantenimiento de Esquema Individual: Continuar enviando muestras a laboratorios comerciales fuera del estado asumiendo costos y demoras.",
+          "score": 5
+        },
+        {
+          "value": "opt2",
+          "label": "Bolsa Regional de Ensayos con Tarifa Preferencial: Integrar un grupo de compra de servicios analíticos para negociar tarifas volurimétricas.",
+          "score": 12
+        },
+        {
+          "value": "opt3",
+          "label": "Laboratorio Comunitario en Campus Universitario: Co-financiar el equipamiento de un laboratorio de polímeros en una universidad regional (BUAP / UPAEP / UTT).",
+          "score": 20
+        },
+        {
+          "value": "opt4",
+          "label": "Acreditación ISO/IEC 17025 in Situ: Participación en el comité técnico para que el laboratorio regional emita certificados oficiales validados por la EMA.",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "id": "N2-PLAST-16",
+      "sourceId": "COL-PL03",
+      "level": "n2",
+      "sectorId": "plasticos",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Mesa de Compra Consolidada de Resinas y Masterbatch para PyMEs",
+      "prompt": "Pregunta de Evaluación: ¿Qué grado de apertura tiene su empresa para asociarse en un comité de compras agrupadas que consolide el volumen de resina (PP, PE, PET) y aditivos frente a petroquímicas y distribuidoras?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Compras Aisladas Individuales: Mantener la compra atomizada a distribuidores locales asumiendo sobreprecio por bajo volumen.",
+          "score": 5
+        },
+        {
+          "value": "opt2",
+          "label": "Consolidación de Pedidos de Commodities: Disposición a sumar volumen de resina estándar (PP/PE) para negociar compras por carro de ferrocarril o pipa.",
+          "score": 12
+        },
+        {
+          "value": "opt3",
+          "label": "Consorcio de Importación Directa: Participar en un vehículo legal que importe resina directamente desde molinos petroquímicos de EE.UU. o Asia.",
+          "score": 20
+        },
+        {
+          "value": "opt4",
+          "label": "Fideicomiso de Compras y Almacén en Consignación (VMI): Co-financiar un centro logístico de distribución de resina con inventario en consignación para socios.",
+          "score": 25
+        }
+      ]
+    }
+  ]
+}

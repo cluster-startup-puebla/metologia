@@ -1,0 +1,779 @@
+{
+  "sectorId": "automotriz",
+  "moduleCode": "MOD-AUTO-N2",
+  "questions": [
+    {
+      "id": "N2-AUTO-01",
+      "sourceId": "A01",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "Módulo 0: Perfilado del Eslabón y Localización Territorial",
+      "title": "Posición Específica en la Cadena de Suministro Automotriz",
+      "prompt": "Posición Específica en la Cadena de Suministro Automotriz",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Tier 1 (Sistemas Integrados) --- Venta directa, entregas Just-in-Time/JIS y co-diseño con plantas armadoras (OEMs).",
+          "score": 4
+        },
+        {
+          "value": "opt2",
+          "label": "Tier 2 (Fabricante de Subensambles) --- Proveedor recurrente de partes maquinadas, troqueladas, arneses o recubrimientos para integradores Tier 1 instalados en Puebla, Tlaxcala o el Bajío.",
+          "score": 3
+        },
+        {
+          "value": "opt3",
+          "label": "Tier 3 / Maquila Especializada --- Taller de maquinado por lote, troquelado, pailería o inyección que provee a empresas Tier 2 bajo planos del cliente.",
+          "score": 2
+        },
+        {
+          "value": "opt4",
+          "label": "Servicios Críticos a Planta --- Metrología, mantenimiento de herramentales/troqueles, calibración, automatización o logística especializada para plantas automotrices.",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-02",
+      "sourceId": "A02",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "Módulo 0: Perfilado del Eslabón y Localización Territorial",
+      "title": "Corredor Industrial y Localización de Operaciones",
+      "prompt": "Corredor Industrial y Localización de Operaciones",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Corredor Central Puebla (FINSA, Cuautlancingo, San Jerónimo Caleras, Parque Puebla 2000).",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Corredor Poniente / Carretero (Huejotzingo, San Martín Texmelucan, San Miguel Xoxtla).",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Corredor Oriental / Audi (San José Chiapa, Nopalucan, Rafael Lara Grajales, Ciudad Modelo).",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Corredor Tlaxcala Centro-Sur (Ciudad Industrial Xicohténcatl I en Tetla, Papalotla, Panzacola, Chiautempan).",
+          "score": null
+        },
+        {
+          "value": "opt5",
+          "label": "Corredor Tlaxcala Oriente (Ciudad Industrial Xicohténcatl II en Huamantla / CIX III en Tlaxco).",
+          "score": null
+        },
+        {
+          "value": "opt6",
+          "label": "Instalación fuera de parque industrial / Taller independiente en mancha urbana.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-03",
+      "sourceId": "R00-PROD",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "Sección I: Jerarquización de Fricciones Operativas y Sourcing (Rompehielos)",
+      "title": "Jerarquización de Fricciones en Proceso Productivo (Piso de Planta)",
+      "prompt": "Ordene del 1 al 8 los siguientes problemas según el nivel de impacto negativo en los costos y flujo de su planta en Puebla-Tlaxcala (1 = Mayor gravedad, 8 = Menor gravedad)",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 8",
+      "factorCount": 8,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Paros no programados de maquinaria crítica (prensas de estampado, inyectoras o centros CNC) por mantenimiento reactivo."
+        },
+        {
+          "id": "f2",
+          "label": "Scrap interno y retrabajos (Rework) de piezas que no alcanzan tolerancias dimensionales o especificaciones superficiales."
+        },
+        {
+          "id": "f3",
+          "label": "Tiempos prolongados de cambio de molde/dado (Set-up / SMED) para alternar corridas entre modelos VW/Audi."
+        },
+        {
+          "id": "f4",
+          "label": "Retrasos en la entrega de acero regional, resinas automotrices o componentes importados que frenan el programa de ensamble."
+        },
+        {
+          "id": "f5",
+          "label": "Cuellos de botella en liberación de calidad y metrología dimensional por saturación de máquinas de coordenadas (CMM)."
+        },
+        {
+          "id": "f6",
+          "label": "Incumplimiento, demoras o piezas quemadas por parte de proveedores foráneos de tratamientos térmicos y galvanoplastia."
+        },
+        {
+          "id": "f7",
+          "label": "Déficit, ausentismo y rotación de técnicos calificados (matriceros, soldadores robotizados, técnicos CNC, inspectores VDA)."
+        },
+        {
+          "id": "f8",
+          "label": "Variaciones de voltaje eléctrico o cortes de agua de enfriamiento que detienen líneas automatizadas en el parque industrial."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-AUTO-04",
+      "sourceId": "R00-SOURCING-MAT",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "Sección I: Jerarquización de Fricciones Operativas y Sourcing (Rompehielos)",
+      "title": "Jerarquización de Riesgos en Sourcing de Materias Primas",
+      "prompt": "Ordene del 1 al 6 las restricciones que mayor incertidumbre o sobrecosto generan en su abastecimiento de insumos",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Exigencia de acero y aluminio fundido en Norteamérica ('melted and poured') para cumplir regla de origen T-MEC."
+        },
+        {
+          "id": "f2",
+          "label": "Tiempos de entrega excesivos (Lead times > 12 semanas) en resinas, aceros aleados o herramentales de importación."
+        },
+        {
+          "id": "f3",
+          "label": "Volatilidad de precios en commodities y sobrecostos por fletes marítimos o aranceles a insumos no originarios."
+        },
+        {
+          "id": "f4",
+          "label": "Atadura a resinas y materiales con código IMDS y fichas técnicas homologadas exclusivamente por VW/Audi (Normas TL)."
+        },
+        {
+          "id": "f5",
+          "label": "Volúmenes mínimos de compra (MOQ) exigidos por distribuidores de acero/resinas que exceden el capital de trabajo de la PyME."
+        },
+        {
+          "id": "f6",
+          "label": "Variación de dureza, espesor o propiedades mecánicas entre lotes de metal o polímero que generan desajustes en dados/moldes."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-AUTO-05",
+      "sourceId": "R00-SOURCING-SERV",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "Sección I: Jerarquización de Fricciones Operativas y Sourcing (Rompehielos)",
+      "title": "Jerarquización de Riesgos en Servicios Especializados e Infraestructura",
+      "prompt": "Ordene del 1 al 6 las limitaciones de proveeduría de servicios en la región Puebla-Tlaxcala que más afectan su operación",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Déficit de hornos locales certificados bajo norma AIAG CQI-9 (tratamientos térmicos de cementado, templado y revenido)."
+        },
+        {
+          "id": "f2",
+          "label": "Carencia regional de plantas acreditadas bajo CQI-11/CQI-12 para recubrimientos galvánicos, zincado y pintura E-coat anticorrosiva."
+        },
+        {
+          "id": "f3",
+          "label": "Falta de talleres de matricería y cuartos de herramientas con centros de electroerosión (EDM) para reparar troqueles dañados en <24 hrs."
+        },
+        {
+          "id": "f4",
+          "label": "Demoras de más de 48 horas en laboratorios acreditados ISO/IEC 17025 para calibración de patrones y pruebas metalográficas."
+        },
+        {
+          "id": "f5",
+          "label": "Dependencia de técnicos de servicio foráneos (Alemania, Monterrey, Querétaro) para calibración de husillos y prensas complejas."
+        },
+        {
+          "id": "f6",
+          "label": "Riesgos de seguridad carretera y costo de custodia armada en fletes sobre la autopista 150D (Puebla-Veracruz) y el Arco Norte."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-AUTO-06",
+      "sourceId": "QA01",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "Sección II: Auditoría de Piso de Planta, Calidad y Cadena de Valor Interna",
+      "title": "Despliegue Operativo de Core Tools (IATF 16949 / VDA 6.3 / Formel Q)",
+      "prompt": "Despliegue Operativo de Core Tools (IATF 16949 / VDA 6.3 / Formel Q)",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Inspección manual al final de la línea: No se calculan índices estadísticos Cp/Cpk; la calidad depende de la revisión visual del operador antes de empacar.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Control Estadístico (SPC) documental reactivo: Se llenan cartas de control para auditorías, pero las variaciones de proceso no detienen automáticamente la máquina ni retroalimentan el plan de control.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Control Estadístico activo y FMEA dinámico: Gráficos de control en pie de máquina; cálculo sistemático de Cpk ≥ 1.33 en variables críticas; plan de control vinculado a características especiales (D/TLD de VW/Audi).",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Aseguramiento avanzado Poka-Yoke e Industria 4.0: Dispositivos mecánicos/sensores a prueba de error en 100% de estaciones críticas; Cpk ≥ 1.67; trazabilidad digital de parámetros de inyección/estampado.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-07",
+      "sourceId": "QA02",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "Sección II: Auditoría de Piso de Planta, Calidad y Cadena de Valor Interna",
+      "title": "Desempeño en Partes por Millón (PPM) y Costo de No Calidad",
+      "prompt": "Desempeño en Partes por Millón (PPM) y Costo de No Calidad",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Riesgo crítico (> 200 PPM con cliente o scrap interno > 4%): Reclamos formales frecuentes; riesgo de suspensión de órdenes de compra.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "En contención (50 a 200 PPM): Requiere contratar empresas de inspección de tercera parte (Sorting) en los patios de VW Cuautlancingo o Audi San José Chiapa.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Control automotriz estándar (15 a 49 PPM): Scrap interno menor al 2%; respuesta inmediata a reportes 8D en menos de 48 horas sin paros de línea ocasionados al cliente.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Clase mundial (< 15 PPM o Cero Defectos sostenido): Scrap menor al 1% con trazabilidad completa y reconocimientos de calidad del OEM.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-08",
+      "sourceId": "QA03",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "Sección II: Auditoría de Piso de Planta, Calidad y Cadena de Valor Interna",
+      "title": "Capacidad Metrológica, Validación Dimensional (GD&T) y Ensayos",
+      "prompt": "Capacidad Metrológica, Validación Dimensional (GD&T) y Ensayos",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Instrumentos manuales básicos: Calibradores Vernier, micrómetros y dispositivos pasa/no-pasa sin estudios de repetibilidad y reproducibilidad (%R&R).",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Metrología tercerizada: Dependencia de laboratorios externos en Puebla, Cholula o CDMX para reportes dimensionales CMM, demorando la liberación de lotes de 48 a 72 horas.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Laboratorio de metrología CMM propio en planta: Máquinas de coordenadas por contacto o escáner óptico 3D con personal técnico certificado y estudios %R&R < 10%.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Metrología en línea automatizada: Sensores láser o visión artificial integrados en la célula de manufactura con reporte dimensional automático por número de serie.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-09",
+      "sourceId": "QA04",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "Sección II: Auditoría de Piso de Planta, Calidad y Cadena de Valor Interna",
+      "title": "Disponibilidad Operativa (OEE), Mantenimiento y Cambios de Modelo (SMED)",
+      "prompt": "Disponibilidad Operativa (OEE), Mantenimiento y Cambios de Modelo (SMED)",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "OEE < 60%: Paros imprevistos frecuentes por fallas mecánicas; tiempos de cambio de herramental superiores a 3 horas; mantenimiento correctivo de emergencia.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "OEE entre 60% y 74%: Mantenimiento preventivo programado; paros por falta de refacciones importadas; cambio de molde entre 1 y 3 horas.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "OEE entre 75% y 84%: Programa estructurado de Mantenimiento Productivo Total (TPM); metodología SMED implementada con cambios de modelo en menos de 45 minutos.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "OEE ≥ 85% (Clase Mundial): Mantenimiento predictivo basado en vibraciones y termografía; cambios de modelo rápidos en un solo dígito de minutos (SMED < 10 min).",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-10",
+      "sourceId": "QA05",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "Sección II: Auditoría de Piso de Planta, Calidad y Cadena de Valor Interna",
+      "title": "Madurez del Sistema de Gestión de Calidad (IATF 16949 / VDA 6.3)",
+      "prompt": "Madurez del Sistema de Gestión de Calidad (IATF 16949 / VDA 6.3)",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin certificación automotriz formal: Opera bajo ISO 9001:2015 genérico o procesos empíricos; venta limitada a maquila menor o refacciones no críticas.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "En proceso de certificación IATF 16949: Auditoría de brecha completada pero sin certificación formal; condicionado por clientes a certificar en < 12 meses.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Certificación IATF 16949:2016 vigente: Sistema auditado por casa certificadora internacional sin no-conformidades mayores abiertas.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Calificación de Proceso VDA 6.3 y Formel Q vigente: Planta auditada directamente por Grupo Volkswagen / Audi con dictamen de aprobación Grado A o B vigente.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-11",
+      "sourceId": "SC01",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "sourcing_corredor",
+      "indexId": null,
+      "section": "Sección III: Retos de Sourcing, Logística de Corredor y Asimetría Financiera",
+      "title": "Cumplimiento de Reglas de Origen T-MEC en Acero y Aluminio",
+      "prompt": "Cumplimiento de Reglas de Origen T-MEC en Acero y Aluminio",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Riesgo crítico de incumplimiento: Compra de placa, rollo o barra a distribuidores locales sin certificados de molino 'melted and poured' de Norteamérica.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Cumplimiento parcial con sobrecosto: Se compra material regional para clientes que lo exigen, pero se utilizan aceros asiáticos para otras líneas por diferencial de precio.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Trazabilidad documental completa: Todos los lotes cuentan con certificado de molino norteamericano (México, EE.UU., Canadá) validado en la cadena de custodia del Tier 1.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Abastecimiento directo consolidado: Contratos marco anuales con acerías norteamericanas o molinos regionales con esquemas de entrega Just-in-Time y precio pactado.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-12",
+      "sourceId": "SC02",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "sourcing_corredor",
+      "indexId": null,
+      "section": "Sección III: Retos de Sourcing, Logística de Corredor y Asimetría Financiera",
+      "title": "Acceso Regional a Procesos Especiales Acreditados (Normas AIAG CQI)",
+      "prompt": "Acceso Regional a Procesos Especiales Acreditados (Normas AIAG CQI)",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Brecha crítica: Los proveedores locales no cuentan con auditoría CQI (CQI-9 en tratamiento térmico, CQI-11 en galvano); piezas rechazadas en laboratorio.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Dependencia de logística foránea remota: Se envían piezas a procesar al Estado de México, Querétaro o Guanajuato (> 250 km), agregando 1 a 2 semanas al ciclo de entrega.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Proveeduría regional homologada: Cuenta con proveedores certificados CQI en el área metropolitana de Puebla o corredores industriales de Tlaxcala.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Procesos especiales verticalmente integrados en planta: Cuenta con hornos de tratamiento o líneas de recubrimiento propias auditadas y aprobadas bajo CQI.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-13",
+      "sourceId": "SC03",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "sourcing_corredor",
+      "indexId": null,
+      "section": "Sección III: Retos de Sourcing, Logística de Corredor y Asimetría Financiera",
+      "title": "Logística de Corredor, Riesgos Carreteros y Ventanas de Despacho",
+      "prompt": "Logística de Corredor, Riesgos Carreteros y Ventanas de Despacho",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Impacto severo: Costos elevados de seguro de carga y contratación obligatoria de patrullas de custodia armada para transitar por la autopista 150D o Arco Norte.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Fricción operativa frecuente: Retrasos en entregas Just-in-Time por bloqueos, accidentes o revisiones en casetas que han generado cobros de fletes de emergencia (Hot shots).",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Riesgo administrado con inventario de seguridad: Se mantienen almacenes avanzados cerca de las armadoras (Cuautlancingo o San José Chiapa) para amortiguar el traslado.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Flujo sincronizado seguro (JIT/JIS): Entregas locales directas en menos de 45 minutos desde parque industrial cercano con 100% de cumplimiento On-Time Delivery.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-14",
+      "sourceId": "SC04",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "sourcing_corredor",
+      "indexId": null,
+      "section": "Sección III: Retos de Sourcing, Logística de Corredor y Asimetría Financiera",
+      "title": "Asimetría en Capital de Trabajo y Ciclo Financiero",
+      "prompt": "Asimetría en Capital de Trabajo y Ciclo Financiero",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Estrés de liquidez crítico: Los proveedores cobran a 30 días o contado, mientras el cliente paga a 90 o 120 días; recurre a deuda cara o frena producción.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Factoraje financiero costoso: Se descuentan facturas con bancos comerciales asumiendo un costo financiero que reduce el margen neto de la pieza.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Equilibrio financiero aceptable: Cuenta con líneas de factoraje preferente operadas por la armadora (Reverse factoring) o acuerdos de pago a 45 días con proveedores.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Autonomía y solidez financiera: Flujo de caja propio y líneas de crédito revolventes de bajo costo que permiten amortiguar inventarios de seguridad sin estrés.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-15",
+      "sourceId": "OP01",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "mercados_ev",
+      "indexId": null,
+      "section": "Sección IV: Habilitación de Nuevos Mercados y Transición a Electromovilidad",
+      "title": "Sustitución de Insumos y Partes Importadas en el Corto Plazo",
+      "prompt": "Sustitución de Insumos y Partes Importadas en el Corto Plazo",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Tornillería, sujetadores y herrajes automotrices de alta resistencia bajo normas DIN / ISO.",
+          "score": 3
+        },
+        {
+          "value": "opt2",
+          "label": "Componentes maquinados en CNC de precisión para sistemas de frenos, dirección o suspensión.",
+          "score": 4
+        },
+        {
+          "value": "opt3",
+          "label": "Inyección de piezas plásticas técnicas de ingeniería (Poliamidas con fibra de vidrio) para compartimento de motor o interiores.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Troquelado y estampado de partes estructurales medianas de chasis y carrocería.",
+          "score": 4
+        },
+        {
+          "value": "opt5",
+          "label": "Empaques retornables especializados, charolas termoformadas antiestáticas y contenedores de ensamble.",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-16",
+      "sourceId": "OP02",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "mercados_ev",
+      "indexId": null,
+      "section": "Sección IV: Habilitación de Nuevos Mercados y Transición a Electromovilidad",
+      "title": "Grado de Exposición frente al Motor de Combustión Interna vs Nuevas Plataformas",
+      "prompt": "Grado de Exposición frente al Motor de Combustión Interna vs Nuevas Plataformas",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Exposición alta (> 50% de las ventas en monoblocks, pistones, múltiples de admisión, tubos de escape, bombas mecánicas): Riesgo crítico de obsolescencia.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "Exposición moderada (20% a 50% de las ventas en componentes térmicos): Cuenta con líneas para chasis o interiores pero el motor sigue siendo el ancla del negocio.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Catálogo neutro o agnóstico (< 20% en motor): Fabricación de suspensión, frenos, estampados de carrocería, asientos o iluminación útiles en cualquier vehículo.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Portafolio activo en electromovilidad: Suministro de piezas para vehículos híbridos (PHEV) o eléctricos puros (BEV) en plataformas Audi Q5 o Volkswagen.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-17",
+      "sourceId": "OP03",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "mercados_ev",
+      "indexId": null,
+      "section": "Sección IV: Habilitación de Nuevos Mercados y Transición a Electromovilidad",
+      "title": "Capacidades Técnicas para Componentes Ligeros y Electromovilidad (Lightweighting)",
+      "prompt": "Capacidades Técnicas para Componentes Ligeros y Electromovilidad (Lightweighting)",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin capacidad de aligeramiento: Solo procesa aceros al carbón comerciales y estampados tradicionales de bajo calibre.",
+          "score": 1
+        },
+        {
+          "value": "opt2",
+          "label": "En fase de experimentación: Primeras corridas piloto en aleaciones de aluminio o aceros de alta resistencia con herramentales adaptados empíricamente.",
+          "score": 2
+        },
+        {
+          "value": "opt3",
+          "label": "Procesamiento validado de aluminio y aceros avanzados: Capacidad probada para troquelar o maquinar aceros de ultra-alta resistencia (UHSS) o aluminio series 5000/6000.",
+          "score": 3
+        },
+        {
+          "value": "opt4",
+          "label": "Tecnología de frontera para vehículos eléctricos: Estampado en caliente (Hot Stamping), soldadura láser, uniones mecánicas autoperforantes (SPR) o fabricación de bandejas de batería.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-18",
+      "sourceId": "COL01",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "Sección V: Bienes de Club y Desarrollo Colaborativo Regional",
+      "title": "Interés en Laboratorio Comunitario de Metrología y Pruebas CMM (Coordinate Measuring Machine o Máquina de Medición por Coordenadas)",
+      "prompt": "Interés en Laboratorio Comunitario de Metrología y Pruebas CMM (Coordinate Measuring Machine o Máquina de Medición por Coordenadas)",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Totalmente dispuesto: Aportaría cuota de inversión o contrataría horas mensuales de medición para evitar compras individuales de equipo costoso.",
+          "score": 4
+        },
+        {
+          "value": "opt2",
+          "label": "Interesado como usuario eventual: Utilizaría el laboratorio únicamente para validaciones anuales de herramental o auditorías de clientes.",
+          "score": 3
+        },
+        {
+          "value": "opt3",
+          "label": "Renuente: Prefiere seguir tercerizando con laboratorios privados foráneos a pesar del costo y demora.",
+          "score": 2
+        },
+        {
+          "value": "opt4",
+          "label": "Sin interés: Cuenta con laboratorio propio completo o sus piezas no requieren verificación tridimensional.",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-19",
+      "sourceId": "COL02",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "Sección V: Bienes de Club y Desarrollo Colaborativo Regional",
+      "title": "Consorcio Regional para Planta Comunitaria de Tratamientos Especiales (CQI)",
+      "prompt": "Consorcio Regional para Planta Comunitaria de Tratamientos Especiales (CQI)",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Prioridad estratégica urgente: Se integraría activamente al consorcio empresarial para garantizar volumen de carga y reducir fletes a otros estados.",
+          "score": 4
+        },
+        {
+          "value": "opt2",
+          "label": "Interesado como cliente usuario: Enviaría sus piezas a procesar localmente siempre que los precios y certificaciones sean competitivos.",
+          "score": 3
+        },
+        {
+          "value": "opt3",
+          "label": "Escéptico sobre la viabilidad asociativa: Duda que las empresas locales puedan acordar tiempos de entrega y confidencialidad en un horno compartido.",
+          "score": 2
+        },
+        {
+          "value": "opt4",
+          "label": "No aplica: Sus procesos no requieren tratamientos térmicos ni recubrimientos superficiales.",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "N2-AUTO-20",
+      "sourceId": "COL03",
+      "level": "n2",
+      "sectorId": "automotriz",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "Sección V: Bienes de Club y Desarrollo Colaborativo Regional",
+      "title": "Mesas de Compra Consolidada de Acero y Materias Primas T-MEC",
+      "prompt": "Mesas de Compra Consolidada de Acero y Materias Primas T-MEC",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Totalmente de acuerdo: La consolidación de compras permitiría alcanzar los volúmenes mínimos (MOQ) y negociar mejores precios y plazos de entrega.",
+          "score": 4
+        },
+        {
+          "value": "opt2",
+          "label": "Dispuesto bajo reglas estrictas: Participaría si existe un intermediario financiero neutral (fideicomiso) que gestione los pedidos y cobros.",
+          "score": 3
+        },
+        {
+          "value": "opt3",
+          "label": "Prefiere negociar en forma independiente: Considera que sus especificaciones técnicas de acero son muy particulares para compras agrupadas.",
+          "score": 2
+        },
+        {
+          "value": "opt4",
+          "label": "No aplica: Su volumen de compra es lo suficientemente grande para negociar directamente con molinos.",
+          "score": 1
+        }
+      ]
+    }
+  ]
+}

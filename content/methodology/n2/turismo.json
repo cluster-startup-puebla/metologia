@@ -1,0 +1,620 @@
+{
+  "sectorId": "turismo",
+  "moduleCode": "MOD-TUR-N2",
+  "questions": [
+    {
+      "id": "N2-TUR-01",
+      "sourceId": "TG-01",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Eslabón Dominante en la Cadena Turística y Gastronómica",
+      "prompt": "Pregunta de Evaluación: ¿En cuál de los siguientes eslabones se concentra la mayor proporción de los ingresos y la actividad comercial de su empresa o establecimiento?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "HOS",
+          "label": "Hospedaje y Alojamiento: Hoteles (boutique, business, haciendas, turismo rural), posadas, glamping o administración de villas/propiedades vacacionales.",
+          "score": null
+        },
+        {
+          "value": "GAS",
+          "label": "Gastronomía y Restauración: Restaurantes de cocina virreinal/de autor, banquetes y eventos, cafeterías de especialidad, bares/cantinas tradicionales o food halls.",
+          "score": null
+        },
+        {
+          "value": "TOU",
+          "label": "Servicios Turísticos y Tour Operación: DMCs, agencias receptivas, guías certificados (NOM-08/NOM-09), rutas bioculturales y transporte turístico.",
+          "score": null
+        },
+        {
+          "value": "MIC",
+          "label": "Turismo MICE, Eventos y Bodas de Destino: Centros de convenciones, recintos históricos, organizadores de congresos/bodas y proveedores de ambientación/banquetes MICE.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-TUR-02",
+      "sourceId": "TG-02",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Corredor Turístico y Micro-Región de Operación Principal",
+      "prompt": "Pregunta de Evaluación: ¿En qué corredor o subregión turística de Puebla o Tlaxcala se localiza la principal infraestructura o punto de atención de su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "R1",
+          "label": "Corredor 1: ZMPT y Centro Histórico (Puebla - Tlaxcala - Cholula): Turismo cultural virreinal UNESCO, turismo MICE, corporativo y gastronómico.",
+          "score": null
+        },
+        {
+          "value": "R2",
+          "label": "Corredor 2: Valles y Pueblos Mágicos (Atlixco, Val'Quirico, Calpan, Huejotzingo): Turismo de fin de semana, bodas de destino, agroturismo y ruta del Chile en Nogada.",
+          "score": null
+        },
+        {
+          "value": "R3",
+          "label": "Corredor 3: Sierra Norte y Nororiental (Zacatlán, Chignahuapan, Cuetzalan, Teziutlán): Ecoturismo, turismo de aventura, sidra/esferas, café de especialidad e identidad indígena.",
+          "score": null
+        },
+        {
+          "value": "R4",
+          "label": "Corredor 4: Ruta de las Haciendas, Pulque y Naturaleza (Huamantla, Nanacamilpa, Tlaxco, Altiplano): Santuario de Luciérnagas, haciendas pulqueras, alfombras de aserrín.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-TUR-03",
+      "sourceId": "TG-03",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Sustentabilidad Hídrica, Manejo de Residuos y Huella Ambiental",
+      "prompt": "Pregunta de Evaluación: ¿Cuál es la situación de su establecimiento en cuanto al consumo de agua, tratamiento de aguas residuales, aceites de cocina y separación de residuos orgánicos?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin Manejo Sustentable / Cumplimiento Mínimo: Vertido de aguas residuales sin trampa de grasa certificada; descarga de aceite al drenaje y basura sin separar.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Separación Básica y Trampa de Grasa: Trampa de grasa en cocina con limpieza periódica y entrega de aceite usado a recolectores; separación primaria de residuos.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Tratamiento Hídrico y Compras de Reducción: Mantenimiento de trampa de grasa con bitácora, sistema de captación pluvial o grifería ahorradora y compostaje orgánico.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Certificación Ambiental Integral (EarthCheck / NOM-120 / Zero Waste): Planta de tratamiento de aguas grises propia (PTAR), cero plásticos de un solo uso, compostaje total y energía solar/eficiente.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TUR-04",
+      "sourceId": "R00-TUR-PROD",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Fricciones en Operación y Servicio al Cliente (Rompehielos de Jerarquización (Drag-and-Drop 1 al 8))",
+      "prompt": "Pregunta de Evaluación: Ordene del 1 al 8 los siguientes problemas operativos según el impacto económico negativo y la frecuencia con que afectan la rentabilidad de su establecimiento",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 8",
+      "factorCount": 8,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Alta estacionalidad y baja ocupación / ventas entre semana (dependencia exclusiva de fin de semana)."
+        },
+        {
+          "id": "f2",
+          "label": "Cancelaciones de última hora, no-shows o mesas vacías por falta de depósitos de garantía."
+        },
+        {
+          "id": "f3",
+          "label": "Alta rotación, ausentismo y falta de capacitación del personal (meseros, cocineros, recepción)."
+        },
+        {
+          "id": "f4",
+          "label": "Tiempos de espera prolongados y cuello de botella en cocina / comandas durante horas pico."
+        },
+        {
+          "id": "f5",
+          "label": "Sobrecostos operacionales de energía eléctrica, gas L.P. y abastecimiento de agua en pipas."
+        },
+        {
+          "id": "f6",
+          "label": "Mermas y desperdicio de insumos perecederos por mala proyección de demanda o fallas de refrigeración."
+        },
+        {
+          "id": "f7",
+          "label": "Fallas en conectividad Wi-Fi, terminales punto de venta (TPV) o caídas del sistema de reservas."
+        },
+        {
+          "id": "f8",
+          "label": "Quejas recurrentes, malas calificaciones o gestión deficiente en plataformas digitales (TripAdvisor, Google, OTAs)."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-TUR-05",
+      "sourceId": "R00-TUR-SOURCING-IN",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Riesgos en Sourcing de Insumos Gastronómicos y Suministros (Rompehielos de Jerarquización (Drag-and-Drop 1 al 6))",
+      "prompt": "Pregunta de Evaluación: Ordene del 1 al 6 los principales cuellos de botella y riesgos en la compra de insumos agrícolas, alimentos y suministros para su negocio",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Escasez o encarecimiento de ingredientes criollos regionales de temporada (Chile Poblano criollo de Calpan, Nuez de Castilla, piñón, pulque)."
+        },
+        {
+          "id": "f2",
+          "label": "Volatilidad de precios en cárnicos, pescados, mariscos y lácteos de calidad estandarizada."
+        },
+        {
+          "id": "f3",
+          "label": "Falta de proveedores locales de alimentos que cuenten con certificación de inocuidad o facturación formal."
+        },
+        {
+          "id": "f4",
+          "label": "Sobrecostos en amenidades, blancos, mantelería, vajilla de Talavera o equipamiento especializado de cocina."
+        },
+        {
+          "id": "f5",
+          "label": "Dificultad para abastecer bebidas locales artesanales con marca y registro sanitario (mezcal poblano, sidra, cerveza artesanal)."
+        },
+        {
+          "id": "f6",
+          "label": "Comisiones elevadas de plataformas intermediarias de entrega a domicilio (delivery) y agencias de viaje OTAs (15% a 30%)."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-TUR-06",
+      "sourceId": "R00-TUR-SOURCING-SERV",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Deficiencias en Infraestructura y Servicios Externos Regionales (Rompehielos de Jerarquización (Drag-and-Drop 1 al 6))",
+      "prompt": "Pregunta de Evaluación: Ordene del 1 al 6 las mayores deficiencias de infraestructura y servicios gubernamentales/externos en su zona turística",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Insuficiente conectividad y transporte turístico especializado entre los atractivos del corredor o Pueblo Mágico."
+        },
+        {
+          "id": "f2",
+          "label": "Falta de señalética turística clara, módulos de información y estacionamientos seguros para autobuses/visitantes."
+        },
+        {
+          "id": "f3",
+          "label": "Percepción de inseguridad, falta de iluminación o riesgos en tramos carreteros durante traslados nocturnos."
+        },
+        {
+          "id": "f4",
+          "label": "Escasa o ineficiente promoción turística digital del destino por parte de las autoridades municipales o estatales."
+        },
+        {
+          "id": "f5",
+          "label": "Ausencia de centros de formación y certificación técnica turística local (falta de guías capacitados e intérpretes)."
+        },
+        {
+          "id": "f6",
+          "label": "Tramitología compleja, inspecciones discrecionales o sobrecostos en licencias de funcionamiento y protección civil."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-TUR-07",
+      "sourceId": "TG-TECH-01",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Inocuidad Alimentaria, Calidad Sanitaria y Distintivos de Higiene",
+      "prompt": "Pregunta de Evaluación: ¿Cuál es el nivel de implementación formal de normas de higiene e inocuidad alimentaria en la recepción, preparación y servicio de alimentos/bebidas en su establecimiento?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Cumplimiento Sanitario Empírico: Limpieza diaria convencional sin bitácoras de temperatura, sin análisis microbiológico de agua/hielo y sin plan de inocuidad.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Cumplimiento de NOM-251-SSA1-2009 Obligatoria: Manejo higiénico con bitácoras internas de temperatura en refrigeración/congelación y cloración de agua, pero sin distintivo formal.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Certificación Distintivo H / Punto Limpio Vigente: Reconocimiento otorgado por SECTUR/SALUD con auditoría de tercera parte en recepción, almacenamiento, preparación y servicio.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Certificación Internacional de Inocuidad (ISO 22000 / FSSC 22000 / Distintivo M Superior): Sistema HACCP certificado para procesamiento masivo de alimentos, banquetes o hotelería de lujo con auditorías no anunciadas.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TUR-08",
+      "sourceId": "TG-TECH-02",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Comercialización Digital, Motor de Reservas Directo y Channel Manager",
+      "prompt": "Pregunta de Evaluación: ¿Cómo gestiona su establecimiento la atracción de clientes, la venta de habitaciones/mesas y el control de reservas en canales digitales?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Venta Tradicional / Walk-in: Captación presencial, telefónica o libreta manual; sin sitio web comercial ni motor de reservas automatizado.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Venta por Redes Sociales y OTAs Básicas: Consultas por WhatsApp/Facebook y listado en OTAs o apps de delivery, pero con carga manual de disponibilidad y riesgo de overbooking.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Motor de Reservas Directo en Sitio Web con Pasarela de Pago: Sitio web propio responsivo con motor de reservas/comandas en tiempo real, cobro digital (Stripe/PayPal/SPEI) y listado administrado.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Ecosistema Digital Integrado (PMS / POS + Channel Manager + CRM + IA): PMS/POS sincronizado en la nube con Channel Manager de OTAs, CRM para fidelización y tarificación dinámica (Yield/Revenue Management) por demanda.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TUR-09",
+      "sourceId": "TG-TECH-03",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Gestión del Talento, Estándares de Servicio y Certificación de Competencias",
+      "prompt": "Pregunta de Evaluación: ¿Cuál es el grado de formalización de la capacitación, estándares de atención al cliente y certificación del personal de contacto en su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Capacitación Empírica Informa: Aprendizaje 'sobre la marcha' sin manuales de servicio, sin perfil de puesto definido y con alta rotación de personal no calificado.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Manuales Internos de Operación: Procedimientos de atención escritos para recepción, mesa o cocina, con inducción básica pero sin certificación externa.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Certificación Distintivo M (Moderniza) o Estándares CONOCER: Personal capacitado y evaluado en estándares de competencias (EC0127, EC0081), inglés turístico básico y protocolos de servicio.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Planta Laboral Bilingüe Altamente Calificada (Sommelier / Barista / Concierge Clefs d'Or): Cuadro directivo y operativo con certificaciones de especialidad internacional, bilingüismo fluido y plan de carrera continuo.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TUR-10",
+      "sourceId": "TG-TECH-04",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Paquetización, Turismo de Experiencias y Aumento de Pernocta",
+      "prompt": "Pregunta de Evaluación: ¿De qué manera su oferta de servicios se integra con otros atractivos del destino para incentivar una mayor estancia promedio (pernocta) y gasto por visitante?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Servicio Aislado / Monoproducto: Venta exclusiva de noche de habitación o platillo individual sin vinculación ni recomendación de atractivos del destino.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Recomendación e Información Turística Básica: Mapeo impreso o digital de atractivos locales disponible en recepción/mesa, pero sin alianzas ni paquetes estructurados.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Paquetización y Alianzas Comerciales Locales: Paquetes combinados (ej. Hotel + Tour a Luciérnagas / Ruta del Chile en Nogada + Cata de Mezcal) co-diseñados con operadores locales.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Experiencias Inmersivas Exclusivas de Destino: Producto turístico de autor (talleres privados de cocina virreinal, cenas maridaje en haciendas, senderismo interpretativo con guías NOM-09) que atrae clientes por sí mismo.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TUR-11",
+      "sourceId": "CP-TG-01",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Reconversión hacia la 'Fruta Madura' Turística y Gastronómica (Alta Densidad ω_j > 0.65)",
+      "prompt": "Pregunta de Evaluación: Considerando su infraestructura y ubicación actual, ¿hacia cuál de los siguientes productos de mayor margen y sofisticación tiene viabilidad técnica de reconversión o ampliación en menos de 12 meses?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "Fruta Madura 1",
+          "label": "Menús Maridaje de Cocina de Origen Certificado: Incorporación de menús degustación con Denominación de Origen (Mezcal Poblano, Talavera en vajilla, ingredientes criollos de temporada).",
+          "score": null
+        },
+        {
+          "value": "Fruta Madura 2",
+          "label": "Bodas de Destino y Eventos Sociales de Alto Formato: Adecuación de jardines, patios virreinales o salones para banquetes boutique de bodas con proveedores locales coordinados.",
+          "score": null
+        },
+        {
+          "value": "Fruta Madura 3",
+          "label": "Rutas y Experiencias Ecoturísticas Certificadas: Habilitación de senderos, glamping de lujo o tours nocturnos con acreditación de seguridad y protección ambiental.",
+          "score": null
+        },
+        {
+          "value": "Fruta Madura 4",
+          "label": "Gastronomía Especializada para Nichos de Alta Derrama: Oferta de menús certificados para requerimientos específicos (gluten-free, vegano, Kosher, Halal o dietas de salud).",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-TUR-12",
+      "sourceId": "CP-TG-02",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Apuestas Estratégicas y Turismo de Alta Complejidad (Alto ICPO)",
+      "prompt": "Pregunta de Evaluación: En un horizonte de 2 a 3 años con apoyo de coinversión y alianzas institucionales, ¿en cuál segmento de alta sofisticación y derrama económica tiene visión de incursionar?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "Apuesta 1",
+          "label": "Turismo MICE y Congresos Sustentables Internacionales: Infraestructura y certificación verde para hospedar simposios, convenciones corporativas y expos de nivel internacional.",
+          "score": null
+        },
+        {
+          "value": "Apuesta 2",
+          "label": "Turismo Médico, de Bienestar (Wellness) y Longevidad: Alianza con hospitales/clínicas para estancias de recuperación médica o retreats de spa/wellness de alta gama en entornos naturales.",
+          "score": null
+        },
+        {
+          "value": "Apuesta 3",
+          "label": "Centro de Investigación Biocultural y Laboratorio Gastronómico: Creación de un espacio dedicado a la recuperación, conservación y vanguardia de la cocina tradicional con chef investigador.",
+          "score": null
+        },
+        {
+          "value": "Apuesta 4",
+          "label": "Plataformas de Turismo Inmersivo e Inteligencia Artificial: Integración de experiencias de realidad aumentada en recorridos patrimoniales, conciergerie con IA y membresías Web3/NFTs de arte local.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-TUR-13",
+      "sourceId": "CP-TG-03",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Economía Circular, 'Kilómetro 0' y Residuo Cero en Alimentos",
+      "prompt": "Pregunta de Evaluación: ¿Qué nivel de integración tiene su establecimiento con productores agrícolas/artesanales de proximidad (KM 0) y el manejo sustentable de desperdicios orgánicos?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Compras en Centrales de Abasto / Intermediarios: Compras convencionales de insumos importados o de origen indeterminado; basura mezclada enviada al relleno sanitario.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Compras Locales Parciales y Separación de Residuos: Compra de hortalizas o frutas en mercados locales y separación básica de cartón y botellas de vidrio.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Cadena de Abastecimiento 'Kilómetro 0' Directa: Alianza comercial permanente con cooperativas agrícolas y campesinos de la región (sin intermediarios) para la compra de insumos tradicionales.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Certificación Residuo Cero (Zero Waste) y Bioconversión: Menú 100% de temporada KM 0, compostaje en planta o envío a biodigestores, reciclaje de aceite para biodiesel y cero merma.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TUR-14",
+      "sourceId": "COL-TG01",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Comité Regional de Marca Destino, Promoción Digital y Channel Manager Compartido",
+      "prompt": "Pregunta de Evaluación: ¿Cuál sería la disposición de su empresa para integrar un comité colectivo de comercialización que opere una plataforma digital y Channel Manager unificado del destino?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Operación Individual Cerrada: Prefiere mantener la comercialización de su negocio de forma independiente y aislada.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Participación en Campañas de Promoción Conjunta: Interés en aportar a un fondo promocional regional para ferias turísticas o campañas digitales colectivas.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Adopción de Plataforma Digital y Motor de Reservas Compartido: Disposición a integrar sus inventarios en una app/plataforma web regional con comisiones reducidas (Pay-per-Booking).",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Gobernanza Fiduciaria en la Marca Destino: Participación activa con aportación de capital en un fideicomiso de turismo/gastronomía que administre la marca colectiva del corredor.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TUR-15",
+      "sourceId": "COL-TG02",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Centro de Capacitación y Laboratorio Gastronómico Comunitario (Cuádruple Hélice)",
+      "prompt": "Pregunta de Evaluación: ¿Cómo participaría su establecimiento en una alianza con escuelas de gastronomía y turismo locales para operar un centro de formación continua y certificación de personal?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Capacitación Interna Exclusiva: Mantener la formación del personal dentro del establecimiento sin vinculación académica.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Recepción de Practicantes y Becarios: Permitir que estudiantes de carreras de turismo/gastronomía realicen estadías temporales en su negocio.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Co-diseño de Planes de Formación Dual: Participar con chefs y gerentes en la impartición de talleres y certificación de competencias CONOCER/Distintivo H para el sector.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Patronato de Centro de Innovación Gastronómica y Turística: Co-financiamiento de un laboratorio de investigación biocultural y escuela de alta gastronomía en alianza público-privada.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-TUR-16",
+      "sourceId": "COL-TG03",
+      "level": "n2",
+      "sectorId": "turismo",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Consorcio de Compras Consolidadas 'Kilómetro 0' y Sello de Origen Regional",
+      "prompt": "Pregunta de Evaluación: ¿Qué grado de apertura tiene su empresa para asociarse en un consorcio de compras agrupadas de insumos criollos certificados (Chile de Calpan, Nuez de Castilla, Mezcal, Pulque)?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Compras Individuales Directas: Mantener negociaciones independientes con proveedores o distribuidores.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Compras Agrupadas de Insumos Secos y Blancos: Disposición a consolidar pedidos de loza, mantelería, cristalería o insumos de limpieza para obtener precios de mayoreo.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Consorcio de Insumos Gastronómicos con Sello de Origen: Integración a una red de compra anticipada a productores agrícolas regionales con garantía de inocuidad y precio estandarizado.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Integradora Logística y Marca Colectiva Gastronómica: Co-fundación de una empresa integradora con centro de acopio y red de distribución en frío para abastecer al sector turístico regional.",
+          "score": 100
+        }
+      ]
+    }
+  ]
+}

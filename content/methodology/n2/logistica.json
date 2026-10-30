@@ -1,0 +1,620 @@
+{
+  "sectorId": "logistica",
+  "moduleCode": "MOD-LOG-N2",
+  "questions": [
+    {
+      "id": "N2-LOG-01",
+      "sourceId": "LG-01",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "MÓDULO 0: PERFILADO DEL ESLABÓN Y LOCALIZACIÓN TERRITORIAL",
+      "title": "Eslabón Dominante en la Cadena Logística",
+      "prompt": "Pregunta de Evaluación: ¿En cuál de los siguientes eslabones se concentra la mayor proporción de la facturación y actividad operativa de su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Autotransporte de Carga General y Especializada (1PL / 2PL): Flota propia o arrendada dedicada al arrastre de carga seca, a granel, plataformas o tanques en rutas nacionales/locales.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Servicios de Almacenamiento, Distribución y 3PL (Third-Party Logistics): Operación de almacenes, centros de distribución (Cedis), gestión de inventarios, kitting y maquila ligera para terceros.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Operador Logístico Integrado 4PL / Control Tower / Consultoría: Orquestación integral de la cadena de suministro, gestión de fletes multi-modal, torres de control digitales y aduanas.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Logística de Última Milla, E-commerce y Distribución Urbana: Paquetería, mensajería express, entregas consolidadas urbanas y rutas de distribución punto a punto en ZMPT y ciudades regionales.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-LOG-02",
+      "sourceId": "LG-02",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "MÓDULO 0: PERFILADO DEL ESLABÓN Y LOCALIZACIÓN TERRITORIAL",
+      "title": "Corredor Logístico y Nodo Regional de Operación",
+      "prompt": "Pregunta de Evaluación: ¿En qué corredor vial o nodo logístico de la región Puebla - Tlaxcala se localiza la principal base de flota o centro de distribución de su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Corredor 1: ZMPT / Autopista México-Puebla 150D (Puebla, Cuautlancingo, FINSA, Amozoc, San Martín Texmelucan): Enlace prioritario con ZMVM y Puerto de Veracruz.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Corredor 2: Arco Norte y Zona Centro-Norte de Tlaxcala (Calpulalpan, Apizaco, CIX I, II, III): Conectividad transnacional evitando la ZMVM y enlace hacia el Norte/Bajío.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Corredor 3: Ciudad Modelo / Audi / Huamantla (Nodo Oriental Puebla-Tlaxcala): Logística especializada automotriz, parques de proveedores y plataforma ferroviaria.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Corredor 4: Valle de Tehuacán y Nodo Sur (ZMTH / Autopista Cuacnopalan-Oaxaca): Logística agroindustrial, avícola, alimentos procesados y enlace con el Istmo/Oaxaca.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-LOG-03",
+      "sourceId": "LG-03",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "MÓDULO 0: PERFILADO DEL ESLABÓN Y LOCALIZACIÓN TERRITORIAL",
+      "title": "Certificación de Seguridad e Infraestructura de Flota",
+      "prompt": "Pregunta de Evaluación: ¿Cuál es el nivel de cumplimiento normativo SCT y certificación formal de seguridad en transporte que ostenta su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Cumplimiento Básico Obligatorio / SCT: Licencias de chofer vigentes y pesos/dimensiones NOM-012-SCT, sin programas formales de certificación de seguridad ni auditorías externas.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Protocolos Internos Antirrobo sin Certificación: Rastreo GPS instalado por exigencia de aseguradora y paro de motor remoto, pero sin estándar internacional C-TPAT u OEA.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Certificación C-TPAT / OEA Vigente: Certificación formal aprobada por CBP (EE.UU.) y/o SAT (México) con auditorías periódicas de cadena de custodia y socios comerciales.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Estándar Multicertificado (ISO 28000 / TAPA TSR / ISO 39001): Sistema de gestión de seguridad ISO 28000, estándar TAPA para carga de alto valor y seguridad vial ISO 39001 auditados.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-LOG-04",
+      "sourceId": "R00-LOG-PROD",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "SECCIÓN I: ROMPEHIELOS DE JERARQUIZACIÓN DE IMPACTO (MÉTODO DE BORDA)",
+      "title": "Jerarquización de Fricciones en Operación de Flotas y Almacén (Rompehielos de Jerarquización 1 al 8)",
+      "prompt": "Pregunta de Evaluación: Ordene del 1 al 8 los siguientes problemas operativos según el impacto económico negativo y la frecuencia con que afectan su empresa (1 = Mayor impacto negativo / Máxima gravedad; 8 = Menor impacto)",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 8",
+      "factorCount": 8,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Robos de unidades y mercancía en carretera (autopista 150D, Arco Norte) e incremento en costo de pólizas de seguro."
+        },
+        {
+          "id": "f2",
+          "label": "Escasez, alta rotación y falta de capacitación/certificación de conductores de autotransporte."
+        },
+        {
+          "id": "f3",
+          "label": "Tiempos excesivos de espera para carga/descarga y cuellos de botella en rampas de Cedis y clientes."
+        },
+        {
+          "id": "f4",
+          "label": "Paros por mantenimiento no programado, fallas mecánicas e ineficiencia en el consumo de diésel."
+        },
+        {
+          "id": "f5",
+          "label": "Falta de visibilidad en tiempo real de inventarios en almacén (diferencias de stock, errores de picking/kitting)."
+        },
+        {
+          "id": "f6",
+          "label": "Sobrecostos y mermas por ruptura de cadena de frío en tránsito o patio de maniobras."
+        },
+        {
+          "id": "f7",
+          "label": "Reclamaciones y penalizaciones de clientes por entregas tardías fuera de ventana de servicio (OTIF < 90%)."
+        },
+        {
+          "id": "f8",
+          "label": "Trámites aduanales lentos, revisiones de SCT/Guardia Nacional y permisos municipales de carga/descarga."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-LOG-05",
+      "sourceId": "R00-LOG-SOURCING-MAT",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "SECCIÓN I: ROMPEHIELOS DE JERARQUIZACIÓN DE IMPACTO (MÉTODO DE BORDA)",
+      "title": "Jerarquización de Riesgos en Sourcing de Equipos y Refacciones (Rompehielos de Jerarquización 1 al 6)",
+      "prompt": "Pregunta de Evaluación: Ordene del 1 al 6 los principales riesgos y cuellos de botella que enfrenta su empresa en la compra y mantenimiento de activos de transporte",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Dificultad y retrasos de entrega en la adquisición/arrendamiento de tractocamiones, remolques y cajas secas/refrigeradas."
+        },
+        {
+          "id": "f2",
+          "label": "Volatilidad de precios y desabasto de refacciones originales (frenos, transmisión, suspensión, filtros)."
+        },
+        {
+          "id": "f3",
+          "label": "Costos elevados y escasez de neumáticos de alta calidad y rendimiento kilométrico."
+        },
+        {
+          "id": "f4",
+          "label": "Incremento continuo en precios de combustible diésel y aditivos de tratamiento de gases (DEF / Urea)."
+        },
+        {
+          "id": "f5",
+          "label": "Altos costos de licencias de software telemático (GPS, TMS, WMS, sensores IoT) y renovación de equipos."
+        },
+        {
+          "id": "f6",
+          "label": "Escasez de refacciones especializadas para equipos de refrigeración (Thermo King / Carrier)."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-LOG-06",
+      "sourceId": "R00-LOG-SOURCING-SERV",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "SECCIÓN I: ROMPEHIELOS DE JERARQUIZACIÓN DE IMPACTO (MÉTODO DE BORDA)",
+      "title": "Jerarquización de Deficiencias en Infraestructura y Servicios Externos (Rompehielos de Jerarquización 1 al 6)",
+      "prompt": "Pregunta de Evaluación: Ordene del 1 al 6 las mayores deficiencias de infraestructura y servicios externos que limitan la logística en la región Puebla-Tlaxcala",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Carencia de paraderos seguros (TPPAR) con vigilancia y servicios para operadores en corredores 150D y Arco Norte."
+        },
+        {
+          "id": "f2",
+          "label": "Déficit de talleres externos autorizados de mantenimiento pesado, alineación y rectificación CNC de chasis."
+        },
+        {
+          "id": "f3",
+          "label": "Escasez de almacenes frigoríficos públicos y cámaras frías con servicio de cross-docking refrigerado."
+        },
+        {
+          "id": "f4",
+          "label": "Cobertura deficiente y puntos ciegos de red celular / satelital en tramos carreteros montañosos de la región."
+        },
+        {
+          "id": "f5",
+          "label": "Falta de centros regionales de capacitación y simulación de manejo defensivo / ecodriving para conductores."
+        },
+        {
+          "id": "f6",
+          "label": "Sobrecostos y lentitud en servicios de grúas de arrastre y salvamento en accidentes carreteros."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-LOG-07",
+      "sourceId": "LG-TECH-01",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: AUDITORÍA TÉCNICA DE TELEMETRÍA, SEGURIDAD, CADENA DE FRÍO Y WMS/TMS",
+      "title": "Telemetría IoT, Monitoreo GPS y Gestión de Flota (FMS)",
+      "prompt": "Pregunta de Evaluación: ¿Cuál es el nivel de implementación tecnológica para el monitoreo en tiempo real, telemetría de motor y gestión de flotilla (FMS) en sus unidades de transporte?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Monitoreo GPS Básico / Instalación Posterior: Posicionamiento satelital simple por celda o GPS comercial sin telemetría de motor ni sensores de apertura de puerta.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Telemetría CAN-Bus e Integración FMS: Monitoreo telemático conectado a la computadora del vehículo (CAN-Bus) para medir velocidad, frenados bruscos, consumo de diésel y horas de ralentí.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Sistema de Telemetría IoT Activa Antirrobo: Sensores IoT de desenganche de quinta rueda, chapa satelital, detector de jammer (bloqueador de señal), paro de motor automático e integración con centro de monitoreo 24/7.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Torre de Control Logístico / IA Predictiva: Plataforma integral FMS/TMS con algoritmos de IA para mantenimiento predictivo, ruteo dinámico y puntuación en tiempo real del comportamiento del conductor.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-LOG-08",
+      "sourceId": "LG-TECH-02",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: AUDITORÍA TÉCNICA DE TELEMETRÍA, SEGURIDAD, CADENA DE FRÍO Y WMS/TMS",
+      "title": "Sistemas de Gestión de Almacenes (WMS) y Cross-Docking Automatizado",
+      "prompt": "Pregunta de Evaluación: ¿Qué nivel de tecnología y automatización utiliza su empresa para el control de inventarios, recepción, acomodo y picking en sus almacenes o Cedis?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Registro Manual / Hojas de Cálculo: Control de inventarios en registros en papel o hojas de cálculo; procesos de entrada y salida sin escaneo de código de barras.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Software ERP Básico / Registro de Ubicaciones: Módulo de inventarios del ERP con códigos de barras 1D/2D y terminales de radiofrecuencia (RF) para entradas y salidas.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Sistema WMS Dedicado (Warehouse Management System): WMS avanzado con slotting dinámico (optimización de ubicaciones), waveless picking, trazabilidad LIFO/FIFO/FEFO automática y cross-docking programado.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Almacén Automatizado / WCS / Robótica: Integración de WMS con sistemas de control de almacén (WCS), sorters automatizados, transelevadores o vehículos guiados autónomos (AGV/AMR) y Pick-to-Light / Voice Picking.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-LOG-09",
+      "sourceId": "LG-TECH-03",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: AUDITORÍA TÉCNICA DE TELEMETRÍA, SEGURIDAD, CADENA DE FRÍO Y WMS/TMS",
+      "title": "Certificaciones de Seguridad Internacional (C-TPAT / OEA) y Protocolos Antirrobo",
+      "prompt": "Pregunta de Evaluación: ¿Cuál es el nivel de certificación formal en seguridad de la cadena de suministro y prevención de delitos que ostenta su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Protocolo Interno Informal: Medidas de seguridad basadas en criterio operativo; sin auditorías de personal, antecedentes ni certificación de procesos.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Cumplimiento de Requerimientos de Aseguradora: Instalación de dispositivos exigidos por la póliza de seguro (GPS, chapa, horario nocturno restringido) sin estándar internacional.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Certificación C-TPAT y/o OEA Vigente: Certificación formal expedida por la CBP (EE.UU.) y/o el SAT (México) con procedimientos validados de seguridad física, de personal, socios comerciales y contenedores.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Estándar Multicertificado (ISO 28000 / TAPA / C-TPAT / OEA): Sistema de gestión de seguridad ISO 28000 y/o TAPA TSR/FSR con auditorías no anunciadas, ciberseguridad industrial y resiliencia ante contingencias.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-LOG-10",
+      "sourceId": "LG-TECH-04",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: AUDITORÍA TÉCNICA DE TELEMETRÍA, SEGURIDAD, CADENA DE FRÍO Y WMS/TMS",
+      "title": "Logística de Cadena de Frío, Mantenimiento de Unidades y Monitoreo Térmico",
+      "prompt": "Pregunta de Evaluación: ¿Cómo garantiza su empresa el control preciso de temperatura y la humedad en el transporte de mercancías perecederas, medicamentos o químicos frágiles?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin Servicio de Frío / Transporte Seco: Operación exclusiva de carga seca; sin capacidad técnica ni unidades de refrigeración.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Refrigeración Convencional sin Registro Telemático: Cajas refrigeradas con equipos Thermo King / Carrier ajustados manualmente; lectura de temperatura en termómetro de aguja sin registro continuo.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Monitoreo Térmico Telemático Multi-zona: Cajas refrigeradas multi-temperatura con sensores telemáticos independientes en tiempo real, alertas de apertura de puerta y registros auditables para COFEPRIS / FDA.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Cadena de Frío Ultrafina / Pharma-Grade (GDP / ISO 23412): Cumplimiento estricto de Buenas Prácticas de Distribución (GDP), calificación de cajas refrigeradas, mapeo térmico de 24 horas y túneles de pre-enfriado / cross-docking refrigerado.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-LOG-11",
+      "sourceId": "CP-LG-01",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "SECCIÓN III: SOFISTICACIÓN PRODUCTIVA Y SALTO EN EL ESPACIO DE SERVICIOS (CIDE)",
+      "title": "Reconversión hacia la 'Fruta Madura' Logística (Alta Densidad ω_j > 0.65)",
+      "prompt": "Pregunta de Evaluación: Considerando su infraestructura de transporte y almacén, ¿hacia cuál servicio logístico adyacente de mayor valor agregado tiene mayor viabilidad técnica de reconversión en < 12 meses?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Integración de Servicios 3PL: Incorporación de servicios de almacenaje dedicado, control de inventario, kitting y empaque secundario para industria automotriz/manufactura.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Logística de Última Milla Urbana Inteligente: Rutas consolidadas de distribución urbana con ruteo optimizado para e-commerce, retail y consumo masivo.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Operación de Cross-docking Refrigerado: Infraestructura de transferencia rápida de carga perecedera para conectarla agroindustria de Tehuacán y Sierra Norte con Cedis nacionales.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Mantenimiento Especializado de Flotillas a Terceros: Apertura de taller mecánico pesado, verificación físico-mecánica NOM-068 e instalación telemática para empresas locales.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-LOG-12",
+      "sourceId": "CP-LG-02",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "SECCIÓN III: SOFISTICACIÓN PRODUCTIVA Y SALTO EN EL ESPACIO DE SERVICIOS (CIDE)",
+      "title": "Apuestas Estratégicas y Servicios Logísticos de Alta Complejidad (Alto ICPO)",
+      "prompt": "Pregunta de Evaluación: En un horizonte de 2 a 3 años con coinversión y vinculación estratégica, ¿en cuál segmento de alta complejidad tecnológica e internacional tiene visión de incursionar?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Operador 4PL / Control Tower Digital: Orquestación inteligente de cadenas globales mediante algoritmos de IA, analítica predictiva de tráfico y gestión aduanal multicliente.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Logística Pharma-Grade y Cadena Ultrafina: Certificación GDP para transporte de biológicos, vacunas y reactivos a ultra-baja temperatura (-80°C) con trazabilidad auditable.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Operación de Puerto Seco / Terminal Intermodal Ferroviaria: Terminal de transferencia contenedorizada ferrocarril-autotransporte con recinto fiscalizado estratégico (Ciudad Modelo / Tehuacán).",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Flota Cero Emisiones / Logística Verde Urbana: Operación de flotilla 100% eléctrica o alimentada por hidrógeno verde con infraestructura propia de recarga ultrarrápida.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-LOG-13",
+      "sourceId": "CP-LG-03",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "SECCIÓN III: SOFISTICACIÓN PRODUCTIVA Y SALTO EN EL ESPACIO DE SERVICIOS (CIDE)",
+      "title": "Descarbonización de Flotas, Eficiencia Energética y Logística Inversa",
+      "prompt": "Pregunta de Evaluación: ¿Qué nivel de avance tiene su empresa en la medición de huella de carbono, renovación de motores y gestión de logística inversa de tarimas/envases?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin Programa de Sustentabilidad: Flota con motores anteriores a EPA 04 / Euro IV, sin medición de emisiones CO2 ni programa de logística inversa.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Mantenimiento para Emisiones / Motores Euro V: Mantenimiento regular para verificación vehicular y cumplimiento de normativa de humo; reemplazo progresivo por motores Euro V / EPA 07.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Flota de Alta Eficiencia (Euro VI / Gas Natural) y Smart Driving: Adquisición de unidades Euro VI / EPA 10 / GNV, capacitación en conducción ecológica (Ecodriving) y medición de gCO2/ton-km.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Flota Cero Emisiones / Economía Circular e ISO 14064: Integración de unidades eléctricas/híbridas en última milla, neutralidad de carbono certificada (ISO 14064) y programa de logística inversa de tarimas y envases.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-LOG-14",
+      "sourceId": "COL-LG01",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "SECCIÓN IV: SOLUCIONES COLABORATIVAS ANTE LA FALLA DE ESCALA (BIENES DE CLUB)",
+      "title": "Centro Comunitario de Monitoreo GPS, Ciberseguridad y Conducción Segura",
+      "prompt": "Pregunta de Evaluación: ¿Cuál sería la disposición de su empresa para integrarse a una red compartida de monitoreo de seguridad en transporte, inteligencia de riesgos en el corredor 150D/Arco Norte y centro de simulación de manejo defensivo?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Desinterés o Desconfianza Absoluta: Prefiere gestionar la seguridad y capacitación de forma 100% aislada con recursos propios.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Red Compartida de Alertas de Riesgo en Tiempo Real: Disposición a compartir datos anónimos de eventos de riesgo e incidentes en carretera para mapas de calor regionales.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Co-financiamiento de Centro de Monitoreo Ciberseguro: Aportación de cuotas para operar un centro de monitoreo espejeado con la Guardia Nacional y simulador de manejo para choferes.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Fideicomiso Logístico Integrado de Seguridad: Participación activa en un fideicomiso empresarial de seguridad patrimonial en transporte con patrullaje privado y escoltas consolidadas.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-LOG-15",
+      "sourceId": "COL-LG02",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "SECCIÓN IV: SOLUCIONES COLABORATIVAS ANTE LA FALLA DE ESCALA (BIENES DE CLUB)",
+      "title": "Almacén Comunitario Multicliente en Frío y Cross-docking Regional",
+      "prompt": "Pregunta de Evaluación: ¿Cómo participaría su empresa en la operación o uso de un centro logístico multicliente con cámaras frías y rampas de cross-docking en nodos clave de Puebla-Tlaxcala bajo esquema de pago por servicio?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Mantenimiento de Esquema Individual: Continuar operando únicamente con bodegas propias o fletes secos sin infraestructura de frío.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Usuario de Servicios Pay-per-Use en Frío: Contratación de servicios de consolidación y almacenaje refrigerado por tarima/día en un centro comunitario regional.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Co-inversionista en Centro Logístico de Frío: Aportación de capital para equipar un almacén con túneles de pre-enfriado y certificación TAPA/GDP en un parque industrial local.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Consorcio Operador Logístico Regional: Integración como socio fundador de una empresa integradora de servicios logísticos fríos para atender agroindustria y sector farmacéutico.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-LOG-16",
+      "sourceId": "COL-LG03",
+      "level": "n2",
+      "sectorId": "logistica",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "SECCIÓN IV: SOLUCIONES COLABORATIVAS ANTE LA FALLA DE ESCALA (BIENES DE CLUB)",
+      "title": "Consorcio de Compras Consolidadas de Combustible, Llantas, Telemetría y Seguros",
+      "prompt": "Pregunta de Evaluación: ¿Qué grado de apertura tiene su empresa para asociarse en un consorcio de compras grupales que negocie tarifas corporativas en diésel, neumáticos, telemática y pólizas de seguro de carga?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Operación de Compras Aislada: Mantener negociaciones individuales con proveedores directos de insumos y aseguradoras.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Participación en Bolsa de Compras de Diésel y Llantas: Integrar volumen de consumo de la flota para compras grupales spot de llantas, diésel y refacciones.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Negociación Colectiva de Pólizas de Seguro de Carga: Sumar unidades al consorcio para licitar pólizas de seguro de flotilla con deducibles preferenciales y cobertura de robo.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Consorcio Proveedor Logístico Integral: Creación de una comercializadora de insumos de autotransporte que incluya estación de autoconsumo de diésel y centro de renovado de llantas.",
+          "score": null
+        }
+      ]
+    }
+  ]
+}

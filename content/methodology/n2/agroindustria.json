@@ -1,0 +1,589 @@
+{
+  "sectorId": "agroindustria",
+  "moduleCode": "MOD-AGRO-N2",
+  "questions": [
+    {
+      "id": "N2-AGRO-01",
+      "sourceId": "AG-01",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "MÓDULO 0: PERFILADO DEL ESLABÓN Y LOCALIZACIÓN TERRITORIAL",
+      "title": "Eslabón Dominante en la Cadena Agroalimentaria",
+      "prompt": "Eslabón Dominante en la Cadena Agroalimentaria",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Producción Primaria y Empaque Fresco en Origen: Horticultura, fruticultura o granjas tecnificadas con empaque básico y selección.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Procesamiento Primario y Transformación Básica: Deshidratado convencional, molienda, pasteurización, descabezado, congelado simple o tostado.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Transformación Avanzada y Alimentos Procesados de Alto Valor: Extracción de aceites esenciales, liofilización, alimentos funcionales, conservas retortables, embutidos y confitería especializada.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Proveeduría de Insumos y Servicios Críticos: Almacenamiento frigorífico, formulación de empaques barrera, ingredientes activos, biofertilizantes o logística en frío.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-AGRO-02",
+      "sourceId": "AG-02",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "MÓDULO 0: PERFILADO DEL ESLABÓN Y LOCALIZACIÓN TERRITORIAL",
+      "title": "Cuenca Territorial y Micro-Región Productiva",
+      "prompt": "Cuenca Territorial y Micro-Región Productiva",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Región 1: Valles Centrales y ZMPT (Puebla - Tlaxcala - Cholula - Huejotzingo): Agroindustria de alimentos procesados, panificación, bebidas, confitería y logística de distribución.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Región 2: Tehuacán y Valle de Zapotitlán (ZMTH): Horticultura intensiva, huevo de ave, porcicultura, alimentos balanceados y salsas.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Región 3: Sierra Norte y Nororiental (Teziutlán, Zacatlán, Cuetzalan): Café de especialidad, cítricos, manzana, berries, pimienta gorda, miel y trucha.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Región 4: Altiplano Central y Valle de Serdán / Huamantla: Hortalizas a campo abierto y bajo invernadero (brócoli, zanahoria, papa, lechuga, cebolla) y cebada maltera.",
+          "score": null
+        },
+        {
+          "value": "opt5",
+          "label": "Región 5: Mixteca Poblana y Valle de Atlixco: Flores de corte, hortalizas, cacahuate, destilados de agave (mezcal con DO) y amaranto.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-AGRO-03",
+      "sourceId": "R00-AGRO-PROD",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "SECCIÓN I: ROMPEHIELOS DE JERARQUIZACIÓN DE IMPACTO (MÉTODO DE BORDA)",
+      "title": "Jerarquización de Fricciones en Procesamiento y Piso de Planta (ROMPEHIELOS DE JERARQUIZACIÓN)",
+      "prompt": "Instrucción UI / Aplicación Web: Ordene los siguientes factores de 1 al 8 según el impacto económico y gravedad que generan en su operación (1 = Mayor impacto negativo / Máxima gravedad; 8 = Menor impacto).",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 8",
+      "factorCount": 8,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Merma post-cosecha y descomposición por fallas o roturas en la cadena de frío (almacenes o transporte)."
+        },
+        {
+          "id": "f2",
+          "label": "Paros no programados de línea por averías en calderas, pasteurizadores, autoclaves, llenadoras o túneles IQF."
+        },
+        {
+          "id": "f3",
+          "label": "Lotes retenidos o rechazados por incumplimiento microbiológico o físico-químico (listeria, salmonella, acidez)."
+        },
+        {
+          "id": "f4",
+          "label": "Variabilidad extrema en el rendimiento y calidad organoléptica de la materia prima recibida de campo."
+        },
+        {
+          "id": "f5",
+          "label": "Tiempos prolongados de limpieza profunda, sanitización (CIP) y cambio de lote/formato de envasado."
+        },
+        {
+          "id": "f6",
+          "label": "Escasez de técnicos capacitados en inocuidad (HACCP, PCQI), microbiología y mantenimiento electromecánico."
+        },
+        {
+          "id": "f7",
+          "label": "Sobrecostos y cortes intempestivos en energía eléctrica, gas LP/natural o agua de calidad purificada."
+        },
+        {
+          "id": "f8",
+          "label": "Fallas en etiquetado, dosificación o defectos de sellado hermético en empaques primarios (fugas, bolsas infladas)."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-AGRO-04",
+      "sourceId": "R00-AGRO-SOURCING",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "SECCIÓN I: ROMPEHIELOS DE JERARQUIZACIÓN DE IMPACTO (MÉTODO DE BORDA)",
+      "title": "Jerarquización de Riesgos en Sourcing de Materias Primas Agrícolas (ROMPEHIELOS DE JERARQUIZACIÓN)",
+      "prompt": "Instrucción UI / Aplicación Web: Ordene los siguientes factores de 1 al 6 según el impacto económico y gravedad que generan en su operación (1 = Mayor impacto negativo / Máxima gravedad; 6 = Menor impacto).",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Dependencia de acopiadores tradicionales o 'coyotes' con márgenes opacos y sin contratos en firme."
+        },
+        {
+          "id": "f2",
+          "label": "Contaminación por trazas de plaguicidas no autorizados o presencia de metales pesados en suelos/agua de riego."
+        },
+        {
+          "id": "f3",
+          "label": "Falta de trazabilidad documental a nivel de parcela o unidad de producción (loteo y bitácoras de campo)."
+        },
+        {
+          "id": "f4",
+          "label": "Escasez crítica y estrés hídrico que reduce volúmenes de cosecha y eleva precios de materia prima."
+        },
+        {
+          "id": "f5",
+          "label": "Productores sin certificación en Buenas Prácticas Agrícolas (BPA, PrimusGFS, GlobalGAP)."
+        },
+        {
+          "id": "f6",
+          "label": "Volatilidad especulativa en el precio de empaques grado alimenticio (hojalata, vidrio, películas laminadas)."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-AGRO-05",
+      "sourceId": "R00-AGRO-SERV",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "SECCIÓN I: ROMPEHIELOS DE JERARQUIZACIÓN DE IMPACTO (MÉTODO DE BORDA)",
+      "title": "Jerarquización de Fricciones en Servicios Especializados e Infraestructura (ROMPEHIELOS DE JERARQUIZACIÓN)",
+      "prompt": "Instrucción UI / Aplicación Web: Ordene los siguientes factores de 1 al 6 según el impacto económico y gravedad que generan en su operación (1 = Mayor impacto negativo / Máxima gravedad; 6 = Menor impacto).",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Carencia de laboratorios locales acreditados ISO/IEC 17025 para residuos de plaguicidas, micotoxinas y patógenos."
+        },
+        {
+          "id": "f2",
+          "label": "Falta de bodegas frigoríficas comunitarias y transporte refrigerado con monitoreo continuo de temperatura."
+        },
+        {
+          "id": "f3",
+          "label": "Altos costos y demoras burocráticas en trámites de inspección y exportación sanitaria (SENASICA / FDA)."
+        },
+        {
+          "id": "f4",
+          "label": "Déficit de plantas comunitarias de procesamiento avanzado (secado por aspersión, irradiación, liofilizado)."
+        },
+        {
+          "id": "f5",
+          "label": "Escasez de casas certificadoras locales para esquemas internacionales (FSSC 22000, BRCGS, SQF, Kosher, Halal)."
+        },
+        {
+          "id": "f6",
+          "label": "Sobrecostos por transporte con custodia armada ante el riesgo delictivo en carreteras regionales."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-AGRO-06",
+      "sourceId": "FS-01",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: INOCUIDAD, CONTROL DE PROCESO, CADENA DE FRÍO Y TRAZABILIDAD",
+      "title": "Madurez del Sistema de Gestión de Inocuidad Alimentaria",
+      "prompt": "Madurez del Sistema de Gestión de Inocuidad Alimentaria",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Cumplimiento Empírico Básico: Buenas Prácticas de Manufactura (BPM) y NOM-251-SSA1-2009, pero sin plan formal de inocuidad ni registros sistemáticos.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Sistema HACCP Implementado: Plan de Análisis de Peligros y Puntos Críticos de Control formal con validación técnica, pero sin certificación internacional de tercera parte.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Certificación GFSI Vigente: Planta certificada bajo esquemas reconocidos internacionalmente (FSSC 22000, BRCGS Food, SQF o IFS) y cumplimiento pleno de la Ley FSMA de EE.UU.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Grado de Excelencia Global: Certificación GFSI con módulos avanzados de Food Defense (defensa alimentaria), Food Fraud (prevención de fraude alimentario) y auditorías no anunciadas superadas.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-AGRO-07",
+      "sourceId": "FS-02",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: INOCUIDAD, CONTROL DE PROCESO, CADENA DE FRÍO Y TRAZABILIDAD",
+      "title": "Control de Cadena de Frío e Infraestructura Térmica",
+      "prompt": "Control de Cadena de Frío e Infraestructura Térmica",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin Cadena de Frío Controlada: Manipulación y transporte a temperatura ambiente con mermas por sobremaduración o deterioro microbiológico superiores al 15%.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Cadena de Frío Parcial / Vulnerable: Cuartos fríos en planta pero transporte en cajas secas con hielo o fletes refrigerados sin registro automatizado (frecuentes picos térmicos).",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Cadena de Frío Continua Monitoreada: Cámaras de pre-enfriado rápido (hidroenfriado, aire forzado), almacenamiento automatizado y transporte refrigerado con dataloggers GPS en tiempo real.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Infraestructura Criogénica / IQF Avanzada: Túneles de congelación rápida individual (IQF), nitrógeno líquido o liofilizado con control estricto de humedad relativa y merma < 2%.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-AGRO-08",
+      "sourceId": "FS-03",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: INOCUIDAD, CONTROL DE PROCESO, CADENA DE FRÍO Y TRAZABILIDAD",
+      "title": "Trazabilidad Digital Bidireccional y Recall",
+      "prompt": "Trazabilidad Digital Bidireccional y Recall",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Trazabilidad Manual en Papel: Bitácoras físicas aisladas; una prueba de trazabilidad (mock recall) toma más de 24 horas y no garantiza precisión entre parcela y producto final.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Trazabilidad Semiautomatizada en ERP: Registro de entrada de materia prima y salida en ERP o software contable, pero con saltos manuales en mezclado y líneas de proceso.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Trazabilidad Serializada Digital (Código 2D / GS1): Sistema digital integrado con códigos QR/DataMatrix GS1 que vincula insumos agrícolas, parámetros de proceso, lote y anaquel en menos de 1 hora.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Trazabilidad Blockchain / Cadena Abierta: Integración en plataformas de cadena de suministro (Blockchain / nube abierta) compartida con clientes mayoristas y cadenas de autoservicio.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-AGRO-09",
+      "sourceId": "FS-04",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: INOCUIDAD, CONTROL DE PROCESO, CADENA DE FRÍO Y TRAZABILIDAD",
+      "title": "Tecnología de Empaque y Preservación de Vida de Anaquel",
+      "prompt": "Tecnología de Empaque y Preservación de Vida de Anaquel",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Empaque Convencional Básico: Bolsas de polietileno, cajas de cartón estándar o costales sin atmósfera modificada; vida de anaquel menor a 15 días.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Empaque de Barrera Estándar: Envasado al vacío simple, frascos de vidrio pasteurizados o latas con barniz sanitario; vida de anaquel de 3 a 6 meses.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Atmósfera Modificada (MAP) y Bolsas Retortables: Inyección de gases protectores (CO2/N2), películas microperforadas antifog o empaques retortables multicapa de alta barrera.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Empaques Activos, Inteligentes y Biodegradables: Películas con agentes antimicrobianos naturales, absorbedores de etileno/oxígeno o materiales compostables certificados para mercados premium.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-AGRO-10",
+      "sourceId": "CP-01",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "SECCIÓN III: SOFISTICACIÓN PRODUCTIVA Y SALTO EN EL ESPACIO DE PRODUCTOS",
+      "title": "Reconversión hacia la 'Fruta Madura' Agroindustrial (Alta Densidad ω_j)",
+      "prompt": "Reconversión hacia la 'Fruta Madura' Agroindustrial (Alta Densidad ω_j)",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Carencia de Proyecto: La empresa planea seguir vendiendo hortalizas a granel o productos tradicionales sin procesamiento adicional.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Conservas y Preparaciones de Hortalizas/Frutas (VCR potencial alto): Líneas para conservas en vinagre/salmuera, pastas de tomate, purés asépticos y hortalizas congeladas en cubos.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Azúcar para Confitería, Mermeladas y Almíbares Funcionales: Jarabes de agave, mermeladas bajas en azúcar con pectinas naturales, confitería enriquecida y pulpas pasteurizadas.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Embutidos y Procesados Cárnicos Certificados TIF: Aprovechamiento de la porcicultura y avicultura de Tehuacán para jamones, salchichas y marinados con valor agregado.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-AGRO-11",
+      "sourceId": "CP-02",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "SECCIÓN III: SOFISTICACIÓN PRODUCTIVA Y SALTO EN EL ESPACIO DE PRODUCTOS",
+      "title": "Apuestas Estratégicas de Alto Valor Agregado (Complejidad ICPO)",
+      "prompt": "Apuestas Estratégicas de Alto Valor Agregado (Complejidad ICPO)",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin Visión de Alta Complejidad: Foco exclusivo en commodities alimenticios de volumen.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Extractos Botánicos, Aceites Esenciales y Colorantes Naturales: Extracción de oleorresinas, colorantes a partir de cempasúchil/grana cochinilla o extractos aromáticos de hierbas de la sierra.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Alimentos Funcionales, Probióticos y Nutracéuticos: Harinas de leguminosas/amaranto enriquecidas, bebidas fermentadas bioactivas (kombucha, kéfir) o proteína vegetal concentrada.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Liofilizados y Secado Farmacéutico/Alimentario: Frutas, café de especialidad y alimentos deshidratados por sublimación al vacío para raciones militares, outdoor o fórmulas premium.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-AGRO-12",
+      "sourceId": "CP-03",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "SECCIÓN III: SOFISTICACIÓN PRODUCTIVA Y SALTO EN EL ESPACIO DE PRODUCTOS",
+      "title": "Valorización de Subproductos y Economía Circular",
+      "prompt": "Valorización de Subproductos y Economía Circular",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Disposición como Basura o Costo de Flete: Desecho no tratado en tiraderos o drenajes con riesgo de multas ambientales de CONAGUA/PROFEPA.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Destino como Alimento de Ganado sin Procesar: Venta o entrega gratuita de rastrojo, bagazo o suero a productores pecuarios vecinos.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Compostaje Estructurado y Biofertilizantes: Transformación aerobia controlada o biodigestores para producción de biogás y abono orgánico certificado.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Biorrefinería y Extracción de Compuestos Bioactivos: Obtención de pectinas, antioxidantes, polifenoles o fibra dietética a partir de residuos agroindustriales.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-AGRO-13",
+      "sourceId": "COL-AG01",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "SECCIÓN IV: SOLUCIONES COLABORATIVAS ANTE LA FALLA DE ESCALA (BIENES DE CLUB)",
+      "title": "Agroparque y Centro Comunitario de Empaque y Cadena de Frío",
+      "prompt": "Agroparque y Centro Comunitario de Empaque y Cadena de Frío",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Desinterés o Desconfianza Absoluta: Prefiere operar exclusivamente con cuartos fríos y bodegas propias.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Esquema Pay-per-Use en Frío: Interés en contratar espacio refrigerado por tarima/mes y tiempo de pre-enfriado en una instalación común regional.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Coinversión en Centro de Empaque y Línea Óptica: Disposición a aportar capital o cuotas fiduciarias para cofinanciar calibradoras ópticas y túneles IQF compartidos.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Gobernanza Fiduciaria Completa: Participación en una empresa integradora o fideicomiso para operar un centro logístico en frío en nodos carreteros clave (Tehuacán / Huamantla / ZMPT).",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-AGRO-14",
+      "sourceId": "COL-AG02",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "SECCIÓN IV: SOLUCIONES COLABORATIVAS ANTE LA FALLA DE ESCALA (BIENES DE CLUB)",
+      "title": "Laboratorio Regional Compartido de Análisis de Residuos e Inocuidad",
+      "prompt": "Laboratorio Regional Compartido de Análisis de Residuos e Inocuidad",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Mantenimiento de Esquema Individual Externo: Continuar enviando muestras a laboratorios comerciales en CDMX o Querétaro asumiendo demoras de 5 a 7 días hábiles.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Convenio de Descuento por Volumen: Integrar una bolsa regional de muestras para negociar tarifas preferenciales con laboratorios acreditados.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Laboratorio Comunitario Cuádruple Hélice: Alianza formal (Empresas - Universidad - Gobierno del Estado) para equipar un laboratorio de inocuidad en campus universitario local (BUAP / UPAEP / UTT).",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Acreditación y Validación de Exportación In Situ: Aportación activa a un fondo de sostenibilidad para que el laboratorio regional emita certificados reconocidos por SENASICA y FDA.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-AGRO-15",
+      "sourceId": "COL-AG03",
+      "level": "n2",
+      "sectorId": "agroindustria",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "SECCIÓN IV: SOLUCIONES COLABORATIVAS ANTE LA FALLA DE ESCALA (BIENES DE CLUB)",
+      "title": "Consorcio de Comercialización y Exportación Colectiva",
+      "prompt": "Consorcio de Comercialización y Exportación Colectiva",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Operación Individual Cerrada: Mantener venta a intermediarios o clientes locales pequeños de forma aislada.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Consolidación de Contenedores de Exportación: Disposición a compartir espacio en contenedores refrigerados para abaratar el flete marítimo/terrestre hacia EE.UU. o Europa.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Marca Colectiva / Paragua Regional: Integrar productos de alta calidad bajo un sello regional certificado (ej. 'Sabores de Puebla-Tlaxcala') con estándares unificados de calidad.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Consorcio Formal con Oficina Comercial Externa: Asociación legal en un consorcio exportador que cuente con representación comercial y bodega de distribución en McAllen, Texas o Los Ángeles.",
+          "score": null
+        }
+      ]
+    }
+  ]
+}

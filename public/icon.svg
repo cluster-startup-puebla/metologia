@@ -1,0 +1,9 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="37" fill="#FF1493"/>
+  <!-- Bloque grande izquierdo -->
+  <rect x="32" y="52" width="56" height="56" rx="10" fill="white"/>
+  <!-- Bloque pequeño superior derecho -->
+  <rect x="98" y="40" width="50" height="44" rx="9" fill="white" opacity="0.75"/>
+  <!-- Bloque pequeño inferior derecho -->
+  <rect x="98" y="92" width="50" height="36" rx="9" fill="white" opacity="0.5"/>
+</svg>

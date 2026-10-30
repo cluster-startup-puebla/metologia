@@ -1,0 +1,594 @@
+{
+  "sectorId": "artes-graficas",
+  "moduleCode": "MOD-GRAF-N2",
+  "questions": [
+    {
+      "id": "N2-GRAF-01",
+      "sourceId": "AG-01",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "MÓDULO 0: PERFILADO DEL ESLABÓN Y LOCALIZACIÓN TERRITORIAL",
+      "title": "Eslabón Dominante en la Cadena de Impresión y Empaque",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿En cuál de los siguientes eslabones se concentra la mayor proporción de la facturación y capacidad productiva instalada de su planta?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Impresión Comercial y Editorial: Trípticos, folletos, revistas, libros, papelería corporativa y publicidad pliego/rotativa.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Empaque Plegadizo y Cajas de Cartoncillo: Cajas impresas para industria farmacéutica, agroalimentaria, cosmética y automotriz.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Cartón Corrugado y Empaque Estructural Pesado: Cajas de cartón corrugado y microcorrugado (flauta B, C, E, F) para transporte y distribución.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Flexografía y Etiqueta Autoadherible / Envoltorio Flexible: Etiquetas en rollo para botellas, alimentos, químicos y mangas termocontraíbles.",
+          "score": null
+        },
+        {
+          "value": "opt5",
+          "label": "Impresión Digital de Gran Formato y Promocional POP: Impresión direct-to-substrate, cama plana UV, exhibidores y señalética corporativa.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-GRAF-02",
+      "sourceId": "AG-02",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "MÓDULO 0: PERFILADO DEL ESLABÓN Y LOCALIZACIÓN TERRITORIAL",
+      "title": "Cuenca Territorial y Parque Industrial de Ubicación",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿En qué corredor industrial o municipio de la región Puebla - Tlaxcala se localiza la principal planta de producción de su empresa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Zona Metropolitana de Puebla (ZMPT): Parques Industriales 5 de Mayo, Resurrección, Chachapa y naves urbanas en Puebla capital.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Corredor Huejotzingo - San Martín Texmelucan: Parque Industrial FINSA II, Ciudad Textil y zonas limítrofes con acceso a la Autopista 150D.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Corredor Industrial Tlaxcala: Ciudades Industriales Xicohténcatl (CIX I Tetla, CIX II Huamantla, CIX III Tlaxco) y Papalotla.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Cuenca Tehuacán - Ajalpan: Zona Industrial Tehuacán y empresas proveedoras del clúster avícola y alimentario del sur.",
+          "score": null
+        },
+        {
+          "value": "opt5",
+          "label": "Corredor Amozoc - Tepeaca: Naves sobre la carretera federal Puebla-Veracruz y libramiento sur.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-GRAF-03",
+      "sourceId": "R00-GRAF-PROD",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "SECCIÓN I: ROMPEHIELOS DE JERARQUIZACIÓN DE IMPACTO (MÉTODO DE BORDA)",
+      "title": "Jerarquización de Fricciones en Impresión y Acabados (Piso de Planta) (Rompehielos de Jerarquización)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: Ordene del 1 al 8 los siguientes problemas operativos según el impacto económico negativo y la frecuencia con que afectan su planta de impresión",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 8",
+      "factorCount": 8,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Variaciones de tono y color entre tirajes (quejas de clientes y repeticiones de tiro)."
+        },
+        {
+          "id": "f2",
+          "label": "Tiempos prolongados de ajuste y arreglo en máquina (setup / mermas de arranque elevadas)."
+        },
+        {
+          "id": "f3",
+          "label": "Mermas de sustrato por registro defectuoso, repinte o mal secado de tintas."
+        },
+        {
+          "id": "f4",
+          "label": "Cuellos de botella en áreas de acabado (troquelado, doblado, pegado de cajas o enuadernación)."
+        },
+        {
+          "id": "f5",
+          "label": "Escasez y rotación de prensistas, operadores CTP y especialistas en acabados."
+        },
+        {
+          "id": "f6",
+          "label": "Paros no programados por fallas mecánicas/electrónicas en prensas o CTP."
+        },
+        {
+          "id": "f7",
+          "label": "Variaciones en el suministro eléctrico o falta de aire comprimido seco."
+        },
+        {
+          "id": "f8",
+          "label": "Descalibración de monitores, software RIP y procesadoras de placas CTP."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-GRAF-04",
+      "sourceId": "R00-GRAF-SOURCING-MAT",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "SECCIÓN I: ROMPEHIELOS DE JERARQUIZACIÓN DE IMPACTO (MÉTODO DE BORDA)",
+      "title": "Jerarquización de Riesgos en Sourcing de Papel, Cartón e Insumos (Rompehielos de Jerarquización)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: Ordene del 1 al 6 los principales cuellos de botella y riesgos en la compra de sustratos, tintas y químicos de impresión",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Volatilidad de precios y desabasto de papel, cartoncillo SBS y bobinas de cartón corrugado."
+        },
+        {
+          "id": "f2",
+          "label": "Tiempos de entrega prolongados (lead times > 8 semanas) en sustratos o películas especiales importadas."
+        },
+        {
+          "id": "f3",
+          "label": "Escasez o sobrecostos en tintas especializadas (grado alimenticio, tintas UV, colores Pantone específicos)."
+        },
+        {
+          "id": "f4",
+          "label": "Exigencia de volúmenes mínimos de compra (MOQ) elevados por parte de distribuidores o molinos de papel."
+        },
+        {
+          "id": "f5",
+          "label": "Insumos químicos de solución de fuente, mantillas o placas CTP fuera de especificación."
+        },
+        {
+          "id": "f6",
+          "label": "Falta de certificación FSC / PEFC en distribuidores locales de papel y cartón."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-GRAF-05",
+      "sourceId": "R00-GRAF-SOURCING-SERV",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "SECCIÓN I: ROMPEHIELOS DE JERARQUIZACIÓN DE IMPACTO (MÉTODO DE BORDA)",
+      "title": "Jerarquización de Deficiencias en Servicios Especializados e Infraestructura Externa (Rompehielos de Jerarquización)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: Ordene del 1 al 6 las mayores deficiencias de servicios externos e infraestructura que limitan la competitividad de su empresa en Puebla-Tlaxcala",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Carencia de laboratorios regionales acreditados ISO 17025 para espectrocolorimetría y pruebas Mullen/ECT/BCT."
+        },
+        {
+          "id": "f2",
+          "label": "Escasez de talleres especializados en afilado de cuchillas de guillotina, troqueles rotativos y mantenimiento offset."
+        },
+        {
+          "id": "f3",
+          "label": "Falta de servicios locales de grabado de cilindros anilox/flexografía y grabado láser CTP de alta resolución."
+        },
+        {
+          "id": "f4",
+          "label": "Servicios de acabado externo (barniz UV registradon, hot stamping, grabado) lentos e informales."
+        },
+        {
+          "id": "f5",
+          "label": "Sobrecostos de seguridad y custodia en transporte de empaque terminado por la Autopista 150D y Arco Norte."
+        },
+        {
+          "id": "f6",
+          "label": "Falta de centros regionales de capacitación técnica en gestión de color y operación de prensas."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-GRAF-06",
+      "sourceId": "AG-TECH-01",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: AUDITORÍA TÉCNICA DE PREPRENSA CTP, GESTIÓN DE COLOR Y EMPAQUE ESTRUCTURAL",
+      "title": "Gestión de Color y Estandarización de Impresión (G7 / ISO 12647)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Cuál es el nivel de estandarización en gestión de color, uso de espectrofotómetros y perfiles ICC en su proceso de preprensa e impresión?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Ajuste Empírico a Ojo: Visto bueno de color a criterio del prensista en pie de máquina sin medición densitométrica ni espectrofotómetro.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Medición Densitométrica Básica: Control de densidad de tinta en tira de control, pero sin calibración de curvas de ganancia de punto ni perfiles ICC de prensa.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Estandarización ISO 12647 / Medición Espectral: Uso regular de espectrofotómetros (X-Rite / Techkon), calibración CTP con perfiles ICC y control de Delta E < 2.5 en tiraje.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Certificación G7 Master / Estandarización Automatizada: Planta certificada G7 Master o ISO 12647 plena, con espectrofotometría en línea en prensa y pruebas de color digital probadas de contrato.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-GRAF-07",
+      "sourceId": "AG-TECH-02",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: AUDITORÍA TÉCNICA DE PREPRENSA CTP, GESTIÓN DE COLOR Y EMPAQUE ESTRUCTURAL",
+      "title": "Tecnología de Preprensa CTP y Software de Flujo de Trabajo (RIP / Workflow)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Qué nivel de tecnología de preprensa CTP (Computer-to-Plate) y software de flujo de trabajo utiliza su empresa para la generación de placas?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Film / Película Convencional o CTP Obsoleto: Filmación de negativos o procesadora CTP manual de baja resolución (< 2400 dpi) con químicos agresivos.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "CTP Térmico / UV Estándar Semiautomático: CTP térmico o UV de pliego con software RIP básico; procesadora de placas convencional con generación de residuos químicos.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "CTP Direct-to-Plate Automático Libre de Procesamiento (Processless): CTP térmico automático alimentado por casete, placas ecológicas sin químicos y software RIP con tramado estocástico (FM).",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Flujo de Trabajo Integrado JDF/CIP4 e Impresión Digital: Workflow automatizado (Kodak Prinergy / ESKO / Heidelberg Prinect) con generación de archivos CIP3/CIP4 para tintero de prensa y CTP robotizado.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-GRAF-08",
+      "sourceId": "AG-TECH-03",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: AUDITORÍA TÉCNICA DE PREPRENSA CTP, GESTIÓN DE COLOR Y EMPAQUE ESTRUCTURAL",
+      "title": "Desarrollo de Empaque Estructural (Plegadizo/Corrugado) y Pruebas Físicas",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Qué capacidad de diseño de empaque estructural CAD/CAM y laboratorio de pruebas físicas (Mullen / ECT / BCT) tiene su planta?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Copia de Muestras Manual: Elaboración de maquetas de empaque cortadas a mano con navaja sobre muestras enviadas por el cliente; sin diseño estructural digital.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Diseño CAD Estructural Básico: Uso de software CAD (ArtiosCAD / Impact / AutoCAD) e impresión de planos, pero trazado de troqueles tercerizado sin mesa de muestras.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Centro de Diseño CAD/CAM con Mesa Plotter Muestreadora: Software CAD especializado integrado a mesa plotter de corte/hendido (Zünd / Kongsberg) para maquetas físicas y optimización de nido.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Laboratorio Estructural Completo y Simulación ISO/TAPPI: Diseño paramétrico 3D con simulación de carga en estiba, mesa de muestras y equipo propio para pruebas Mullen, ECT (Edge Crush Test) y BCT (Box Crush Test).",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-GRAF-09",
+      "sourceId": "AG-TECH-04",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "SECCIÓN II: AUDITORÍA TÉCNICA DE PREPRENSA CTP, GESTIÓN DE COLOR Y EMPAQUE ESTRUCTURAL",
+      "title": "Tintas Grado Alimenticio/Médico, Bajas Emisiones VOC e Inocuidad",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Cómo gestiona su planta el cumplimiento normativo de tintas de baja migración, solventes de limpieza y control de emisiones orgánicas (VOC)?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Tintas y Solventes Estándar Sin Control de Migración: Tintas convencionales a base de aceite mineral y solventes volátiles sin ficha de inocuidad alimentaria/farmacéutica.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Tintas de Baja Migración Bajo Pedido: Uso de tintas vegetales o de baja migración únicamente cuando el cliente alimentario lo exige explícitamente en el contrato.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Línea de Tintas Vegetales / UV Curing de Bajas Emisiones: Uso generalizado de tintas base agua o vegetales de baja migración (cumplimiento Nestlé Guidance / EuPIA) y cura UV de bajo consumo.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Inocuidad Certificada e Impresión Residuo Cero: Tintas y barnices certificados FDA / EuPIA para contacto indirecto, solventes biodegradables y sistema de recuperación/reciclaje de solventes de limpieza.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-GRAF-10",
+      "sourceId": "CP-AG-01",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "SECCIÓN III: SOFISTICACIÓN PRODUCTIVA Y SALTO EN EL ESPACIO DE PRODUCTOS (CIDE / HARVARD)",
+      "title": "Reconversión hacia la 'Fruta Madura' de Artes Gráficas (Alta Densidad ω_j > 0.65)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: Considerando su equipamiento actual de prensas/acabados, ¿hacia cuál de los siguientes productos de mayor margen tiene mayor viabilidad de reconversión en < 12 meses?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Empaque Plegadizo de Alta Especifidad Farmacéutica/Cosmética: Cajas con braille embosado, barniz UV registrado, código farmacopea e insértos plegados.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Etiqueta Autoadherible en Rollo Flexo/Digital con Finos Acabados: Etiquetas con estampado al calor (hot stamping), relieve y laminado para licores, mezcal y alimentos gourmet.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Cajas de Cartón Microcorrugado Impreso de Alto Impacto (Litho-Laminado): Cajas de exhibición para electrodomésticos, juguetes y calzado con excelente rigidez e impresión fotográfica.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Envoltorios Flexibles de Alta Barrera para Alimentos (Doypack / Pouches): Bolsas termoformadas de material trilaminado impreso en flexo de banda ancha o rotograbado.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-GRAF-11",
+      "sourceId": "CP-AG-02",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "SECCIÓN III: SOFISTICACIÓN PRODUCTIVA Y SALTO EN EL ESPACIO DE PRODUCTOS (CIDE / HARVARD)",
+      "title": "Apuestas Estratégicas y Empaque Inteligente / Seguridad (Alto ICPO)",
+      "prompt": "Pregunta de Evaluación / Jerarquización: En un horizonte de 2 a 3 años con coinversión pública-privada y desarrollo tecnológico, ¿en cuál segmento de alta complejidad tiene visión de incursionar?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Empaque Anti-Falsificación y Seguridad Avanzada: Incorporación de tintas reactivas UV/IR, microtextos, guilloches y hologramas para combatir el mercado pirata.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Empaque Inteligente con RFID / NFC Integrado: Cajas y etiquetas con chips RFID/NFC impresos o insertados para trazabilidad automatizada en almacén e interacción del usuario final.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Empaque Sustentable 100% Compostable / Barrera Base Agua: Desarrollo de recipientes y cajas de cartón con recubrimientos poliméricos biodegradables sustitutos del polietileno.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Electrónica Impresa y Sensores de Frescura: Impresión funcional de circuitos conductivos y sensores que cambian de color ante la ruptura de la cadena de frío.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-GRAF-12",
+      "sourceId": "CP-AG-03",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "SECCIÓN III: SOFISTICACIÓN PRODUCTIVA Y SALTO EN EL ESPACIO DE PRODUCTOS (CIDE / HARVARD)",
+      "title": "Economía Circular, Sustentabilidad FSC y Reciclaje de Mermas de Papel",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Qué destino y nivel de gestión otorga actualmente su empresa a las mermas de arranque, desperdicio de viruta/papel y solución de fuente usada?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Mezcla de Basura y Químicos al Drenaje: Desecho no clasificado de merma de papel y vertido de aguas de lavado con tinta/solución al drenaje municipal.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Venta de Merma a Desperdicieros Informales: Venta de retazo de papel/cartón a empacadoras locales de desperdicio sin certificación de destrucción.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Segregación y Cadena de Custodia FSC / PEFC: Separación clasificada de merma de papel por grado (blanco, kraft, impreso) y envío a molinos recicladores con certificación FSC.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Planta de Tratamiento de Agua de Lavado y Reciclaje Interno: Tratamiento físico-químico propio para recircular el agua de lavado de tintas y prensado de pacas de papel certificado.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-GRAF-13",
+      "sourceId": "COL-AG01",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "SECCIÓN IV: SOLUCIONES COLABORATIVAS ANTE LA FALLA DE ESCALA (BIENES DE CLUB)",
+      "title": "Centro Regional de Preprensa CTP, Grabado Láser y Pruebas G7 Compartidas",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Cuál sería la disposición de su empresa para utilizar o cofinanciar un centro regional de preprensa CTP de gran formato y grabado de anilox bajo esquema Pay-per-Use?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Desinterés o Operación Aislada: Prefiere continuar adquiriendo placas CTP con distribuidores comerciales o con su propio equipo limitado.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Esquema Pay-per-Use de Placas CTP: Interés en comprar servicios de filmación CTP de alta resolución y pruebas de color digital probadas en una instalación común regional.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Coinversión en Centro de Preprensa y Calibración G7: Disposición a aportar cuotas para equipar un centro con tecnología CTP Processless y espectrofotometría compartida.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Participación Fiduciaria en Hub de Grabado y Preprensa: Integración en un fideicomiso industrial para operar un centro de servicios de preprensa, CTP y troquelado digital para el sector.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-GRAF-14",
+      "sourceId": "COL-AG02",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "SECCIÓN IV: SOLUCIONES COLABORATIVAS ANTE LA FALLA DE ESCALA (BIENES DE CLUB)",
+      "title": "Laboratorio Regional de Ensayos de Empaque (Mullen / ECT / BCT) e Inocuidad de Tintas",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Cómo participaría su empresa en un laboratorio regional acreditado ISO 17025 para pruebas mecánicas de cartón y migración de tintas bajo alianza de Cuádruple Hélice?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Esquema Tradicional de Laboratorio Externo: Mantener envío de muestras a laboratorios en CDMX asumiendo costos y demoras de 5 a 7 días.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Bolsa Regional de Muestras para Descuento por Volumen: Agrupar pedidos de pruebas mecánicas de cartón con otras empresas para negociar mejores tarifas.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Laboratorio Comunitario en Universidad Local: Alianza formal (Empresas - Universidad UPAEP/BUAP/UTT - Gobierno) para equipar un laboratorio de empaque y tintas.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Acreditación ISO 17025 y Emisión de Certificados de Exportación: Aportación activa para que el laboratorio emita certificados auditables ante FDA, TAPPI y TAPPI/ISO.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-GRAF-15",
+      "sourceId": "COL-AG03",
+      "level": "n2",
+      "sectorId": "artes-graficas",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "SECCIÓN IV: SOLUCIONES COLABORATIVAS ANTE LA FALLA DE ESCALA (BIENES DE CLUB)",
+      "title": "Mesa de Compra Consolidada de Papel, Cartón y Sustratos FSC",
+      "prompt": "Pregunta de Evaluación / Jerarquización: ¿Qué grado de apertura tiene su empresa para asociarse en un consorcio comercial que consolide la compra de papel, cartoncillo e insumos con molinos papeleros?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Compras Individuales Independientes: Comprar papel y cartón a distribuidores locales según necesidades inmediatas de cada proyecto.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Compras Conjuntas Ocasionales de Papel Estándar: Unir pedidos de cartón o papel de alto consumo con 2 o 3 imprentas aliadas para obtener descuentos por volumen.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Mesa de Compra Consolidada y Almacén Común: Integrarse a un fideicomiso de compras para adquirir bobinas de papel/cartón directamente con molinos nacionales/internacionales.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Consorcio de Exportación de Empaque Impreso: Asociación legal que consolide la compra de sustratos FSC y abra oficinas comerciales para abastecer mercados de exportación.",
+          "score": 100
+        }
+      ]
+    }
+  ]
+}

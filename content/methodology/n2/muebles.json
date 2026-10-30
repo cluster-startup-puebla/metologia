@@ -1,0 +1,620 @@
+{
+  "sectorId": "muebles",
+  "moduleCode": "MOD-MUEB-N2",
+  "questions": [
+    {
+      "id": "N2-MUEB-01",
+      "sourceId": "MB-01",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Eslabón Dominante en la Cadena Mueblera y Madera",
+      "prompt": "Pregunta de Evaluación: ¿En cuál de los siguientes eslabones de procesamiento o fabricación se concentra la mayor facturación de su taller o fábrica?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Aserrado, Dimensionado y Estufado de Madera: Primera transformación de la troza en tabla/tablón estufado y tratado.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Fabricación de Mueble de Madera Sólida / Artesanal: Mueble rústico, torneado, ebanistería tradicional o carpintería a medida.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Mueble Modular de Ingeniería / RTA (MDF / Aglomerado): Mobiliario desarmable en tableros melamínicos, cocinas y closets RTA.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Mobiliario Institucional, Hospitalario y Contract / Hotelero: Proyectos a gran escala con especificaciones arquitectónicas y fuego/humedad.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MUEB-02",
+      "sourceId": "MB-02",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Cuenca Territorial y Micro-Región Mueblera",
+      "prompt": "Pregunta de Evaluación: ¿En qué cuenca forestal o corredor industrial de Puebla - Tlaxcala se ubica su centro de producción?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Región 1: Tlaxco y Altiplano Central Tlaxcalteca (Tlaxco, Apizaco, Terrenate): Aserraderos, estufado y mueble de pino.",
+          "score": null
+        },
+        {
+          "value": "opt2",
+          "label": "Región 2: Sierra Norte y Nororiental de Puebla (Zacatlán, Chignahuapan, Teziutlán): Abastecimiento forestal, triplay y talleres.",
+          "score": null
+        },
+        {
+          "value": "opt3",
+          "label": "Región 3: ZMPT y Amozoc - Cholula (Puebla, Amozoc, Calpan, San Pedro Cholula): Carpintería industrial, salas, cocinas y contract.",
+          "score": null
+        },
+        {
+          "value": "opt4",
+          "label": "Región 4: Corredor Chiautempan - Huamantla - Tlaxcala: Mueble clásico, torneado, salas y comercialización regional.",
+          "score": null
+        }
+      ]
+    },
+    {
+      "id": "N2-MUEB-03",
+      "sourceId": "MB-03",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "perfilado",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Legalidad Forestal, Trazabilidad y Certificación FSC",
+      "prompt": "Pregunta de Evaluación: ¿Cómo verifica y documenta su empresa el origen legal de la madera en troza o dimensionada que procesa?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin Verificación Documental / Compra Informal: Compra de madera a taladores o depósitos locales sin remisión forestal formal (riesgo de decomiso).",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Verificación de Guías Forestales SEMARNAT: Compra exclusiva con remisiones o guías de transporte forestal gubernamentales vigentes.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Cadena de Custodia Legalizada ERP: Trazabilidad digital que vincula el lote de madera comprada con el volumen de muebles fabricados.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Certificación de Cadena de Custodia FSC / PEFC: Maderas y tableros provenientes 100% de bosques gestionados de forma sustentable certificados FSC.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MUEB-04",
+      "sourceId": "R00-MUEB-PROD",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Fricciones en Aserrado, Maquinado y Acabado (Rompehielos de Jerarquización - Método de Borda)",
+      "prompt": "Pregunta de Jerarquización: Ordene del 1 al 8 los siguientes problemas productivos según el impacto económico negativo y frecuencia en su planta (1 = Mayor impacto; 8 = Menor impacto)",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 8",
+      "factorCount": 8,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Rajaduras, torceduras o pandeo en muebles por madera verde o mal estufada (humedad >12%)."
+        },
+        {
+          "id": "f2",
+          "label": "Marcas de maquinado, astillado en tableros melamínicos y tiempos excesivos de lijado manual."
+        },
+        {
+          "id": "f3",
+          "label": "Desalineación y errores dimensionales en perforaciones para taquetes, pernos y herrajes."
+        },
+        {
+          "id": "f4",
+          "label": "Tiempos prolongados de ajuste y programación en ruteadores CNC, seccionadoras o tupís (SMED lento)."
+        },
+        {
+          "id": "f5",
+          "label": "Cuellos de botella en la cabina de aplicación de barniz o sellador con secado lento."
+        },
+        {
+          "id": "f6",
+          "label": "Desprendimiento de enchapado de canto en melamina por mala calidad del pegamento térmico (EVA)."
+        },
+        {
+          "id": "f7",
+          "label": "Falta de ebanistas calificados o proyectistas capacitados en software CAD/CAM mueblero."
+        },
+        {
+          "id": "f8",
+          "label": "Paros no programados por variaciones de voltaje eléctrico o fallas en el sistema de aspiración de aserrín."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-MUEB-05",
+      "sourceId": "R00-MUEB-SOURCING-MAT",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Riesgos en Sourcing de Madera, Tableros y Herrajes (Rompehielos de Jerarquización - Método de Borda)",
+      "prompt": "Pregunta de Jerarquización: Ordene del 1 al 6 los principales riesgos y cuellos de botella en la compra de insumos para su taller o fábrica",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Escasez y sobrecosto de madera sólida estufada de primera calidad (Pino, Encino, Banak, Estufado FAS)."
+        },
+        {
+          "id": "f2",
+          "label": "Variaciones de densidad, espesor y calidad superficial en tableros aglomerados y MDF."
+        },
+        {
+          "id": "f3",
+          "label": "Falta de disponibilidad local de herrajes técnicos de ingeniería (correderas ocultas, bisagras de cierre suave)."
+        },
+        {
+          "id": "f4",
+          "label": "Escasez de adhesivos técnicos de alta resistencia a la humedad (Poliuretano PUR / D3 / D4)."
+        },
+        {
+          "id": "f5",
+          "label": "Altos precios y baja durabilidad en abrasivos, lijas y bandas de lijado industrial."
+        },
+        {
+          "id": "f6",
+          "label": "Volatilidad en precios de barnices, tintas y poliuretanos derivados del petróleo."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-MUEB-06",
+      "sourceId": "R00-MUEB-SOURCING-SERV",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "borda_r00",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Jerarquización de Deficiencias en Servicios Especializados Externos (Rompehielos de Jerarquización - Método de Borda)",
+      "prompt": "Pregunta de Jerarquización: Ordene del 1 al 6 las mayores deficiencias de servicios e infraestructura externa en Puebla - Tlaxcala",
+      "note": null,
+      "type": "rank",
+      "sourceType": "ranking_borda; N = 6",
+      "factorCount": 6,
+      "rankDirection": "1_is_max_pain",
+      "factors": [
+        {
+          "id": "f1",
+          "label": "Carencia de estufas/estufaderos comunitarios con capacidad disponible para secado técnico de madera a maquila."
+        },
+        {
+          "id": "f2",
+          "label": "Falta de talleres especializados en afilado de sierras principales, discos e insertos de diamante (PCD) para CNC."
+        },
+        {
+          "id": "f3",
+          "label": "Déficit de despachos de diseño industrial 3D, parametrización RTA y renderizado hiperrealista."
+        },
+        {
+          "id": "f4",
+          "label": "Falta de laboratorios acreditados para pruebas de resistencia de uniones, adherencia de pintura e impacto ASTM."
+        },
+        {
+          "id": "f5",
+          "label": "Escasez de plantas o maquiladoras con tecnología de acabado UV ecológico base agua."
+        },
+        {
+          "id": "f6",
+          "label": "Inseguridad y sobrecostos por fletes terrestres para el transporte de muebles terminados a centros de consumo."
+        }
+      ],
+      "costCapture": {
+        "unit": "MXN",
+        "entersScore": false
+      }
+    },
+    {
+      "id": "N2-MUEB-07",
+      "sourceId": "MB-TECH-01",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Control de Humedad de Madera y Tecnología de Estufado",
+      "prompt": "Pregunta de Evaluación: ¿Cómo mide y controla su empresa el porcentaje de humedad en la madera sólida antes de entrar a la línea de corte y ensamble?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin Medición / Secado al Aire Libre: Secado natural al sol sin xilómetro; humedad variable (15% a 25%) con alto riesgo de rajadura.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Medición Manual con Xilómetro de Puntas: Verificación visual con medidor de humedad de agujas en caras externas antes de cortar.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Estufado Propio o Maquilado Controlado (8% - 10%): Proceso en estufa de vapor/condensación con curvas de secado e higrómetro capacitivo.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Estufado Automatizado por Computadora y Tratamiento Térmico HT: Estufa automatizada con sensores de madera internos, desinfección HT (NIMF-15) e historial.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MUEB-08",
+      "sourceId": "MB-TECH-02",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Maquinado CNC Nesting, Seccionado y Enchapado de Canto PUR",
+      "prompt": "Pregunta de Evaluación: ¿Qué tecnología de corte, ruteado y pegado de canto utiliza su empresa para la fabricación de piezas y modulares?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Maquinado Manual / Sierra Escuadradora Convencional: Corte con sierra de mano o escuadradora manual; enchapado de canto con plancha o pistola.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Seccionadora Automática y Enchapadora EVA: Corte en seccionadora CNC e pegado de canto automático con cola termofusible EVA.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Ruteador CNC Nesting y Enchapadora PUR: Centro de maquinado CNC ruteador de 3/4 ejes con software de optimización e pegado PUR impermeable.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Célula Flexible Nesting 4.0 / Láser Edgebanding: Carga/descarga automática en CNC ruteador, enchapado de canto por aire caliente/láser sin junta visible.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MUEB-09",
+      "sourceId": "MB-TECH-03",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Tecnología de Aplicación de Acabados y Emisiones VOC",
+      "prompt": "Pregunta de Evaluación: ¿Cómo aplica los selladores, tintas y barnices en sus muebles y qué tecnología utiliza para controlar las emisiones de solventes?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Aplicación al Abierto con Pistola Convencional: Pintado en área abierta con barniz de nitrocelulosa o poliuretano con alta emisión de solventes.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Cabina de Pintura Seca con Filtros de Cartón: Cabina con extractores y filtros de papel, utilizando pistolas de alta eficiencia HVLP.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Cabina de Cortina de Agua y Barniz Poliuretano Alto Sólidos: Recirculación de agua para atrapamiento de overspray y uso de recubrimientos de baja emisión.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Línea Automatizada de Acabado UV Base Agua / Barnizado Robótico: Aplicación con robot o cortina automatizada, curado instantáneo por lámpara UV y cero VOCs.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MUEB-10",
+      "sourceId": "MB-TECH-04",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "auditoria_tecnica",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Diseño Paramétrico RTA / Flat-Pack y Herrajes de Ingeniería (Sistema 32 mm)",
+      "prompt": "Pregunta de Evaluación: ¿Qué nivel de estandarización paramétrica y diseño listo para armar (RTA / Desarmable) tienen sus productos muebles?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Mueble Armado Fijo Fijo (Clavado/Pegado): Mueble soldado o pegado de forma permanente, sin posibilidad de desarmado para transporte.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Ensamble Mixto con Herrajes Visibles: Mueble parcialmente desarmable utilizando tornillos o escuadras metálicas expuestas.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Diseño Paramétrico RTA / Sistema 32 mm (Cabinet Vision / Promob): Mueble 100% desarmable con perforaciones ocultas para minifix, rafix y taquetes.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Ecosistema Modular Inteligente / Configurador 3D Web: Diseño optimizado para empaque Flat-Pack en caja plana, instructivo 3D QR y empaque automatizado.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MUEB-11",
+      "sourceId": "CP-MB-01",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Reconversión hacia la 'Fruta Madura' Mueblera (Alta Densidad ω_j > 0.65)",
+      "prompt": "Pregunta de Evaluación: Considerando la maquinaria de su taller o fábrica, ¿hacia cuál de los siguientes productos de mayor margen tiene viabilidad de reconvertirse en <12 meses?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Mobiliario Escolar y de Oficina Modular Ergonómico: Escritorios, mamparas y sillas ajustables con estructura metálica y cubiertas melamínicas.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Cocinas Integrales y Closets RTA en Caja Plana: Módulos estandarizados de cocina con herrajes de cierre suave para tiendas de autoservicio.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Puertas Técnicas de Tambor y MDF Termoformadas: Fabricación de puertas de interior acústicas y térmicas con bastidor estufado.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Mobiliario Comercial y Exhibidores Retail (P.O.P.): Fabricación de islas, exhibidores y mobiliario especializado para tiendas departamentales.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MUEB-12",
+      "sourceId": "CP-MB-02",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Apuestas Estratégicas y Mobiliario de Alta Complejidad (Alto ICPO)",
+      "prompt": "Pregunta de Evaluación: En un horizonte de 2 a 3 años con apoyo de coinversión y tecnología, ¿en cuál segmento de alta complejidad tiene visión estratégica de incursionar?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Proyectos Contract Hoteleros y Residenciales a Medida: Equipamiento integral de habitaciones de hotel con estándares internacionales de fuego.",
+          "score": 25
+        },
+        {
+          "value": "opt2",
+          "label": "Mobiliario Hospitalario y Laboratorio Especializado: Muebles con cubiertas de resina epóxica antibacteriana y resistencia química.",
+          "score": 50
+        },
+        {
+          "value": "opt3",
+          "label": "Paneles Acústicos Perforados y Muros De Madera Arquitectónicos: Revestimientos de madera CNC para auditorios y corporativos.",
+          "score": 75
+        },
+        {
+          "value": "opt4",
+          "label": "Mueble de Exterior en Madera Tratada Térmicamente (TMT / Thermowood): Muebles de terraza sin químicos altamente resistentes a intemperie.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MUEB-13",
+      "sourceId": "CP-MB-03",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "complejidad",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Valorización de Viruta, Aserrín y Economía Circular Mueblera",
+      "prompt": "Pregunta de Evaluación: ¿Qué destino y nivel de procesamiento otorga actualmente su empresa a la viruta, aserrín y retazos de tablero generados en su planta?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Tiradero en Abierto / Quema / Regalo: Acumulación de aserrín con riesgo de incendio o regala a granjas pecuarias sin beneficio económico.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Venta de Aserrín a Granel para Cama de Galpón: Venta de viruta suelta a granjas avícolas o porcinas a precio marginal.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Briquetado Mecánico de Viruta Seca: Prensado de aserrín seco en briquetas densas para venta como combustible limpio en panaderías o calderas.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Planta de Pelletizado Certificado FSC: Transformación automatizada de residuo leñoso en pellets de alta densidad para exportación o biomasa.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MUEB-14",
+      "sourceId": "COL-MB01",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Centro Comunitario de Estufado de Madera y Maquinado CNC Nesting",
+      "prompt": "Pregunta de Evaluación: ¿Cuál sería la disposición de su empresa para utilizar un centro común de secado técnico de madera y corte CNC Nesting bajo esquema Pay-per-Use?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Sin Interés / Operación Tradicional: Prefiere seguir trabajando exclusivamente con madera secada al sol y corte manual.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Maquila por Horas / Metros de Estufado: Disposición a contratar servicio de estufado y ruteado CNC por pedido en un centro comunitario.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Coinversión en Estufadero Regional: Disposición a aportar cuotas fiduciarias para cofinanciar estufas automatizadas de vapor comunes.",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Gobernanza Fiduciaria de Parque Mueblero: Participación en el fideicomiso integrador de un parque mueblero con centro logístico y CNC en Tlaxco/Amozoc.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MUEB-15",
+      "sourceId": "COL-MB02",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Centro Regional de Diseño Paramétrico 3D y Afilado de Diamante PCD",
+      "prompt": "Pregunta de Evaluación: ¿Cómo participaría su empresa en una alianza regional con universidades para contar con un centro de parametrización 3D y afilado de herramientas CNC?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Mantenimiento de Afilado Convencional: Continuar afilando sierras en talleres informales locales sin rectificado CNC.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Servicio por Evento de Afilado Diamante: Contratar afilado por computadora para brocas y sierras CNC en un centro regional.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Centro Universitario de Diseño y Prototipado 3D: Aportar cuotas para equipar un laboratorio de diseño paramétrico RTA en campus universitario (BUAP/UTT).",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Certificación de Diseño y Ensayos ASTM: Coinversión en laboratorio de pruebas estructurales de muebles para licitaciones internacionales.",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "N2-MUEB-16",
+      "sourceId": "COL-MB03",
+      "level": "n2",
+      "sectorId": "muebles",
+      "block": "bienes_club",
+      "indexId": null,
+      "section": "(sin encabezado)",
+      "title": "Consorcio de Compras Consolidadas de Herrajes y Comercialización Colectiva",
+      "prompt": "Pregunta de Evaluación: ¿Qué grado de apertura tiene su empresa para asociarse en un consorcio de compras para adquirir tableros MDF/FSC y herrajes a precio mayorista?",
+      "note": null,
+      "type": "single_select",
+      "sourceType": "seleccion_unica",
+      "options": [
+        {
+          "value": "opt1",
+          "label": "Operación Aislada Tradicional: Prefiere comprar tableros y herrajes por pieza a distribuidores minoristas locales.",
+          "score": 0
+        },
+        {
+          "value": "opt2",
+          "label": "Consolidación de Pedidos de Materia Prima: Participar en compras agrupadas de tableros melamínicos y herrajes por contenedor.",
+          "score": 33
+        },
+        {
+          "value": "opt3",
+          "label": "Marca Colectiva / Catálogo Mueblero Regional: Incorporar sus productos bajo un catálogo unificado de muebles RTA (ej. 'Mueble Diseñado en Puebla-Tlaxcala').",
+          "score": 66
+        },
+        {
+          "value": "opt4",
+          "label": "Consorcio Exportador / Showroom Comercial Compartido: Participación en una empresa integradora con showroom común en CDMX o exportación a EE.UU.",
+          "score": 100
+        }
+      ]
+    }
+  ]
+}

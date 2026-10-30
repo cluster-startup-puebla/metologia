@@ -1,0 +1,102 @@
+{
+  "instrumentVersion": "n1-web-3.0",
+  "region": "puebla-tlaxcala",
+  "generatedFrom": "docs/metodologia/ENTENDIMIENTO.md",
+  "applicationModel": {
+    "everyoneSees": "n1",
+    "sectorChoiceQuestionId": "N1-02",
+    "sectorChoiceSourceId": "F0.2",
+    "thenAsk": "exactlyOneN2",
+    "n1AndN2CombinedIndex": null
+  },
+  "counts": {
+    "n1": 46,
+    "n2": 191
+  },
+  "sectors": [
+    {
+      "id": "automotriz",
+      "moduleCode": "MOD-AUTO-N2",
+      "label": "Sector 01: Industria Automotriz, Autopartes, BIW y Electrónica SDV",
+      "questionCount": 20,
+      "file": "n2/automotriz.json"
+    },
+    {
+      "id": "agroindustria",
+      "moduleCode": "MOD-AGRO-N2",
+      "label": "Sector 02: Agroindustria, Procesamiento de Alimentos y Bebidas",
+      "questionCount": 15,
+      "file": "n2/agroindustria.json"
+    },
+    {
+      "id": "plasticos",
+      "moduleCode": "MOD-PLAST-N2",
+      "label": "Sector 03: Plásticos, Polímeros Técnicos y Envase Sustentable",
+      "questionCount": 16,
+      "file": "n2/plasticos.json"
+    },
+    {
+      "id": "metalmecanica",
+      "moduleCode": "MOD-METAL-N2",
+      "label": "Sector 04: Metalmecánica, Maquinado CNC de Precisión y Pailería",
+      "questionCount": 16,
+      "file": "n2/metalmecanica.json"
+    },
+    {
+      "id": "textil",
+      "moduleCode": "MOD-TEXT-N2",
+      "label": "Sector 05: Textil, Confección y Textiles Técnicos Industriales",
+      "questionCount": 16,
+      "file": "n2/textil.json"
+    },
+    {
+      "id": "muebles",
+      "moduleCode": "MOD-MUEB-N2",
+      "label": "Sector 06: Muebles, Madera e Ingeniería RTA",
+      "questionCount": 16,
+      "file": "n2/muebles.json"
+    },
+    {
+      "id": "turismo",
+      "moduleCode": "MOD-TUR-N2",
+      "label": "Sector 07: Turismo, Gastronomía y Servicios de Hospitalidad",
+      "questionCount": 16,
+      "file": "n2/turismo.json"
+    },
+    {
+      "id": "medico-hospitalario",
+      "moduleCode": "MOD-MED-N2",
+      "label": "Sector 08: Dispositivos Médicos, Material Quirúrgico y Salud",
+      "questionCount": 14,
+      "file": "n2/medico-hospitalario.json"
+    },
+    {
+      "id": "construccion",
+      "moduleCode": "MOD-CONST-N2",
+      "label": "Sector 09: Construcción, Prefabricados e Infraestructura",
+      "questionCount": 16,
+      "file": "n2/construccion.json"
+    },
+    {
+      "id": "logistica",
+      "moduleCode": "MOD-LOG-N2",
+      "label": "Sector 10: Logística, Transporte de Carga y Cadena de Suministro",
+      "questionCount": 16,
+      "file": "n2/logistica.json"
+    },
+    {
+      "id": "artes-graficas",
+      "moduleCode": "MOD-GRAF-N2",
+      "label": "Sector 11: Artes Gráficas, Impresión y Empaque Estructural",
+      "questionCount": 15,
+      "file": "n2/artes-graficas.json"
+    },
+    {
+      "id": "tics-startups",
+      "moduleCode": "MOD-TIC-N2",
+      "label": "Sector 12: Startups, Soluciones TICs y Software (KISA / Deep Tech)",
+      "questionCount": 15,
+      "file": "n2/tics-startups.json"
+    }
+  ]
+}
