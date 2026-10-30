@@ -1,6 +1,14 @@
+"use client"
+
+import { useState } from "react"
+import { FileText } from "lucide-react"
 import { illustrationsFor, type EvaluationReport } from "@/lib/methodology/report"
 import type { MethodologyRules, ScoreResult, TechnicalScore } from "@/lib/methodology/types"
 import { Button } from "@/components/ui/button"
+import { RankingLadder } from "./ranking-ladder"
+import { ResultsSheet } from "./results-sheet"
+import { SectorPlace } from "./sector-place"
+import { explainScore, formatScore } from "./score-copy"
 import { sessionById } from "./session-theme"
 import { SessionTrail } from "./session-trail"
 
@@ -13,6 +21,7 @@ interface ResultPanelProps {
 
 export function ResultPanel({ sectorLabel, report, rules, onRestart }: ResultPanelProps) {
   const session = sessionById("score")
+  const [sheetOpen, setSheetOpen] = useState(false)
   return (
     <div className="min-h-screen bg-background">
       <main className="mx-auto flex w-full max-w-2xl flex-col gap-6 px-4 py-8">
@@ -24,6 +33,8 @@ export function ResultPanel({ sectorLabel, report, rules, onRestart }: ResultPan
           <h1 className="text-3xl font-semibold text-balance">Lo que el instrumento sí calcula</h1>
           <p className="text-sm leading-relaxed text-muted-foreground">{sectorLabel}</p>
         </div>
+
+        <SectorPlace sectorLabel={sectorLabel} />
 
         <ScoreCard title="Entorno normativo (SEN)" result={report.sen} format={(value) => `${formatScore(value)} / 100`} />
         <TechnicalCard title="Score técnico, solo auditoría" result={report.technicalAuditoria} rules={rules} rankings={report.rankings} />
@@ -37,43 +48,24 @@ export function ResultPanel({ sectorLabel, report, rules, onRestart }: ResultPan
           </p>
         </section>
 
-        <section className="space-y-4">
-          <h2 className="text-lg font-semibold">Rankings</h2>
-          {report.rankings.map((ranking) => (
-            <article key={ranking.questionId} className="space-y-2 rounded-3xl border p-4">
-              <h3 className="font-medium">{ranking.title}</h3>
-              {ranking.tabulador.status === "blocked" ? (
-                <p className="text-sm text-muted-foreground">Este ranking está incompleto, así que no entra a la ilustración.</p>
-              ) : (
-                <>
-                  <p className="text-sm text-muted-foreground">
-                    Media del tabulador: {formatScore(ranking.tabuladorMean ?? 0)}. Esa media no cambia si se invierte el orden.
-                  </p>
-                  <ul className="space-y-1 text-sm">
-                    {ranking.tabulador.value
-                      .slice()
-                      .sort((a, b) => a.rank - b.rank)
-                      .map((row) => (
-                        <li key={row.factorId}>
-                          {row.rank}. {row.label} · tabulador {formatScore(row.score)}
-                        </li>
-                      ))}
-                  </ul>
-                </>
-              )}
-            </article>
-          ))}
-        </section>
+        <RankingLadder rankings={report.rankings} />
 
-        <Button
-          type="button"
-          className="rounded-2xl text-white"
-          style={{ backgroundColor: session.color, color: session.ink }}
-          onClick={onRestart}
-        >
-          Volver a empezar
-        </Button>
+        <div className="flex flex-col gap-3 sm:flex-row">
+          <Button
+            type="button"
+            className="h-12 flex-1 rounded-2xl text-white"
+            style={{ backgroundColor: session.color, color: session.ink }}
+            onClick={() => setSheetOpen(true)}
+          >
+            <FileText className="mr-2 size-5" />
+            Generar hoja de resultados
+          </Button>
+          <Button type="button" variant="outline" className="h-12 flex-1 rounded-2xl" onClick={onRestart}>
+            Volver a empezar
+          </Button>
+        </div>
       </main>
+      {sheetOpen ? <ResultsSheet sectorLabel={sectorLabel} report={report} onClose={() => setSheetOpen(false)} /> : null}
     </div>
   )
 }
@@ -93,7 +85,7 @@ function TechnicalCard({
     <section className="space-y-3 rounded-3xl border p-4">
       <h2 className="text-lg font-semibold">{title}</h2>
       {result.status === "blocked" ? (
-        <p className="text-sm text-muted-foreground">{explain(result)}</p>
+        <p className="text-sm text-muted-foreground">{explainScore(result)}</p>
       ) : (
         <>
           <p className="text-2xl font-semibold" style={{ color: sessionById("score").color }}>
@@ -141,27 +133,9 @@ function ScoreCard({
           {format(result.value)}
         </p>
       ) : (
-        <p className="text-sm text-muted-foreground">{explain(result)}</p>
+        <p className="text-sm text-muted-foreground">{explainScore(result)}</p>
       )}
     </section>
   )
 }
 
-function explain(result: ScoreResult<unknown>): string {
-  if (result.status === "ok") return ""
-  const codes = result.failures.map((failure) => failure.code)
-  if (codes.includes("no_numeric_questions")) {
-    return "Este conjunto no trae puntaje en las opciones. Agroindustria y logística están así en todo el instrumento."
-  }
-  if (codes.includes("empty_answer")) {
-    const missing = codes.filter((code) => code === "empty_answer").length
-    return `Faltan ${missing} respuestas. El documento no dice que se imputen ceros, así que el cálculo se detiene.`
-  }
-  if (codes.includes("incomplete")) return "Falta alguno de los seis reactivos del entorno."
-  if (codes.includes("invalid_likert")) return "Hay una respuesta fuera de la escala 1 a 7."
-  return "El cálculo se detiene con los datos que hay."
-}
-
-function formatScore(value: number): string {
-  return new Intl.NumberFormat("es-MX", { maximumFractionDigits: 2 }).format(value)
-}
