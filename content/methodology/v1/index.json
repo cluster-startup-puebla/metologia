@@ -1,7 +1,7 @@
 {
   "instrumentVersion": "n1-web-3.0",
   "region": "puebla-tlaxcala",
-  "generatedFrom": "docs/metodologia/ENTENDIMIENTO.md",
+  "generatedFrom": "docs/metodologia/v1/ENTENDIMIENTO.md",
   "applicationModel": {
     "everyoneSees": "n1",
     "sectorChoiceQuestionId": "N1-02",

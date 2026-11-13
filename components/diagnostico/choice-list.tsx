@@ -21,7 +21,7 @@ export function ChoiceList({ options, value, accent, accentInk, onChange }: Choi
             aria-pressed={selected}
             onClick={() => onChange(option.value)}
             className={cn(
-              "rounded-2xl border px-4 py-3 text-left text-sm leading-relaxed transition-colors",
+              "rounded-2xl border px-4 py-2.5 text-left text-sm leading-snug transition-colors sm:py-3 sm:leading-relaxed",
               selected ? "border-transparent" : "border-border bg-background hover:bg-muted",
             )}
             style={selected ? { backgroundColor: accent, color: accentInk } : undefined}

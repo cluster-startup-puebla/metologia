@@ -3,8 +3,8 @@ import { dirname, join } from "node:path"
 import { fileURLToPath } from "node:url"
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..")
-const sourcePath = join(root, "docs/metodologia/ENTENDIMIENTO.md")
-const outDir = join(root, "content/methodology")
+const sourcePath = join(root, "docs/metodologia/v1/ENTENDIMIENTO.md")
+const outDir = join(root, "content/methodology/v1")
 const n2Dir = join(outDir, "n2")
 
 const SECTORS = [
@@ -675,7 +675,7 @@ writeFileSync(
     {
       instrumentVersion: "n1-web-3.0",
       region: "puebla-tlaxcala",
-      generatedFrom: "docs/metodologia/ENTENDIMIENTO.md",
+      generatedFrom: "docs/metodologia/v1/ENTENDIMIENTO.md",
       applicationModel: {
         everyoneSees: "n1",
         sectorChoiceQuestionId: "N1-02",

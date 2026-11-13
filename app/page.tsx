@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
-import { DiagnosticoFlow } from "@/components/diagnostico/diagnostico-flow"
+import { V2Flow } from "@/components/diagnostico/v2-flow"
 
 export const metadata: Metadata = {
   title: "Diagnóstico sectorial | Puebla–Tlaxcala",
-  description: "Nivel 1 para todas las empresas y el instrumento de Nivel 2 del sector elegido.",
+  description: "Instrumento general y el instrumento específico del sector. Versión 2.0.",
 }
 
 export default function HomePage() {
-  return <DiagnosticoFlow />
+  return <V2Flow />
 }

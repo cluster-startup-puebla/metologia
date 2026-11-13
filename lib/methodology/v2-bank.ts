@@ -1,0 +1,48 @@
+import indexDocument from "@/content/methodology/v2/index.json"
+import n1Document from "@/content/methodology/v2/n1.json"
+import agencias from "@/content/methodology/v2/n2/agencias.json"
+import agricola from "@/content/methodology/v2/n2/agricola-pecuaria.json"
+import alimentos from "@/content/methodology/v2/n2/alimentos.json"
+import artes from "@/content/methodology/v2/n2/artes-graficas.json"
+import automotriz from "@/content/methodology/v2/n2/automotriz.json"
+import confeccion from "@/content/methodology/v2/n2/confeccion.json"
+import construccion from "@/content/methodology/v2/n2/construccion.json"
+import dispositivos from "@/content/methodology/v2/n2/dispositivos.json"
+import gastronomia from "@/content/methodology/v2/n2/gastronomia.json"
+import logistica from "@/content/methodology/v2/n2/logistica.json"
+import medico from "@/content/methodology/v2/n2/medico-hospitalario.json"
+import metal from "@/content/methodology/v2/n2/metalmecanica.json"
+import muebles from "@/content/methodology/v2/n2/muebles.json"
+import plasticos from "@/content/methodology/v2/n2/plasticos.json"
+import textiles from "@/content/methodology/v2/n2/textiles.json"
+import turismo from "@/content/methodology/v2/n2/turismo.json"
+import type { V2Question } from "./v2-types"
+
+const documents = {
+  agencias,
+  "agricola-pecuaria": agricola,
+  alimentos,
+  "artes-graficas": artes,
+  automotriz,
+  confeccion,
+  construccion,
+  dispositivos,
+  gastronomia,
+  logistica,
+  "medico-hospitalario": medico,
+  metalmecanica: metal,
+  muebles,
+  plasticos,
+  textiles,
+  turismo,
+}
+
+export const v2Index = indexDocument
+export const v2N1Questions = n1Document.questions as V2Question[]
+export const v2QuestionsBySector: Record<string, V2Question[]> = Object.fromEntries(
+  Object.entries(documents).map(([sectorId, document]) => [sectorId, document.questions as V2Question[]]),
+)
+
+export function v2InstrumentLabel(sectorId: string): string {
+  return v2Index.instruments.find((instrument) => instrument.id === sectorId)?.label ?? sectorId
+}

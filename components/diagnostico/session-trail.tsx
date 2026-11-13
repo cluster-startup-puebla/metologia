@@ -1,19 +1,27 @@
 import { SESSIONS, type SessionId } from "./session-theme"
 
-interface SessionTrailProps {
-  activeId: SessionId
-  progress: number
+export interface TrailStep {
+  id: string
+  name: string
+  color: string
 }
 
-export function SessionTrail({ activeId, progress }: SessionTrailProps) {
-  const activeIndex = SESSIONS.findIndex((session) => session.id === activeId)
-  const active = SESSIONS[activeIndex] ?? SESSIONS[0]
+interface SessionTrailProps {
+  activeId: SessionId | string
+  progress: number
+  steps?: TrailStep[]
+}
+
+export function SessionTrail({ activeId, progress, steps }: SessionTrailProps) {
+  const sessions = steps ?? SESSIONS
+  const activeIndex = sessions.findIndex((session) => session.id === activeId)
+  const active = sessions[activeIndex] ?? sessions[0]
   const width = Math.min(100, Math.max(0, progress))
 
   return (
     <div className="space-y-3">
       <div className="flex items-center gap-2">
-        {SESSIONS.map((session, index) => {
+        {sessions.map((session, index) => {
           const reached = index <= activeIndex
           const current = session.id === activeId
           return (
@@ -31,7 +39,7 @@ export function SessionTrail({ activeId, progress }: SessionTrailProps) {
                 />
                 {session.name}
               </span>
-              {index < SESSIONS.length - 1 ? <span className="h-px w-4 shrink-0 bg-border" /> : null}
+              {index < sessions.length - 1 ? <span className="h-px w-4 shrink-0 bg-border" /> : null}
             </div>
           )
         })}

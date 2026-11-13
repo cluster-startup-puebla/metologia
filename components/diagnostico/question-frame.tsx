@@ -1,6 +1,7 @@
 import type { ReactNode } from "react"
 import { Button } from "@/components/ui/button"
-import { SessionTrail } from "./session-trail"
+import { Microcopy } from "./microcopy"
+import { SessionTrail, type TrailStep } from "./session-trail"
 import type { SessionTheme } from "./session-theme"
 
 interface QuestionFrameProps {
@@ -15,6 +16,13 @@ interface QuestionFrameProps {
   continueLabel: string
   onBack: () => void
   onContinue: () => void
+  banner?: ReactNode
+  titleColor?: string
+  /** When set, this is the only line above the question. */
+  kicker?: string
+  /** Opposite end of the kicker, such as 1/6. */
+  kickerMeta?: string
+  trailSteps?: TrailStep[]
   children: ReactNode
 }
 
@@ -30,24 +38,43 @@ export function QuestionFrame({
   continueLabel,
   onBack,
   onContinue,
+  banner,
+  titleColor,
+  kicker,
+  kickerMeta,
+  trailSteps,
   children,
 }: QuestionFrameProps) {
   return (
     <div className="min-h-screen bg-background">
-      <main className="mx-auto flex w-full max-w-2xl flex-col gap-5 px-4 pt-6 pb-28">
-        <SessionTrail activeId={session.id} progress={progress} />
-        <div className="space-y-1">
-          <p className="text-xs font-medium uppercase tracking-wide" style={{ color: session.color }}>
-            {stepLabel}
-          </p>
-          <p className="text-sm text-muted-foreground">{blockLabel}</p>
-          <h1 className="text-2xl font-semibold text-balance">{title}</h1>
-          {prompt !== title ? <p className="text-sm leading-relaxed text-muted-foreground">{prompt}</p> : null}
-          {note ? <p className="text-sm leading-relaxed text-muted-foreground">{note}</p> : null}
+      {banner}
+      <main className="mx-auto flex w-full max-w-2xl flex-col gap-4 px-4 pt-4 pb-28 sm:gap-5 sm:pt-6">
+        <SessionTrail activeId={session.id} progress={progress} steps={trailSteps} />
+        <div className="space-y-2">
+          {kicker ? (
+            <div className="flex items-baseline justify-between gap-3">
+              <p className="text-sm font-medium" style={{ color: titleColor }}>
+                {kicker}
+              </p>
+              {kickerMeta ? <p className="shrink-0 text-sm tabular-nums text-muted-foreground">{kickerMeta}</p> : null}
+            </div>
+          ) : (
+            <>
+              <p className="text-xs text-muted-foreground">{stepLabel}</p>
+              <p className="text-xs leading-relaxed text-muted-foreground">{blockLabel}</p>
+              {prompt !== title ? (
+                <p className="text-sm font-medium" style={{ color: titleColor }}>
+                  {title}
+                </p>
+              ) : null}
+            </>
+          )}
+          <h1 className="text-xl font-semibold leading-snug text-balance sm:text-2xl">{prompt || title}</h1>
+          {note ? <Microcopy>{note}</Microcopy> : null}
         </div>
         {children}
       </main>
-      <footer className="fixed inset-x-0 bottom-0 border-t bg-background/95 px-4 py-3 backdrop-blur">
+      <footer className="fixed inset-x-0 bottom-0 border-t bg-background/95 px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur">
         <div className="mx-auto flex w-full max-w-2xl gap-2">
           <Button type="button" variant="outline" className="rounded-2xl" onClick={onBack}>
             Anterior

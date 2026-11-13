@@ -158,6 +158,9 @@ export function DiagnosticoFlow() {
               <Button type="button" variant="outline" className="rounded-2xl" onClick={loadExample}>
                 Ver el ejemplo de artes gráficas
               </Button>
+              <a href="/" className="text-sm underline" style={{ color: sessionById("n2").color }}>
+                Volver a la versión 2.0
+              </a>
             </div>
             <p className="text-xs text-muted-foreground">
               Al continuar, aceptas el{" "}

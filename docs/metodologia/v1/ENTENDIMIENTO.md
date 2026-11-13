@@ -491,7 +491,7 @@ Los reactivos de complejidad de construcción (`CP-CN-01`, `CP-CN-02`) y médico
 
 ### Sector agroindustria (`AGRO`) — 15 reactivos
 
-Fuente: `docs/metodologia/03-instrumento-nivel2/agroindustria.md`.
+Fuente: `docs/metodologia/v1/03-instrumento-nivel2/agroindustria.md`.
 
 #### N2-AGRO-01 · `AG-01`
 
@@ -691,7 +691,7 @@ Fuente: `docs/metodologia/03-instrumento-nivel2/agroindustria.md`.
 
 ### Sector artes-graficas (`GRAF`) — 15 reactivos
 
-Fuente: `docs/metodologia/03-instrumento-nivel2/artes-graficas.md`.
+Fuente: `docs/metodologia/v1/03-instrumento-nivel2/artes-graficas.md`.
 
 #### N2-GRAF-01 · `AG-01`
 
@@ -904,7 +904,7 @@ Fuente: `docs/metodologia/03-instrumento-nivel2/artes-graficas.md`.
 
 ### Sector automotriz (`AUTO`) — 20 reactivos
 
-Fuente: `docs/metodologia/03-instrumento-nivel2/automotriz.md`.
+Fuente: `docs/metodologia/v1/03-instrumento-nivel2/automotriz.md`.
 
 #### N2-AUTO-01 · `A01`
 
@@ -1166,7 +1166,7 @@ Fuente: `docs/metodologia/03-instrumento-nivel2/automotriz.md`.
 
 ### Sector construccion (`CONST`) — 16 reactivos
 
-Fuente: `docs/metodologia/03-instrumento-nivel2/construccion.md`.
+Fuente: `docs/metodologia/v1/03-instrumento-nivel2/construccion.md`.
 
 #### N2-CONST-01 · `CN-01`
 
@@ -1391,7 +1391,7 @@ Fuente: `docs/metodologia/03-instrumento-nivel2/construccion.md`.
 
 ### Sector logistica (`LOG`) — 16 reactivos
 
-Fuente: `docs/metodologia/03-instrumento-nivel2/logistica.md`.
+Fuente: `docs/metodologia/v1/03-instrumento-nivel2/logistica.md`.
 
 #### N2-LOG-01 · `LG-01`
 
@@ -1615,7 +1615,7 @@ Fuente: `docs/metodologia/03-instrumento-nivel2/logistica.md`.
 
 ### Sector medico-hospitalario (`MED`) — 14 reactivos
 
-Fuente: `docs/metodologia/03-instrumento-nivel2/medico-hospitalario.md`.
+Fuente: `docs/metodologia/v1/03-instrumento-nivel2/medico-hospitalario.md`.
 
 #### N2-MED-01 · `MED-01`
 
@@ -1812,7 +1812,7 @@ Fuente: `docs/metodologia/03-instrumento-nivel2/medico-hospitalario.md`.
 
 ### Sector metalmecanica (`METAL`) — 16 reactivos
 
-Fuente: `docs/metodologia/03-instrumento-nivel2/metalmecanica.md`.
+Fuente: `docs/metodologia/v1/03-instrumento-nivel2/metalmecanica.md`.
 
 #### N2-METAL-01 · `MM-01`
 
@@ -2036,7 +2036,7 @@ Fuente: `docs/metodologia/03-instrumento-nivel2/metalmecanica.md`.
 
 ### Sector muebles (`MUEB`) — 16 reactivos
 
-Fuente: `docs/metodologia/03-instrumento-nivel2/muebles.md`.
+Fuente: `docs/metodologia/v1/03-instrumento-nivel2/muebles.md`.
 
 #### N2-MUEB-01 · `MB-01`
 
@@ -2260,7 +2260,7 @@ Fuente: `docs/metodologia/03-instrumento-nivel2/muebles.md`.
 
 ### Sector plasticos (`PLAST`) — 16 reactivos
 
-Fuente: `docs/metodologia/03-instrumento-nivel2/plasticos.md`.
+Fuente: `docs/metodologia/v1/03-instrumento-nivel2/plasticos.md`.
 
 #### N2-PLAST-01 · `PL-01`
 
@@ -2484,7 +2484,7 @@ Fuente: `docs/metodologia/03-instrumento-nivel2/plasticos.md`.
 
 ### Sector textil (`TEXT`) — 16 reactivos
 
-Fuente: `docs/metodologia/03-instrumento-nivel2/textil.md`.
+Fuente: `docs/metodologia/v1/03-instrumento-nivel2/textil.md`.
 
 #### N2-TEXT-01 · `TX-01`
 
@@ -2708,7 +2708,7 @@ Fuente: `docs/metodologia/03-instrumento-nivel2/textil.md`.
 
 ### Sector tics-startups (`TIC`) — 15 reactivos
 
-Fuente: `docs/metodologia/03-instrumento-nivel2/tics-startups.md`.
+Fuente: `docs/metodologia/v1/03-instrumento-nivel2/tics-startups.md`.
 
 #### N2-TIC-01 · `TC-01`
 
@@ -2921,7 +2921,7 @@ Fuente: `docs/metodologia/03-instrumento-nivel2/tics-startups.md`.
 
 ### Sector turismo (`TUR`) — 16 reactivos
 
-Fuente: `docs/metodologia/03-instrumento-nivel2/turismo.md`.
+Fuente: `docs/metodologia/v1/03-instrumento-nivel2/turismo.md`.
 
 #### N2-TUR-01 · `TG-01`
 

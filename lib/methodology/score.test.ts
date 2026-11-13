@@ -23,7 +23,7 @@ function quadrantId(rows: Map<number, { quadrant: ScoreResult<QuadrantBand> }>, 
 }
 
 const root = join(import.meta.dirname, "../..")
-const content = join(root, "content/methodology")
+const content = join(root, "content/methodology/v1")
 
 function readJson<T>(path: string): T {
   return JSON.parse(readFileSync(path, "utf8")) as T
