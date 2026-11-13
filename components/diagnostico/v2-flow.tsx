@@ -1,6 +1,7 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useEffect, useMemo, useState } from "react"
+import Confetti from "react-confetti"
 import { cn } from "@/lib/utils"
 import { v2Index, v2InstrumentLabel, v2N1Questions, v2QuestionsBySector } from "@/lib/methodology/v2-bank"
 import type { V2Answer, V2Answers, V2Question } from "@/lib/methodology/v2-types"
@@ -135,7 +136,8 @@ export function V2Flow() {
 
   if (screen === "done" || !question) {
     return (
-      <main className="mx-auto flex min-h-screen w-full max-w-lg flex-col justify-center gap-6 px-4 py-8">
+      <main className="relative mx-auto flex min-h-screen w-full max-w-lg flex-col justify-center gap-6 px-4 py-8">
+        <FinishConfetti />
         <SessionTrail
           activeId="n2"
           progress={100}
@@ -207,6 +209,31 @@ export function V2Flow() {
         onChange={(answer) => setAnswers((previous) => ({ ...previous, [question.id]: answer }))}
       />
     </QuestionFrame>
+  )
+}
+
+function FinishConfetti() {
+  const [size, setSize] = useState({ width: 0, height: 0 })
+
+  useEffect(() => {
+    const update = () => setSize({ width: window.innerWidth, height: window.innerHeight })
+    update()
+    window.addEventListener("resize", update)
+    return () => window.removeEventListener("resize", update)
+  }, [])
+
+  if (size.width === 0) return null
+
+  return (
+    <Confetti
+      width={size.width}
+      height={size.height}
+      recycle={false}
+      numberOfPieces={180}
+      gravity={0.18}
+      colors={["#FF1493", "#1F4B99", "#0F766E", "#F5B942", "#6D28D9"]}
+      style={{ position: "fixed", top: 0, left: 0, pointerEvents: "none", zIndex: 40 }}
+    />
   )
 }
 

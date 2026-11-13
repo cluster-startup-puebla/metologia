@@ -42,7 +42,7 @@ export function ChoiceWithText({
             maxLength={maxLength}
             rows={3}
             onChange={(event) => onChange({ optionValue: value ?? "", text: event.target.value.slice(0, maxLength) })}
-            className="w-full resize-none rounded-2xl border bg-background px-3 py-2 leading-relaxed"
+            className="w-full resize-none rounded-2xl border bg-background px-3 py-2 text-base leading-relaxed"
           />
           <span className="block text-right text-xs tabular-nums text-muted-foreground">
             {text.length} / {maxLength}

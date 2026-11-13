@@ -127,7 +127,7 @@ export function ResultsSheet({ sectorLabel, report, onClose }: ResultsSheetProps
                   value={company}
                   onChange={(event) => setCompany(event.target.value)}
                   placeholder="Nombre de la empresa"
-                  className="mt-1 w-full border-0 bg-transparent p-0 text-sm font-semibold outline-none placeholder:font-normal placeholder:text-muted-foreground"
+                  className="mt-1 w-full border-0 bg-transparent p-0 text-base font-semibold outline-none placeholder:font-normal placeholder:text-muted-foreground"
                 />
               </label>
               <InfoItem label="Sector" value={sectorLabel} />

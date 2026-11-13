@@ -318,7 +318,7 @@ function RankBody({
               costMxn: raw === "" ? null : Number(raw),
             })
           }}
-          className="w-full rounded-2xl border bg-background px-3 py-2"
+          className="w-full rounded-2xl border bg-background px-3 py-2 text-base"
         />
       </label>
     </div>
