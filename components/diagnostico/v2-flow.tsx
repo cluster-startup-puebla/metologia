@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 import { v2Index, v2InstrumentLabel, v2N1Questions, v2QuestionsBySector, v2Roadmap } from "@/lib/methodology/v2-bank"
 import { V2_EXAMPLES, scoreExample } from "@/lib/methodology/v2-examples"
 import type { V2ExampleCase } from "@/lib/methodology/v2-examples"
-import { buildReport } from "@/lib/methodology/v2-report"
+import { buildReport, frontierReading, useReading } from "@/lib/methodology/v2-report"
 import { levelStepFor, scoreLive } from "@/lib/methodology/v2-score"
 import type { V2Band, V2LevelStep, V2LiveScore } from "@/lib/methodology/v2-score"
 import type { V2Answer, V2Answers, V2Question } from "@/lib/methodology/v2-types"
@@ -54,6 +54,10 @@ const BAND_LABELS: Record<V2Band, string> = {
 
 function formatScore(value: number): string {
   return value.toFixed(2)
+}
+
+function points(value: number): string {
+  return Math.abs(value - Math.round(value)) < 0.05 ? String(Math.round(value)) : formatScore(value)
 }
 
 function complete(question: V2Question, answer: V2Answer | undefined): boolean {
@@ -471,26 +475,8 @@ function DetailedReport({ report }: { report: ReturnType<typeof buildReport> }) 
       {report.underuse || report.frontier || report.control || report.traceability ? (
         <section className="space-y-4">
           <h2 className="text-base font-semibold">La operación</h2>
-          {report.underuse ? (
-            <Callout
-              title="Subuso de tecnología"
-              body={
-                report.underuse.adornment
-                  ? `Se aprovecha ${formatScore(report.underuse.used)} y queda ${formatScore(report.underuse.idle)} sin usar. Pasa de 40: la tecnología está de adorno y toca capacitar a quien ya la tiene.`
-                  : `Se aprovecha ${formatScore(report.underuse.used)}. Queda ${formatScore(report.underuse.idle)} sin usar.`
-              }
-            />
-          ) : null}
-          {report.frontier ? (
-            <Callout
-              title="Distancia con los líderes"
-              body={
-                report.frontier.behind
-                  ? `La frontera está a ${formatScore(report.frontier.delta)} puntos. Pasa de 50: hay riesgo de quedarse atrás.`
-                  : `La frontera está a ${formatScore(report.frontier.delta)} puntos.`
-              }
-            />
-          ) : null}
+          {report.underuse ? <Callout {...useReading(report.underuse.used)} /> : null}
+          {report.frontier ? <Callout {...frontierReading(report.frontier.score)} /> : null}
           {report.control ? <ScoreBars rows={[bar("Control de la operación", report.control.label, report.control.score, "#0F766E")!]} /> : null}
           {report.traceability ? <ScoreBars rows={[bar("Trazabilidad", report.traceability.label, report.traceability.score, "#1D4ED8")!]} /> : null}
         </section>

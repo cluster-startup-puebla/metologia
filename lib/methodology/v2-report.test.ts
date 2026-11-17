@@ -1,8 +1,20 @@
 import assert from "node:assert/strict"
 import test from "node:test"
 
-import { buildReport, gapZone } from "./v2-report.ts"
+import { buildReport, frontierReading, gapZone, useReading } from "./v2-report.ts"
 import type { V2Question } from "./v2-types.ts"
+
+test("each percentage band has its own message", () => {
+  assert.match(useReading(100).body, /100%/)
+  assert.match(useReading(85).body, /cerca/)
+  assert.match(useReading(70).body, /margen/)
+  assert.match(useReading(50).body, /adorno/)
+  assert.match(useReading(20).body, /mayor parte/)
+  assert.match(frontierReading(100).body, /techo/)
+  assert.match(frontierReading(80).body, /Tienes 80/)
+  assert.match(frontierReading(40).body, /Tienes 40/)
+  assert.match(frontierReading(20).body, /lejos/)
+})
 
 test("gap zones follow the manual cuts", () => {
   assert.equal(gapZone(10.01), "Falsa complacencia")
