@@ -8,6 +8,7 @@ import automotriz from "@/content/methodology/v2/n2/automotriz.json"
 import confeccion from "@/content/methodology/v2/n2/confeccion.json"
 import construccion from "@/content/methodology/v2/n2/construccion.json"
 import dispositivos from "@/content/methodology/v2/n2/dispositivos.json"
+import educacion from "@/content/methodology/v2/n2/educacion.json"
 import gastronomia from "@/content/methodology/v2/n2/gastronomia.json"
 import logistica from "@/content/methodology/v2/n2/logistica.json"
 import medico from "@/content/methodology/v2/n2/medico-hospitalario.json"
@@ -32,6 +33,7 @@ const documents = {
   confeccion,
   construccion,
   dispositivos,
+  educacion,
   gastronomia,
   logistica,
   "medico-hospitalario": medico,

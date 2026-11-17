@@ -6,7 +6,7 @@
   "sectorQuestionId": "MOD0-WEB-01",
   "counts": {
     "n1": 22,
-    "n2": 380
+    "n2": 399
   },
   "groups": [
     {
@@ -58,7 +58,13 @@
       "label": "Turismo",
       "instruments": [
         "turismo",
-        "agencias",
+        "agencias"
+      ]
+    },
+    {
+      "id": "gastronomia",
+      "label": "Gastronomía, comisariatos y catering",
+      "instruments": [
         "gastronomia"
       ]
     },
@@ -117,6 +123,13 @@
       "label": "SOFOMES y servicios financieros",
       "instruments": [
         "sofom"
+      ]
+    },
+    {
+      "id": "educacion",
+      "label": "Educación superior y profesional",
+      "instruments": [
+        "educacion"
       ]
     }
   ],
@@ -240,6 +253,12 @@
       "label": "20. SOFOMES y Servicios Financieros no Bancarios",
       "questionCount": 19,
       "file": "n2/sofom.json"
+    },
+    {
+      "id": "educacion",
+      "label": "21. Educación Superior y Profesional",
+      "questionCount": 19,
+      "file": "n2/educacion.json"
     }
   ]
 }

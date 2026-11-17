@@ -32,6 +32,7 @@ FILES = {
     "tics": "instrumento-nivel-2-tics-software-puebla-tlaxcala-v5.md",
     "inmobiliario": "instrumento-nivel-2-inmobiliario-puebla-tlaxcala-v5.md",
     "sofom": "instrumento-nivel-2-sofom-servicios-financieros-puebla-tla.md",
+    "educacion": "instrumento-nivel-2-educacion-superior-puebla-tlaxcala-v5.md",
 }
 
 GROUPS = [
@@ -41,7 +42,8 @@ GROUPS = [
     {"id": "metalmecanica", "label": "Metalmecánica, estructuras y maquinados", "instruments": ["metalmecanica"]},
     {"id": "textil", "label": "Textil", "instruments": ["textiles", "confeccion"]},
     {"id": "muebles", "label": "Muebles, madera y herrajes", "instruments": ["muebles"]},
-    {"id": "turismo", "label": "Turismo", "instruments": ["turismo", "agencias", "gastronomia"]},
+    {"id": "turismo", "label": "Turismo", "instruments": ["turismo", "agencias"]},
+    {"id": "gastronomia", "label": "Gastronomía, comisariatos y catering", "instruments": ["gastronomia"]},
     {"id": "salud", "label": "Salud", "instruments": ["medico-hospitalario", "dispositivos"]},
     {"id": "construccion", "label": "Construcción, obra civil y materiales", "instruments": ["construccion"]},
     {"id": "logistica", "label": "Logística, transporte y última milla", "instruments": ["logistica"]},
@@ -50,6 +52,7 @@ GROUPS = [
     {"id": "tics", "label": "Tecnologías de la información, software y servicios digitales", "instruments": ["tics"]},
     {"id": "inmobiliario", "label": "Desarrollo e intermediación inmobiliaria", "instruments": ["inmobiliario"]},
     {"id": "sofom", "label": "SOFOMES y servicios financieros", "instruments": ["sofom"]},
+    {"id": "educacion", "label": "Educación superior y profesional", "instruments": ["educacion"]},
 ]
 
 QUESTION_START = re.compile(r"^\*\*\[(.+?)\]\s*(.*?)\*\*")
@@ -65,7 +68,7 @@ POINT = re.compile(r"^(\d+)\s*Points?\b", re.I)
 POINT_PREFIX = re.compile(r"^\d+\s+Points?\s*\(\d+\s*pts\):\s*", re.I)
 FREE_MARK = re.compile(r"\[\s*Input de Texto Libre\s*\]|_{5,}", re.I)
 SCORE_NOTE = re.compile(
-    r"\s*(?:\[Score:\s*(\d+(?:\.\d+)?)\s*pts?\]|\((\d+(?:\.\d+)?)\s*pts?\))",
+    r"\s*(?:\[(?:[^\]]*?)Score:\s*(\d+(?:\.\d+)?)\s*pts?\]|\((\d+(?:\.\d+)?)\s*pts?\))",
     re.I,
 )
 
@@ -397,6 +400,10 @@ def main() -> None:
     if "sofom" not in existing_values:
         sector_question["options"].append(
             {"value": "sofom", "label": "20. SOFOMES y Servicios Financieros no Bancarios", "score": None}
+        )
+    if "educacion" not in existing_values:
+        sector_question["options"].append(
+            {"value": "educacion", "label": "21. Educación Superior y Profesional", "score": None}
         )
 
     instruments = []

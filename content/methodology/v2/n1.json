@@ -112,6 +112,11 @@
           "value": "sofom",
           "label": "20. SOFOMES y Servicios Financieros no Bancarios",
           "score": null
+        },
+        {
+          "value": "educacion",
+          "label": "21. Educación Superior y Profesional",
+          "score": null
         }
       ]
     },
