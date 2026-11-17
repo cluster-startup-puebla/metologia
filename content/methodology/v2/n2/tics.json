@@ -248,7 +248,7 @@
       "title": "Absorción Tecnológica P1: Cobertura de Stack Tecnológico y Arquitectura Cloud-Native",
       "prompt": "¿Con cuáles de las siguientes arquitecturas y herramientas de software cuenta su empresa actualmente?",
       "microcopy": "Suma +20.0 pts por casilla seleccionada hasta un máximo de 100.0 pts. Evalúa la sofisticación del stack tecnológico.",
-      "type": "rank",
+      "type": "multi_select",
       "prefilled": false,
       "factorCount": 5,
       "factors": [

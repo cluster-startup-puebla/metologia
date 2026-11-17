@@ -18,7 +18,7 @@ export interface V2Question {
   title: string
   prompt: string
   microcopy: string | null
-  type: "single_select" | "likert_5" | "rank" | "single_select_text"
+  type: "single_select" | "likert_5" | "rank" | "single_select_text" | "multi_select"
   prefilled: boolean
   options?: V2Option[]
   factors?: V2Factor[]
@@ -30,5 +30,6 @@ export type V2Answer =
   | { kind: "single"; optionValue: string }
   | { kind: "text"; optionValue: string; text: string }
   | { kind: "rank"; ranks: Record<string, number> }
+  | { kind: "checks"; selected: string[] }
 
 export type V2Answers = Record<string, V2Answer>

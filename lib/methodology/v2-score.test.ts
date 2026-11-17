@@ -374,11 +374,12 @@ test("scoreLive: real automotriz session scores nivel 1 and reports TECH-01..04 
   assert.equal(s.innovacion, 56.25)
   assert.equal(s.comercial, 83.33)
   assert.equal(s.ismsNivel1, 62.68)
-  assert.deepEqual(s.missing, ["AU-TECH-01", "AU-TECH-02", "AU-TECH-03", "AU-TECH-04"])
-  assert.equal(s.satNivel2, null)
-  assert.equal(s.ismsNivel2, null)
-  assert.equal(s.ib, null)
-  assert.equal(s.band, null)
+  // Index 0 on P1 is one casilla (20). P2–P4 with no printed score use 20/40/60/80/100, so index 0 is 20.
+  // P5 is 60. TECH-06 and TECH-07 at index 1 are 50. (20+20+20+20+60+50+50)/7 = 34.29
+  assert.deepEqual(s.missing, [])
+  assert.equal(s.satNivel2, 34.29)
+  assert.equal(s.ismsNivel2, 48.49)
+  assert.equal(s.ib, 28.39)
 })
 
 test("scoreLive: TECH-06/07 ordinal index maps 0..3 to 25/50/75/100 and rejects other indexes", () => {
@@ -406,6 +407,7 @@ test("scoreLive: synthetic ids with scored options behave like scoreV2 for nivel
     sat: [60, 60, 60, 60, 60, 50, 50],
   })
   const live = scoreLive(questions, answers)
-  assert.equal(live.ismsNivel1, scoreV2(questions, answers).ismsNivel1)
-  assert.equal(live.satNivel2, null)
+  const scored = scoreV2(questions, answers)
+  assert.equal(live.ismsNivel1, scored.ismsNivel1)
+  assert.equal(live.satNivel2, scored.satNivel2)
 })

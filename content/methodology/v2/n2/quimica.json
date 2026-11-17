@@ -238,7 +238,7 @@
       "title": "Absorción Tecnológica P1: Cobertura de Equipamiento y Sourcing Tecnológico",
       "prompt": "¿Con cuáles de las siguientes tecnologías e instrumentos de proceso cuenta su planta actualmente?",
       "microcopy": "Suma +20.0 pts por casilla seleccionada hasta un máximo de 100.0 pts. Evalúa la densidad tecnológica instalada.",
-      "type": "rank",
+      "type": "multi_select",
       "prefilled": false,
       "factorCount": 5,
       "factors": [

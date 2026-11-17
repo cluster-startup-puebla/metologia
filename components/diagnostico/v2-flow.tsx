@@ -57,6 +57,7 @@ function formatScore(value: number): string {
 
 function complete(question: V2Question, answer: V2Answer | undefined): boolean {
   if (!answer) return false
+  if (question.type === "multi_select") return answer?.kind === "checks"
   if (question.type === "rank") {
     if (answer.kind !== "rank" || !question.factors) return false
     const ranks = question.factors.map((factor) => answer.ranks[factor.id])
@@ -695,6 +696,39 @@ function V2Body({
   accentInk: string
   onChange: (answer: V2Answer) => void
 }) {
+  useEffect(() => {
+    if (question.type === "multi_select" && answer?.kind !== "checks") onChange({ kind: "checks", selected: [] })
+  }, [question.id])
+
+  if (question.type === "multi_select" && question.factors) {
+    const selected = answer?.kind === "checks" ? answer.selected : []
+    return (
+      <div className="flex flex-col gap-2">
+        <p className="text-sm leading-snug text-muted-foreground">Marca las que sí tienes. Cada una suma 20, hasta 100.</p>
+        {question.factors.map((factor) => {
+          const on = selected.includes(factor.id)
+          return (
+            <button
+              key={factor.id}
+              type="button"
+              aria-pressed={on}
+              onClick={() => {
+                const next = on ? selected.filter((id) => id !== factor.id) : [...selected, factor.id]
+                onChange({ kind: "checks", selected: next })
+              }}
+              className={cn(
+                "rounded-2xl border px-4 py-2.5 text-left text-base leading-snug",
+                on ? "border-transparent" : "border-border bg-background",
+              )}
+              style={on ? { backgroundColor: accent, color: accentInk } : undefined}
+            >
+              {factor.label}
+            </button>
+          )
+        })}
+      </div>
+    )
+  }
   if (question.type === "rank" && question.factors) {
     const ranks = answer?.kind === "rank" ? answer.ranks : {}
     return <RankBoard factors={question.factors} ranks={ranks} accent={accent} accentInk={accentInk} onChange={(next) => onChange({ kind: "rank", ranks: next })} />

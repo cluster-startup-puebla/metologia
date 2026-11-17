@@ -184,9 +184,11 @@ def parse_file(path: Path, level: str, sector_id: str | None) -> list[dict]:
             return
         widget = current["widget"]
         kind = question_type(widget, options, factors)
+        if kind == "rank" and str(current["id"]).endswith("TECH-01"):
+            kind = "multi_select"
         current["type"] = kind
         current["prefilled"] = "Pre-poblado" in widget
-        if kind == "rank":
+        if kind in {"rank", "multi_select"}:
             current["factorCount"] = len(factors)
             current["factors"] = factors
         else:

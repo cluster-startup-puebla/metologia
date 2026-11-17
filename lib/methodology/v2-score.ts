@@ -121,6 +121,20 @@ function satSlot(id: string): number | null {
   return SYNTHETIC_SAT_IDS[id] ?? null
 }
 
+const FIVE_STEP = [20, 40, 60, 80, 100]
+
+function satItemScore(question: V2Question, answer: V2Answers[string] | undefined, slot: number): number | null {
+  if (!answer) return null
+  if (slot === 5) return P5_FALLBACK
+  if (slot === 1 && answer.kind === "checks") return Math.min(100, answer.selected.length * 20)
+  if (answer.kind === "rank" || answer.kind === "checks") return null
+  const { option, index } = selectedOption(question, { [question.id]: answer }, question.id)
+  if (option.score !== null) return option.score
+  if (slot === 6 || slot === 7) return index < V2_ORDINAL_SCORES.length ? V2_ORDINAL_SCORES[index] : null
+  if (slot === 1) return 20
+  return index < FIVE_STEP.length ? FIVE_STEP[index] : null
+}
+
 function selectedOption(question: V2Question, answers: V2Answers, id: string) {
   const answer = answers[id]
   if (!answer) throw new Error(`Missing answer: ${id}`)
@@ -158,21 +172,12 @@ export function scoreLive(questions: V2Question[], answers: V2Answers): V2LiveSc
   for (const question of questions) {
     const slot = satSlot(question.id)
     if (slot === null) continue
-    if (slot <= 4) {
-      // TECH-01..04 (P1..P4) are not scored by the live scorer.
+    const score = satItemScore(question, answers[question.id], slot)
+    if (score === null) {
       missing.push(question.id)
       continue
     }
-    if (!answers[question.id]) {
-      missing.push(question.id)
-      continue
-    }
-    if (slot === 5) {
-      satScores.set(slot, P5_FALLBACK)
-      continue
-    }
-    const { option, index } = selectedOption(question, answers, question.id)
-    satScores.set(slot, option.score !== null ? option.score : ordinalScore(question.id, index))
+    satScores.set(slot, score)
   }
 
   const complete = missing.length === 0 && [1, 2, 3, 4, 5, 6, 7].every((slot) => satScores.has(slot))
