@@ -335,27 +335,27 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Muestreo 3D Virtual y Simulación de Caída de Tela en Avatares Digitales: Eliminación de contra-muestras físicas reduciendo el tiempo de desarrollo de colecciones de semanas a horas.",
+          "label": "Eliminación de contra-muestras físicas reduciendo el tiempo de desarrollo de colecciones de semanas a horas.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Corte Láser con Visión Artificial para Ajuste Automático de Estampados y Cuadros: Centrado óptico en tiempo real que compensa la deformación de la tela durante el tendido.",
+          "label": "Centrado óptico en tiempo real que compensa la deformación de la tela durante el tendido.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Robótica de Costura Autónoma (Sewbots): Celdas robotizadas para costuras continuas en telas elásticas o prendas básicas sin intervención humana.",
+          "label": "Celdas robotizadas para costuras continuas en telas elásticas o prendas básicas sin intervención humana.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Trazabilidad RFID Pieza por Pieza desde la Mesa de Corte hasta la Tienda D2C: Control de inventario en tiempo real con 99.9% de precisión sin lectura manual.",
+          "label": "Control de inventario en tiempo real con 99.9% de precisión sin lectura manual.",
           "score": null
         },
         {
           "value": "opt5",
-          "label": "Estampado Digital Ecológico sin Uso de Agua (Pigmento Directo de Fijación Instantánea): Proceso limpio sin efluentes tóxicos ni secado térmico intensivo.",
+          "label": "Proceso limpio sin efluentes tóxicos ni secado térmico intensivo.",
           "score": null
         }
       ]
@@ -456,22 +456,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Aprovechamiento Básico / AQL Deficiente: Tizado manual con aprovechamiento de tela < 78%; inspección visual aleatoria sin norma AQL (> 4.0% de defectos).",
+          "label": "Tizado manual con aprovechamiento de tela < 78%; inspección visual aleatoria sin norma AQL (> 4.0% de defectos).",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Aprovechamiento Moderado / AQL Estándar (3.0): Tizado semidigital con aprovechamiento entre 78% y 83%; inspección muestral con AQL 2.5 - 3.0.",
+          "label": "Tizado semidigital con aprovechamiento entre 78% y 83%; inspección muestral con AQL 2.5 - 3.0.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Aprovechamiento Alto / AQL Estándar Exigente (1.5): Tizado automático optimizado por software (> 84% a 88%); inspección formal AQL 1.5 con registro de defectos.",
+          "label": "Tizado automático optimizado por software (> 84% a 88%); inspección formal AQL 1.5 con registro de defectos.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia en Confección / AQL Exigente (< 1.0): Aprovechamiento de tela > 88% mediante CAD 3D; calidad auditada AQL 0.65 - 1.0 para marcas de alto nivel.",
+          "label": "Aprovechamiento de tela > 88% mediante CAD 3D; calidad auditada AQL 0.65 - 1.0 para marcas de alto nivel.",
           "score": null
         }
       ]
@@ -490,22 +490,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Registros Manuales en Papel: Tiquete de bulto escrito a mano; sin rastreo digital de piezas cortadas vs confeccionadas.",
+          "label": "Tiquete de bulto escrito a mano; sin rastreo digital de piezas cortadas vs confeccionadas.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Trazabilidad Semidigital en Excel: Registro posterior en hoja de cálculo de bultos cortados y entregas por módulo al final del turno.",
+          "label": "Registro posterior en hoja de cálculo de bultos cortados y entregas por módulo al final del turno.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Trazabilidad por Código de Barras / QR por Bulto de Corte: Escaneo de tiquetes QR en cada estación de costura para control de avance y cálculo de minutaje.",
+          "label": "Escaneo de tiquetes QR en cada estación de costura para control de avance y cálculo de minutaje.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Trazabilidad Digital Integrada 4.0 (RFID / QR + ERP de Confección): Monitoreo en tiempo real por pantalla en módulo, balanceo automático y visibilidad D2C.",
+          "label": "Monitoreo en tiempo real por pantalla en módulo, balanceo automático y visibilidad D2C.",
           "score": null
         }
       ]
@@ -712,6 +712,44 @@
           "label": "Sin Interés: Prefiere mantener sus compras y negociaciones de comercialización de forma individual.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de muestreo 3D en avatares virtuales, ERP de confección 4.0 con IA de balanceo de líneas en tiempo real y RFID en prenda.",
+        "Capa B (Bienes de Club): Liderazgo en la Plataforma Comercial D2C / Exportación Conjunta."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Captura digital de minutaje SAM con tablets por módulo, optimizador automático de tizado CAD y código QR por bulto de corte.",
+        "Capa B (Bienes de Club): Uso de servicios de corte de alta precisión en Cutting Hub y ensayos en Laboratorio ISO 17025."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): App móvil para control de inventario de tela y bultos, hoja digital de balanceo de módulo y estandarización básica de tiempos.",
+        "Capa B (Bienes de Club): Maquila de tizado optimizado y corte CNC en Digital Cutting Hub y Consorcio de Compras de Avíos."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en ordenamiento de taller (5S), registro digital de piezas cortadas vs cosidas y costeo por prenda.",
+        "Capa B (Bienes de Club): Incorporación al Consorcio de Compras Consolidadas de Avíos e Hilos."
       ]
     }
   ]

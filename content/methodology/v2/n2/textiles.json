@@ -456,22 +456,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Control Básico / Taras Elevadas (> 6%): Sin medición en tiempo real de paros; tela de segunda calidad superior al 6%; consumo hídrico > 120 L/kg.",
+          "label": "Sin medición en tiempo real de paros; tela de segunda calidad superior al 6%; consumo hídrico > 120 L/kg.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Control Moderado / Taras Medias (3% a 6%): Registro manual por turno; tela de segunda calidad entre 3% y 6%; consumo hídrico entre 70 y 120 L/kg.",
+          "label": "Registro manual por turno; tela de segunda calidad entre 3% y 6%; consumo hídrico entre 70 y 120 L/kg.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Control Avanzado / Taras Bajas (1.5% a 3%): Monitoreo de telares con paro automático; tela de segunda entre 1.5% y 3%; consumo hídrico entre 40 y 70 L/kg.",
+          "label": "Monitoreo de telares con paro automático; tela de segunda entre 1.5% y 3%; consumo hídrico entre 40 y 70 L/kg.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia Textil / Taras Mínimas (< 1.5%): Visión artificial en línea; segunda calidad menor a 1.5%; teñido ecotextil con consumo < 40 L/kg.",
+          "label": "Visión artificial en línea; segunda calidad menor a 1.5%; teñido ecotextil con consumo < 40 L/kg.",
           "score": null
         }
       ]
@@ -490,22 +490,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Identificación Manual en Tarjeta de Cartón: Etiqueta de papel atada al rollo escrita a mano; sin conexión con la receta de teñido.",
+          "label": "Etiqueta de papel atada al rollo escrita a mano; sin conexión con la receta de teñido.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Código de Barras Básico por Rollo: Código de barras impreso para inventario de almacén sin registro del lote de hilo o baño.",
+          "label": "Código de barras impreso para inventario de almacén sin registro del lote de hilo o baño.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Trazabilidad por Código QR por Partida y Rollo: Código QR en cada rollo vinculado a la receta de cocina de colores y turno de tejeduría.",
+          "label": "Código QR en cada rollo vinculado a la receta de cocina de colores y turno de tejeduría.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Trazabilidad Digital 4.0 (ERP Textil + RFID / QR GS1): Rastreabilidad total desde el fardo de fibra hasta la entrega del rollo mediante ERP en tiempo real.",
+          "label": "Rastreabilidad total desde el fardo de fibra hasta la entrega del rollo mediante ERP en tiempo real.",
           "score": null
         }
       ]
@@ -712,6 +712,44 @@
           "label": "Sin Interés: Prefiere mantener negociaciones directas e individuales con sus proveedores actuales.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de cocina de colores digitalizada automatizada y sensores IoT de tensión en telar con alertas preventivas.",
+        "Capa B (Bienes de Club): Liderazgo en el Consorcio de Compras Consolidadas de Hilados y exportación a mercados de textiles técnicos."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Código QR por partida de teñido y rollo, software SPC para control de tono/receta y captura digital de producción en tablets.",
+        "Capa B (Bienes de Club): Maquila de acabados especiales en Textile Finishing Hub y validación de efluentes en Laboratorio ISO 17025."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): Instalación de sensores IoT de conteo de pasadas/velocidad y app móvil para registro de paros por rotura de hilo.",
+        "Capa B (Bienes de Club): Acceso al Laboratorio Comunitario ISO 17025 para ensayos de solidez de color y ajuste de recetas."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en control digital de costos por kilo, estandarización de recetas de teñido y Buenas Prácticas Textiles.",
+        "Capa B (Bienes de Club): Incorporación al Consorcio de Compras Consolidadas de Fibras y Químicos."
       ]
     }
   ]

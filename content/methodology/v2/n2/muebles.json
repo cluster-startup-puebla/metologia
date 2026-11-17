@@ -335,27 +335,27 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Enchapado de Cantos por Aire Caliente / Láser Cero-Junta (Zero-Joint Edgebanding): Fusión directa del canto sin pegamento visible ni degradación por calor.",
+          "label": "Fusión directa del canto sin pegamento visible ni degradación por calor.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Celda Flexible de Maquinado Nester con Carga/Descarga Robótica Autónoma: Maquinado 24/7 de tableros sin intervención humana directa.",
+          "label": "Maquinado 24/7 de tableros sin intervención humana directa.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Acabados 100% Base Agua de Secado UV Instantáneo con Cero Emisiones VOC: Línea de pintura ecológica ultra-eficiente.",
+          "label": "Línea de pintura ecológica ultra-eficiente.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Simulación 3D AR/VR y Configuración Omnicanal de Mobiliario RTA en Tiempo Real: Visualización del mueble configurado en la casa del cliente antes de producir.",
+          "label": "Visualización del mueble configurado en la casa del cliente antes de producir.",
           "score": null
         },
         {
           "value": "opt5",
-          "label": "Trazabilidad Blockchain / GS1 2D de Origen Forestal Sustentable: Rastreo digital inmutable desde el árbol hasta el usuario final.",
+          "label": "Rastreo digital inmutable desde el árbol hasta el usuario final.",
           "score": null
         }
       ]
@@ -456,22 +456,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Aprovechamiento Bajo (< 70%) / Reclamaciones Elevadas (> 6%): Despiece manual con alto desperdicio; constantes grietas o imperfecciones en acabado.",
+          "label": "Despiece manual con alto desperdicio; constantes grietas o imperfecciones en acabado.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Aprovechamiento Moderado (70% a 80%) / Reclamaciones Medias (3% a 6%): Despiece con optimizador básico; retrabajos ocasionales por humedad o polvo.",
+          "label": "Despiece con optimizador básico; retrabajos ocasionales por humedad o polvo.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Aprovechamiento Alto (81% a 88%) / Reclamaciones Bajas (1% a 3%): Tizado y despiece por software CAD/CAM; control estadístico de pintura en cabina.",
+          "label": "Tizado y despiece por software CAD/CAM; control estadístico de pintura en cabina.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia en Aprovechamiento (> 88%) / Reclamaciones Mínimas (< 1%): Nester automatizado con desperdicio mínimo; acabado UV continuo sin polvo.",
+          "label": "Nester automatizado con desperdicio mínimo; acabado UV continuo sin polvo.",
           "score": null
         }
       ]
@@ -490,22 +490,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Registro Manual en Hojas de Viajero en Papel: Marcaje a lápiz/tiza en las piezas; sin control digital de inventario en proceso.",
+          "label": "Marcaje a lápiz/tiza en las piezas; sin control digital de inventario en proceso.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Etiquetado Semidigital al Corte: Impresión de etiquetas de código de barras básicas en la seccionadora para identificar la pieza.",
+          "label": "Impresión de etiquetas de código de barras básicas en la seccionadora para identificar la pieza.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Trazabilidad por Código QR por Pieza Vinculado al CAD/CAM: Cada pieza despiezada lleva QR con datos de maquinado, canteado y perforado.",
+          "label": "Cada pieza despiezada lleva QR con datos de maquinado, canteado y perforado.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Trazabilidad Digital 4.0 Integrada (ERP Mueblero + QR / RFID en Lote): Rastreo en tiempo real de la OP desde la recepción de madera hasta el empaque RTA.",
+          "label": "Rastreo en tiempo real de la OP desde la recepción de madera hasta el empaque RTA.",
           "score": null
         }
       ]
@@ -712,6 +712,44 @@
           "label": "Sin Interés: Prefiere mantener sus canales directos de compra actual.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de ERP Mueblero 4.0 con configurador 3D omnicanal y trazabilidad QR total.",
+        "Capa B (Bienes de Club): Liderazgo en el Consorcio de Comercialización Conjunta y exportación RTA."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de Software CAD/CAM (Cabinet Vision/WoodWOP) con tizado automático y etiquetas QR por pieza.",
+        "Capa B (Bienes de Club): Uso de Estufas de Secado en el Woodworking Hub y ensayos BIFMA en Laboratorio ISO 17025."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): App móvil para control de inventario de madera, medidores digitales de humedad y optimizador de corte en laptop.",
+        "Capa B (Bienes de Club): Estufado de madera en el Hub Comunitario y participación en el Consorcio de Compras de Herrajes."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en costos, lectura de planos digitales y control de insumos en hoja de cálculo.",
+        "Capa B (Bienes de Club): Inserción en el Consorcio de Compras Consolidadas de Madera Estufada FSC y Herrajes Básicos."
       ]
     }
   ]

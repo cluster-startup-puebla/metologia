@@ -714,5 +714,43 @@
         }
       ]
     }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de RMS con IA predictiva, check-in 100% digital vía App y domótica en habitaciones.",
+        "Capa B (Bienes de Club): Liderazgo en el Hospitality Tech Hub y campañas internacionales de promoción conjunta."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Integración de Channel Manager en tiempo real, motor de ventas directas en web propia y CRM turístico.",
+        "Capa B (Bienes de Club): Integración al Centro de Capacitación Turística y compras consolidadas de amenidades."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): Migración a PMS Cloud económico, portal cautivo Wi-Fi para captura de clientes y app móvil de bitácoras.",
+        "Capa B (Bienes de Club): Paquete de auditoría grupal para Distintivo H/M y vinculación a laboratorios de alimentos."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en control digital de reservas, costos por habitación y Buenas Prácticas de Higiene.",
+        "Capa B (Bienes de Club): Incorporación al Consorcio de Compras Consolidadas de Blancos y Energéticos."
+      ]
+    }
   ]
 }

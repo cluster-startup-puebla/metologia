@@ -1,12 +1,12 @@
 {
-  "instrumentVersion": "n1-web-6.0",
+  "instrumentVersion": "n1-web-8.0",
   "region": "puebla-tlaxcala",
   "generatedFrom": "docs/metodologia/v2",
   "scoring": null,
   "sectorQuestionId": "MOD0-WEB-01",
   "counts": {
     "n1": 22,
-    "n2": 304
+    "n2": 342
   },
   "groups": [
     {
@@ -89,6 +89,20 @@
       "label": "Artes gráficas, impresión y empaques",
       "instruments": [
         "artes-graficas"
+      ]
+    },
+    {
+      "id": "quimica",
+      "label": "Industria química, petroquímica y resinas sintéticas",
+      "instruments": [
+        "quimica"
+      ]
+    },
+    {
+      "id": "tics",
+      "label": "Tecnologías de la información, software y servicios digitales",
+      "instruments": [
+        "tics"
       ]
     }
   ],
@@ -188,6 +202,18 @@
       "label": "09. Turismo y Servicios de Hospitalidad",
       "questionCount": 19,
       "file": "n2/turismo.json"
+    },
+    {
+      "id": "quimica",
+      "label": "17. Industria Química, Petroquímica y Resinas Sintéticas",
+      "questionCount": 19,
+      "file": "n2/quimica.json"
+    },
+    {
+      "id": "tics",
+      "label": "18. Tecnologías de la Información, Software y Servicios Digitales",
+      "questionCount": 19,
+      "file": "n2/tics.json"
     }
   ]
 }

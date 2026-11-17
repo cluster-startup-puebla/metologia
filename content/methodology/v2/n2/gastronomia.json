@@ -335,27 +335,27 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Menús Digitales Interactivos con Inteligencia Artificial: Recomendaciones personalizadas según alergias, maridajes e historial.",
+          "label": "Recomendaciones personalizadas según alergias, maridajes e historial.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Monitoreo IoT 24/7 de Cámaras Frías con Alertas en Smartphone: Registros continuos sin papel y alarmas ante fallas de temperatura.",
+          "label": "Registros continuos sin papel y alarmas ante fallas de temperatura.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Cocinas 100% Electrificadas por Inducción y Eficiencia Energética: Cero uso de gas, ambiente de trabajo fresco y reducción de emisiones.",
+          "label": "Cero uso de gas, ambiente de trabajo fresco y reducción de emisiones.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Lavado Ultrasónico de Vajilla y Utensilios con Reciclaje Hídrico: Higienización profunda con mínimo consumo de agua y detergente.",
+          "label": "Higienización profunda con mínimo consumo de agua y detergente.",
           "score": null
         },
         {
           "value": "opt5",
-          "label": "Trazabilidad Blockchain / GS1 2D de Insumos Orgánicos y Carnes: Transparencia total del origen del ingrediente desde la granja a la mesa.",
+          "label": "Transparencia total del origen del ingrediente desde la granja a la mesa.",
           "score": null
         }
       ]
@@ -456,22 +456,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Sin Control Estandarizado / Food Cost > 38%: Sin fichas técnicas de recetas; porcionamiento al tanteo; mermas elevadas sin registro.",
+          "label": "Sin fichas técnicas de recetas; porcionamiento al tanteo; mermas elevadas sin registro.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Control Básico / Food Cost 32% a 38%: Costeo manual en Excel actualizado esporádicamente; mermas registradas solo en pérdidas mayores.",
+          "label": "Costeo manual en Excel actualizado esporádicamente; mermas registradas solo en pérdidas mayores.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Control Avanzado / Food Cost 26% a 31%: Fichas técnicas digitales con porcionamiento exacto (báscula); Food Cost monitoreado semanalmente.",
+          "label": "Fichas técnicas digitales con porcionamiento exacto (báscula); Food Cost monitoreado semanalmente.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia Operativa / Food Cost < 26%: Descuento automático de inventario por POS; mermas mermadas < 1.5%; auditoría diaria de variaciones.",
+          "label": "Descuento automático de inventario por POS; mermas mermadas < 1.5%; auditoría diaria de variaciones.",
           "score": null
         }
       ]
@@ -712,6 +712,44 @@
           "label": "Sin Interés: Prefiere mantener sus proveedores actuales de forma independiente.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de CRM de lealtad con IA y motor de reservas propio sin comisión; control automatizado de inventarios por recetario.",
+        "Capa B (Bienes de Club): Liderazgo en el Consorcio de Compras Directas al Campo (Farm-to-Table) y red de comisariatos."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Migración a POS Cloud con comanderas móviles en tablets, pantalla KDS en cocina y menú QR dinámico.",
+        "Capa B (Bienes de Club): Uso del Culinary Commissary Hub para procesos de empacado al vacío y abatimiento de volumen."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): Software POS básico en nube, estandarización digital de fichas técnicas de platillos y app de bitácoras sanitarias en tablet.",
+        "Capa B (Bienes de Club): Acreditación de Distintivo H a través del Centro Comunitario de Capacitación e Inocuidad."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en costeo de recetas, porcionamiento exacto con báscula y control digital de caja/compras.",
+        "Capa B (Bienes de Club): Integración al Consorcio de Compras Consolidadas de Insumos Básicos y Alimentos."
       ]
     }
   ]

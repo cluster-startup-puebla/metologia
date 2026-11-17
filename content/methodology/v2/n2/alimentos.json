@@ -335,27 +335,27 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Procesamiento por Altas Presiones Hidrostáticas (HPP / Pascalización): Pasteurización en frío por presión extrema para conservar sabor y nutrientes frescos.",
+          "label": "Pasteurización en frío por presión extrema para conservar sabor y nutrientes frescos.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Pasteurización Térmica por Microondas o Pulsos Eléctricos (PEF): Conservación continua ultrarrápida para líquidos y purés de alta calidad.",
+          "label": "Conservación continua ultrarrápida para líquidos y purés de alta calidad.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Empaques Inteligentes con Indicadores Tiempo-Temperatura (TTI) e Integridad de Sellado: Sensores integrados al empaque que notifican frescura real.",
+          "label": "Sensores integrados al empaque que notifican frescura real.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Trazabilidad Blockchain / GS1 2D de Granja a Mesa: Rastreo transparente e inmutable de ingredientes desde el rancho hasta el código QR de anaquel.",
+          "label": "Rastreo transparente e inmutable de ingredientes desde el rancho hasta el código QR de anaquel.",
           "score": null
         },
         {
           "value": "opt5",
-          "label": "Envasado Aséptico Continuo para Larga Vida a Temperatura Ambiente (TetraPak / Combibloc): Proceso estéril que elimina la necesidad de refrigeración.",
+          "label": "Proceso estéril que elimina la necesidad de refrigeración.",
           "score": null
         }
       ]
@@ -456,22 +456,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Control Básico / Merma Alta (> 5%): Variabilidad en llenado manual; ajuste empírico por operador; merma de insumos > 5%.",
+          "label": "Variabilidad en llenado manual; ajuste empírico por operador; merma de insumos > 5%.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Control Moderado / Merma Media (2.5% a 5%): Llenadoras automáticas con pesaje por muestreo periódico; merma controlada entre 2.5% y 5%.",
+          "label": "Llenadoras automáticas con pesaje por muestreo periódico; merma controlada entre 2.5% y 5%.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Control Avanzado / Merma Baja (1% a 2.4%): Dosificación automática con balanza de comprobación en línea (Checkweigher); merma entre 1% y 2.4%.",
+          "label": "Dosificación automática con balanza de comprobación en línea (Checkweigher); merma entre 1% y 2.4%.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia en Procesamiento / Merma Mínima (< 1%): Dosificación multi-cabezal con ajuste en tiempo real por celda de carga (Cpk >= 1.33).",
+          "label": "Dosificación multi-cabezal con ajuste en tiempo real por celda de carga (Cpk >= 1.33).",
           "score": null
         }
       ]
@@ -490,22 +490,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Bitácoras Manuales en Papel: Registro físico de lotes de materia prima y producción; rastreo de lote toma más de 24 horas.",
+          "label": "Registro físico de lotes de materia prima y producción; rastreo de lote toma más de 24 horas.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Trazabilidad Semidigital en Excel: Registro de lotes y fechas de caducidad en archivos Excel sin conexión automática a almacén.",
+          "label": "Registro de lotes y fechas de caducidad en archivos Excel sin conexión automática a almacén.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Código GS1-128 / DataMatrix por Tarima y Caja: Impresión automática de etiquetas de lote vinculadas al sistema de almacén.",
+          "label": "Impresión automática de etiquetas de lote vinculadas al sistema de almacén.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Trazabilidad Digital 4.0 (ERP + LIMS Inocuidad + QR 2D): Trazabilidad bidireccional inmediata (< 15 minutos) desde materia prima hasta cliente.",
+          "label": "Trazabilidad bidireccional inmediata (< 15 minutos) desde materia prima hasta cliente.",
           "score": null
         }
       ]
@@ -712,6 +712,44 @@
           "label": "Sin Interés: Prefiere mantener negociaciones individuales directas con sus proveedores actuales.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de LIMS de inocuidad en nube con IA predictiva de vida de anaquel y visión artificial de empaque.",
+        "Capa B (Bienes de Club): Liderazgo en el Consorcio de Exportación y adopción de tecnología de Pasteurización HPP."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Digitalización de bitácoras de PCC en tablets, código GS1-128 por caja e integración de dosificación a ERP.",
+        "Capa B (Bienes de Club): Maquila de empaque especial en el Centro Comunitario MAP/Retort para picos de demanda."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): Instalación de balanza Checkweigher digital en línea y app de registro de puntos críticos de inocuidad.",
+        "Capa B (Bienes de Club): Análisis de inocuidad y vida de anaquel en el Laboratorio Comunitario ISO 17025."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en Buenas Prácticas de Higiene (NOM-251), costeo digital de recetas y control de lotes.",
+        "Capa B (Bienes de Club): Incorporación al Consorcio de Compras Consolidadas de Frascos, Latas y Bolsas."
       ]
     }
   ]

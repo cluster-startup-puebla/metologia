@@ -335,27 +335,27 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Torre de Control Logística (Control Tower 4PL) basada en Inteligencia Artificial y Visibilidad End-to-End: Orquestación en tiempo real de flotas, inventarios, aduanas y tiempos de arribo estimado (ETA) con analítica predictiva.",
+          "label": "Orquestación en tiempo real de flotas, inventarios, aduanas y tiempos de arribo estimado (ETA) con analítica predictiva.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Sistemas Antirrobo Avanzados con Cerraduras Electromecánicas y Cifrado Satelital Inmune a Jammer: Bloqueo de quinta rueda y puertas mediante cifrado satelital no clonable que resiste inhibidores de señal.",
+          "label": "Bloqueo de quinta rueda y puertas mediante cifrado satelital no clonable que resiste inhibidores de señal.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Almacenes 100% Automatizados (AS/RS) con Transelevadores y Robots de Surtido Autónomo (AMR): Sistemas de almacenamiento vertical de alta densidad sin intervención humana directa.",
+          "label": "Sistemas de almacenamiento vertical de alta densidad sin intervención humana directa.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Flotas de Distribución Urbana de Última Milla 100% Eléctricas con Monitoreo de Huella de Carbono en Tiempo Real: Vehículos comerciales ligeros cero emisiones para e-commerce.",
+          "label": "Vehículos comerciales ligeros cero emisiones para e-commerce.",
           "score": null
         },
         {
           "value": "opt5",
-          "label": "Trazabilidad Logística basada en Blockchain y Etiquetas GS1 2D / RFID Pasivo en Tiempo Real: Registro inmutable de custodia de mercancía de alto valor desde el origen hasta el punto de entrega.",
+          "label": "Registro inmutable de custodia de mercancía de alto valor desde el origen hasta el punto de entrega.",
           "score": null
         }
       ]
@@ -456,22 +456,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Control Básico / OTIF Deficiente (< 85%): Sin medición precisa de OTIF; viajes de retorno en vacío superiores al 25% por falta de consolidación de carga.",
+          "label": "Sin medición precisa de OTIF; viajes de retorno en vacío superiores al 25% por falta de consolidación de carga.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Control Moderado / OTIF Aceptable (85% a 92%): Registro manual en Excel de viajes y tiempos de entrega; retornos en vacío entre 15% y 25%.",
+          "label": "Registro manual en Excel de viajes y tiempos de entrega; retornos en vacío entre 15% y 25%.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Control Avanzado / OTIF Alto (93% a 97%): Medición telemática en tiempo real de ventanas de entrega; retornos en vacío entre 8% y 14% mediante fletes de regreso.",
+          "label": "Medición telemática en tiempo real de ventanas de entrega; retornos en vacío entre 8% y 14% mediante fletes de regreso.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia Logística / OTIF de Clase Mundial (>= 98%): Monitoreo predictivo de rutas con TMS; retornos en vacío inferiores al 8% mediante alianzas estratégicas 3PL/4PL.",
+          "label": "Monitoreo predictivo de rutas con TMS; retornos en vacío inferiores al 8% mediante alianzas estratégicas 3PL/4PL.",
           "score": null
         }
       ]
@@ -490,22 +490,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Reportes Manuales por Llamada / WhatsApp: Informes de ubicación a petición del cliente mediante llamadas al operador o mensajes.",
+          "label": "Informes de ubicación a petición del cliente mediante llamadas al operador o mensajes.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Rastreo GPS Pasivo mediante Portal de Proveedor: Acceso a plataforma de rastreo GPS con actualización periódica de posición sin integración a sistemas.",
+          "label": "Acceso a plataforma de rastreo GPS con actualización periódica de posición sin integración a sistemas.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Trazabilidad Digital Integrada WMS/TMS con Alertas Automáticas: Confirmación de entrega (POD digital) y estado de inventario actualizado por código QR/GS1-128.",
+          "label": "Confirmación de entrega (POD digital) y estado de inventario actualizado por código QR/GS1-128.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Visibilidad End-to-End 4PL en Tiempo Real (API / EDI / IoT): Integración directa API/EDI con los sistemas del cliente, alertas predictivas de arribo (ETA) y telemetría de carga 24/7.",
+          "label": "Integración directa API/EDI con los sistemas del cliente, alertas predictivas de arribo (ETA) y telemetría de carga 24/7.",
           "score": null
         }
       ]
@@ -712,6 +712,44 @@
           "label": "Sin Interés: Prefiere mantener negociaciones directas e individuales con sus proveedores actuales.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de analítica predictiva de demanda, IA para optimización de rutas dinámicas y trazabilidad Blockchain.",
+        "Capa B (Bienes de Club): Liderazgo en la red regional de torres de control y consorcio intermodal."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Integración de TMS Cloud con WMS y app móvil para confirmación de entrega (POD digital) por QR/GS1-128.",
+        "Capa B (Bienes de Club): Subsidio para auditoría/certificación OEA/C-TPAT y uso de Almacén Multicliente."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): Kits telemáticos IoT CAN-Bus con sensores de desenganche/paro remoto y WMS Cloud básico.",
+        "Capa B (Bienes de Club): Integración al Centro Comunitario de Monitoreo Telemático y Consorcio de Compras de Diésel/Llantas."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Registro digital básico de mantenimientos de flota, control de insumos diésel y capacitación en conducción defensiva.",
+        "Capa B (Bienes de Club): Incorporación al Consorcio de Compras Consolidadas y seguro colectivo de carga."
       ]
     }
   ]

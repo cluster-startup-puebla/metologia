@@ -451,22 +451,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Control Convencional / Tolerancias Abiertas: Inspección manual con vernier/micrómetro; sin evaluación de Cpk; tolerancias > ± 0.1 mm.",
+          "label": "Inspección manual con vernier/micrómetro; sin evaluación de Cpk; tolerancias > ± 0.1 mm.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Control Semidirecto / Cpk Ocasional: Verificación en CMM de piezas muestra; Cpk evaluado esporádicamente (1.00 a 1.33); tolerancias ± 0.05 mm.",
+          "label": "Verificación en CMM de piezas muestra; Cpk evaluado esporádicamente (1.00 a 1.33); tolerancias ± 0.05 mm.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Control Avanzado / Cpk Sostenido (Cpk >= 1.33): Control estadístico digital en piso; informes GD&T por lote en CMM; tolerancias de precisión ± 0.01 mm.",
+          "label": "Control estadístico digital en piso; informes GD&T por lote en CMM; tolerancias de precisión ± 0.01 mm.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia de Maquinado / Cpk >= 1.67 (Micrónico): Inspección 100% en CMM/Escáner 3D; tolerancias ajustadas (< 5 micras); Cpk >= 1.67.",
+          "label": "Inspección 100% en CMM/Escáner 3D; tolerancias ajustadas (< 5 micras); Cpk >= 1.67.",
           "score": null
         }
       ]
@@ -485,22 +485,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Registro en Papel / Hoja de Viajero Manual: Hoja de ruta física adjunta a la pieza; sin marcaje individual de piezas.",
+          "label": "Hoja de ruta física adjunta a la pieza; sin marcaje individual de piezas.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Trazabilidad Semidigital (Excel / Código de Barras ODT): Captura manual en Excel de tiempos por máquina y código de barras en ODT.",
+          "label": "Captura manual en Excel de tiempos por máquina y código de barras en ODT.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Marcaje Láser / DataMatrix por Pieza + ERP de Taller: Marcaje indivisible en pieza con código QR/DataMatrix vinculado a certificado de molino.",
+          "label": "Marcaje indivisible en pieza con código QR/DataMatrix vinculado a certificado de molino.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Trazabilidad Digital Integrada 4.0 (MES/ERP + Conectividad CNC MTConnect): Monitoreo automático en tiempo real de spindle-time y avance ODT.",
+          "label": "Monitoreo automático en tiempo real de spindle-time y avance ODT.",
           "score": null
         }
       ]
@@ -707,6 +707,44 @@
           "label": "Sin Interés: Prefiere mantener sus canales individuales de adquisición de materiales e insumos.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Software SPC automatizado conectado a CMM y Gemelo Digital de maquinado.",
+        "Capa B (Bienes de Club): Liderazgo en el Consorcio de Compras Consolidadas de Aceros T-MEC."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Módulos CAM de 5 ejes, postprocesadores dedicados y captura digital de ODT en tablets.",
+        "Capa B (Bienes de Club): Uso de horas de 5 ejes en Machining Hub y validación CMM en Laboratorio ISO 17025."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): Software SPC básico para Cpk y app móvil de parámetros de corte y herramientas.",
+        "Capa B (Bienes de Club): Envíos de piezas a inspección CMM en Laboratorio Comunitario e integración a compras de insertos."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en lectura de planos GD&T, control de ODT y preseteo de herramientas.",
+        "Capa B (Bienes de Club): Incorporación al Consorcio de Compras de Insumos y Aceros para abatir costos."
       ]
     }
   ]

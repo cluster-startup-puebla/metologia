@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test": "node --experimental-strip-types --test lib/methodology/score.test.ts",
+    "test": "node --experimental-strip-types --test lib/methodology/score.test.ts lib/methodology/v2-score.test.ts",
     "questions:build": "node scripts/build-question-bank.mjs"
   },
   "dependencies": {

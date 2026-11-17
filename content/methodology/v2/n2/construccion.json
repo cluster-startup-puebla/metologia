@@ -456,22 +456,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Control Básico / Mermas Elevadas (> 7.0%): Sin medición de desperdicio en sitio; mermas de acero/concreto superiores al 7%; retrabajos ocasionales por revenimiento o f'c defectuoso.",
+          "label": "Sin medición de desperdicio en sitio; mermas de acero/concreto superiores al 7%; retrabajos ocasionales por revenimiento o f'c defectuoso.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Control Moderado / Mermas Medias (3.5% a 7.0%): Registro manual de desperdicio por obra; mermas entre 3.5% y 7.0%; ensayes de cilindros en laboratorio externo.",
+          "label": "Registro manual de desperdicio por obra; mermas entre 3.5% y 7.0%; ensayes de cilindros en laboratorio externo.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Control Avanzado / Mermas Bajas (1.5% a 3.4%): Cuantificación digital vs explosión de insumos en ERP; mermas entre 1.5% y 3.4%; ensayes NMX-C con Cpk de resistencia.",
+          "label": "Cuantificación digital vs explosión de insumos en ERP; mermas entre 1.5% y 3.4%; ensayes NMX-C con Cpk de resistencia.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia Constructiva / Mermas Mínimas (< 1.5%): Control estricto lean construction / 5S en obra; mermas < 1.5%; tasa de retrabajos por f'c cercana a cero (< 0.2%).",
+          "label": "Control estricto lean construction / 5S en obra; mermas < 1.5%; tasa de retrabajos por f'c cercana a cero (< 0.2%).",
           "score": null
         }
       ]
@@ -490,22 +490,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Registros en Papel y Cuadernos: Bitácora de obra en formato físico; estimaciones elaboradas en Excel manual sin vinculación a planos.",
+          "label": "Bitácora de obra en formato físico; estimaciones elaboradas en Excel manual sin vinculación a planos.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Registro Semidigital en Hojas de Cálculo: Hojas Excel estructuradas por concepto de obra; envío de remisiones escaneadas por correo.",
+          "label": "Hojas Excel estructuradas por concepto de obra; envío de remisiones escaneadas por correo.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Trazabilidad por Código QR en Remisiones y ERP de Obra: Remisiones de concreto/acero con código QR vinculadas al sistema Opus/Neodata.",
+          "label": "Remisiones de concreto/acero con código QR vinculadas al sistema Opus/Neodata.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Integración Digital 4D/5D en Tiempo Real (BIM Cloud + ERP + QR): Seguimiento en tiempo real de avance físico y financiero desde modelo BIM en tabletas de campo.",
+          "label": "Seguimiento en tiempo real de avance físico y financiero desde modelo BIM en tabletas de campo.",
           "score": null
         }
       ]
@@ -712,6 +712,44 @@
           "label": "Sin Interés: Prefiere mantener negociaciones directas e individuales con sus proveedores actuales.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de Gemelo Digital 7D de obra e IA para monitoreo predictivo de cronograma y seguridad.",
+        "Capa B (Bienes de Club): Liderazgo en el Consorcio de Compras Consolidadas y exportación de módulos prefabricados."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Integración BIM-ERP (5D costos/tiempos), bitácora digital en tablets y código QR en remisiones de preconcreto.",
+        "Capa B (Bienes de Club): Uso de herramientas BIM y escaneo 3D en Off-Site Construction Hub."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): Software de control de obra en nube (Opus/Neodata), app móvil para estimaciones y control de insumos.",
+        "Capa B (Bienes de Club): Vinculación al Laboratorio Comunitario ISO 17025 para calibración de mezclas y ensayes f'c."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en control digital de costos de obra, registro de destajes y seguridad en sitio.",
+        "Capa B (Bienes de Club): Incorporación al Consorcio de Compras Consolidadas de Cemento y Acero de Refuerzo."
       ]
     }
   ]

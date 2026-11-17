@@ -14,8 +14,11 @@ import medico from "@/content/methodology/v2/n2/medico-hospitalario.json"
 import metal from "@/content/methodology/v2/n2/metalmecanica.json"
 import muebles from "@/content/methodology/v2/n2/muebles.json"
 import plasticos from "@/content/methodology/v2/n2/plasticos.json"
+import quimica from "@/content/methodology/v2/n2/quimica.json"
 import textiles from "@/content/methodology/v2/n2/textiles.json"
+import tics from "@/content/methodology/v2/n2/tics.json"
 import turismo from "@/content/methodology/v2/n2/turismo.json"
+import type { V2LevelStep } from "./v2-score"
 import type { V2Question } from "./v2-types"
 
 const documents = {
@@ -33,7 +36,9 @@ const documents = {
   metalmecanica: metal,
   muebles,
   plasticos,
+  quimica,
   textiles,
+  tics,
   turismo,
 }
 
@@ -45,4 +50,9 @@ export const v2QuestionsBySector: Record<string, V2Question[]> = Object.fromEntr
 
 export function v2InstrumentLabel(sectorId: string): string {
   return v2Index.instruments.find((instrument) => instrument.id === sectorId)?.label ?? sectorId
+}
+
+export function v2Roadmap(sectorId: string): V2LevelStep[] {
+  const document = documents[sectorId as keyof typeof documents] as { roadmap?: V2LevelStep[] }
+  return document?.roadmap ?? []
 }

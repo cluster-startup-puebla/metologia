@@ -456,22 +456,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Control Básico / Mermas Elevadas (> 15%): Sin medición precisa de rendimiento por cuadro/cuartel; mermas poscosecha o pérdidas superiores al 15%.",
+          "label": "Sin medición precisa de rendimiento por cuadro/cuartel; mermas poscosecha o pérdidas superiores al 15%.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Control Moderado / Mermas Medias (8% a 15%): Registro manual de rendimiento por cosecha/lote; mermas controladas entre el 8% y 15%.",
+          "label": "Registro manual de rendimiento por cosecha/lote; mermas controladas entre el 8% y 15%.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Control Avanzado / Mermas Bajas (3% a 7%): Registro digital de rendimiento por hectárea o pesaje automatizado; mermas poscosecha entre 3% y 7%.",
+          "label": "Registro digital de rendimiento por hectárea o pesaje automatizado; mermas poscosecha entre 3% y 7%.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia Agropecuaria / Mermas Mínimas (< 3%): Medición en tiempo real por sensor/maquinaria; mermas por debajo del 3% con clasificación automatizada.",
+          "label": "Medición en tiempo real por sensor/maquinaria; mermas por debajo del 3% con clasificación automatizada.",
           "score": null
         }
       ]
@@ -490,22 +490,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Registro Manual en Cuadernos / Papel: Bitácoras de aplicación de agroquímicos/vacunas llevadas a mano; sin trazabilidad digital de lote.",
+          "label": "Bitácoras de aplicación de agroquímicos/vacunas llevadas a mano; sin trazabilidad digital de lote.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Trazabilidad Semidigital en Hojas de Cálculo (Excel): Captura posterior en Excel de lotes de cosecha, aplicación de fertirriego y ventas.",
+          "label": "Captura posterior en Excel de lotes de cosecha, aplicación de fertirriego y ventas.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Sistema de Trazabilidad por Código de Barras / QR por Tarima/Lote: Código QR en cada tarima o lote de empaque vinculado a la bitácora de campo.",
+          "label": "Código QR en cada tarima o lote de empaque vinculado a la bitácora de campo.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Trazabilidad Digital Integrada 4.0 (ERP Agrícola + GS1 2D / IoT): Rastreabilidad total desde la semilla/parición hasta el punto de entrega mediante ERP y sensores.",
+          "label": "Rastreabilidad total desde la semilla/parición hasta el punto de entrega mediante ERP y sensores.",
           "score": null
         }
       ]
@@ -712,6 +712,44 @@
           "label": "Sin Interés: Prefiere mantener negociaciones directas e individuales con sus proveedores actuales.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de ERP Agrícola con módulo de IA predictiva de cosecha y fertirriego autónomo.",
+        "Capa B (Bienes de Club): Liderazgo en el Consorcio de Comercialización Conjunta y exportación directa."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Digitalización de bitácoras de campo en tablets, código QR por lote y software SPC de fertirriego.",
+        "Capa B (Bienes de Club): Integración al Centro Comunitario de Empaque y Frío para picos de producción."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): Kit de sensores IoT de bajo costo para humedad de suelo y app móvil para registro de fertilización.",
+        "Capa B (Bienes de Club): Vinculación al Laboratorio Comunitario ISO 17025 para análisis de suelo y recetas organominerales."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en registro digital de costos, control de insumos y Buenas Prácticas Agrícolas.",
+        "Capa B (Bienes de Club): Incorporación al Consorcio de Compras Consolidadas de Fertilizantes y Semillas."
       ]
     }
   ]

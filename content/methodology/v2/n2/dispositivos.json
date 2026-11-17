@@ -456,22 +456,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Control Básico / Rechazos Elevados (> 2.0%): Sin monitoreo ambiental continuo; tasa de rechazo en cuarto limpio > 2.0%; sistema CAPA manual.",
+          "label": "Sin monitoreo ambiental continuo; tasa de rechazo en cuarto limpio > 2.0%; sistema CAPA manual.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Control Moderado / Rechazos Medios (0.8% a 2.0%): Monitoreo periódico de partículas; rechazos en cuarto limpio entre 0.8% y 2.0%; CAPA registrado en Excel.",
+          "label": "Monitoreo periódico de partículas; rechazos en cuarto limpio entre 0.8% y 2.0%; CAPA registrado en Excel.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Control Avanzado / Rechazos Bajos (0.2% a 0.7%): Monitoreo en tiempo real; rechazos en cuarto limpio entre 0.2% y 0.7%; CAPA digitalizado con causa raíz.",
+          "label": "Monitoreo en tiempo real; rechazos en cuarto limpio entre 0.2% y 0.7%; CAPA digitalizado con causa raíz.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia Sanitaria / Rechazos Mínimos (< 0.1%): Cuarto limpio automatizado ISO Class 7; rechazos < 0.1%; CAPA integrado a software ISO 13485.",
+          "label": "Cuarto limpio automatizado ISO Class 7; rechazos < 0.1%; CAPA integrado a software ISO 13485.",
           "score": null
         }
       ]
@@ -490,22 +490,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Registros Manuales en Papel (DHR Físico): Expediente de dispositivo llevado a mano en carpetas; sin código UDI impreso en empaque.",
+          "label": "Expediente de dispositivo llevado a mano en carpetas; sin código UDI impreso en empaque.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Trazabilidad Semidigital en Excel: Captura posterior de número de lote y caducidad; código de barras 1D básico en caja colectiva.",
+          "label": "Captura posterior de número de lote y caducidad; código de barras 1D básico en caja colectiva.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Código UDI GS1 2D DataMatrix por Pieza/Blister: Impresión de UDI (DI + PI) en cada unidad con registro digital de lote.",
+          "label": "Impresión de UDI (DI + PI) en cada unidad con registro digital de lote.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Expediente de Lote Electrónico 100% Integrado (eDHR + ERP + UDI GS1): Trazabilidad instantánea conforme a FDA 21 CFR Part 11 / MDSAP.",
+          "label": "Trazabilidad instantánea conforme a FDA 21 CFR Part 11 / MDSAP.",
           "score": null
         }
       ]
@@ -712,6 +712,44 @@
           "label": "Sin Interés: Prefiere mantener compras y gestiones regulatorias de forma individual.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de Inteligencia Artificial para inspección de visión 3D 100% en cavidad y Digital Twin de cuarto limpio.",
+        "Capa B (Bienes de Club): Liderazgo en el Consorcio de Compras Consolidadas de Resinas Médicas y desarrollo de implantes 3D en Cleanroom Hub."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Transición de DHR en papel a Expediente de Lote Electrónico (eDHR), marcaje UDI GS1 2D DataMatrix y monitoreo IoT de cuarto limpio.",
+        "Capa B (Bienes de Club): Uso de la Planta Comunitaria de Esterilización ETO/Gamma y laboratorios de biocompatibilidad ISO 17025."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): Software básico de control estadístico de proceso (SPC), app para registro de parámetros ambientales y catálogo digital de productos.",
+        "Capa B (Bienes de Club): Acceso a turnos en el Cleanroom Hub para validación de procesos y ensayos de esterilidad en Centro Comunitario."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en Buenas Prácticas de Fabricación (NOM-241), ordenamiento de DHR en formato digital y costeo técnico.",
+        "Capa B (Bienes de Club): Incorporación urgente al programa de acompañamiento regulatorio COFEPRIS/ISO 13485 y compras consolidadas."
       ]
     }
   ]

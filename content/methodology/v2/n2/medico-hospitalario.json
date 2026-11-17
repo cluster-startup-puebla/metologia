@@ -456,22 +456,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Control Básico: Mermas de reactivos > 5%; tasa de IAAS nosocomiales superior al 3.0%; registros manuales.",
+          "label": "Mermas de reactivos > 5%; tasa de IAAS nosocomiales superior al 3.0%; registros manuales.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Control Moderado: Mermas de reactivos entre 2% y 5%; tasa de IAAS entre 1.5% y 3.0%; control por bitácora.",
+          "label": "Mermas de reactivos entre 2% y 5%; tasa de IAAS entre 1.5% y 3.0%; control por bitácora.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Control Avanzado: Mermas de reactivos entre 0.5% y 2%; tasa de IAAS entre 0.5% y 1.5%; monitoreo continuo por epidemiología.",
+          "label": "Mermas de reactivos entre 0.5% y 2%; tasa de IAAS entre 0.5% y 1.5%; monitoreo continuo por epidemiología.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia Clínica: Mermas de reactivos < 0.5%; tasa de IAAS < 0.5%; indicadores en tiempo real y política Cero Infecciones.",
+          "label": "Mermas de reactivos < 0.5%; tasa de IAAS < 0.5%; indicadores en tiempo real y política Cero Infecciones.",
           "score": null
         }
       ]
@@ -712,6 +712,44 @@
           "label": "Sin Interés: Prefiere negociar directamente con sus proveedores actuales.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de IA diagnóstica en imagenología, plataforma de Telemedicina RPM e integración HL7.",
+        "Capa B (Bienes de Club): Liderazgo en el Medical Hub para estudios genómicos y transferencia metodológica."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Integración bidireccional LIMS/ECE, visor DICOM web para pacientes, app de agendamiento y firma digital.",
+        "Capa B (Bienes de Club): Acompañamiento en el Centro Comunitario para acreditación ISO 15189 y apoyo en CEYE."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): Kit ECE Cloud certificado NOM-024, software de código de barras QR para muestras y control digital de mermas.",
+        "Capa B (Bienes de Club): Ensayos interlaboratorios comunitarios y derivación de estudios al Medical Imaging Hub."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en ECE digital, orden de laboratorio electrónica y bitácoras de inocuidad en tablet.",
+        "Capa B (Bienes de Club): Incorporación al Consorcio de Compras Consolidadas de Reactivos y Recolección de RPBI."
       ]
     }
   ]

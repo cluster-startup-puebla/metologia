@@ -456,22 +456,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Medición Básica / Conversión Baja (< 8%): Sin registro sistemático de prospectos; tasa de conversión por debajo del 8% y cancelaciones > 10%.",
+          "label": "Sin registro sistemático de prospectos; tasa de conversión por debajo del 8% y cancelaciones > 10%.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Control Moderado / Conversión Media (8% a 15%): Seguimiento manual en Excel; conversión entre 8% y 15%; tasa de cancelaciones entre 5% y 10%.",
+          "label": "Seguimiento manual en Excel; conversión entre 8% y 15%; tasa de cancelaciones entre 5% y 10%.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Control Avanzado / Conversión Alta (16% a 25%): Registro en CRM con embudo definido; conversión entre 16% y 25%; cancelaciones < 5%.",
+          "label": "Registro en CRM con embudo definido; conversión entre 16% y 25%; cancelaciones < 5%.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia Comercial / Conversión Sobresaliente (> 25%): Automatización de seguimiento con IA; conversión superior al 25%; cancelaciones < 2%.",
+          "label": "Automatización de seguimiento con IA; conversión superior al 25%; cancelaciones < 2%.",
           "score": null
         }
       ]
@@ -712,6 +712,44 @@
           "label": "Sin Interés: Prefiere mantener negociaciones y promociones individuales.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Implementación de Asistente de Viaje con IA generativa 24/7 y empaquetado dinámico en tiempo real.",
+        "Capa B (Bienes de Club): Liderazgo en el Marketplace TravelTech y representación en ferias internacionales."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Integración de motor de reservas B2C en sitio web con pasarela multi-divisa y software de itinerarios móviles QR.",
+        "Capa B (Bienes de Club): Conexión al TravelTech Hub para acceso a inventario regional e integración API."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): Adopción de CRM turísticos en nube (HubSpot/ZoHo) y software de armado rápido de itinerarios.",
+        "Capa B (Bienes de Club): Capacitación digital y certificación de guías en el Centro Comunitario."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en registro digital de clientes, diseño de marca y cobro con pasarelas digitales móviles.",
+        "Capa B (Bienes de Club): Incorporación al Consorcio de Compras Consolidadas de Licencias y Registro RNT."
       ]
     }
   ]

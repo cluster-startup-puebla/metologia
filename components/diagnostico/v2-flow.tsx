@@ -3,7 +3,11 @@
 import { useEffect, useMemo, useState } from "react"
 import Confetti from "react-confetti"
 import { cn } from "@/lib/utils"
-import { v2Index, v2InstrumentLabel, v2N1Questions, v2QuestionsBySector } from "@/lib/methodology/v2-bank"
+import { v2Index, v2InstrumentLabel, v2N1Questions, v2QuestionsBySector, v2Roadmap } from "@/lib/methodology/v2-bank"
+import { V2_EXAMPLES, scoreExample } from "@/lib/methodology/v2-examples"
+import type { V2ExampleCase } from "@/lib/methodology/v2-examples"
+import { levelStepFor, scoreLive } from "@/lib/methodology/v2-score"
+import type { V2Band, V2LevelStep, V2LiveScore } from "@/lib/methodology/v2-score"
 import type { V2Answer, V2Answers, V2Question } from "@/lib/methodology/v2-types"
 import { Button } from "@/components/ui/button"
 import { ClusterLogo } from "@/components/logos"
@@ -13,6 +17,8 @@ import { LikertFive } from "./likert-five"
 import { PrefilledChoice } from "./prefilled-choice"
 import { QuestionFrame } from "./question-frame"
 import { RankBoard } from "./rank-board"
+import { ScorePentagon } from "./score-pentagon"
+import type { PentagonAxis } from "./score-pentagon"
 import { SessionTrail } from "./session-trail"
 const MODULES: { test: RegExp; number: number; n1: string; n2: string; color: string }[] = [
   { test: /MÓDULO 0/i, number: 0, n1: "Perfil", n2: "Perfil", color: "#BE185D" },
@@ -36,7 +42,18 @@ const INSTRUMENT_2 = { name: "Específico de tu sector", detail: "Del sector", c
 
 type Screen = "intro" | "pick" | "ask" | "curtain" | "done"
 
-const UPDATED_ON = "12 de noviembre de 2026"
+const UPDATED_ON = "17 de noviembre de 2026"
+
+const BAND_LABELS: Record<V2Band, string> = {
+  platino: "Platino",
+  oro: "Oro",
+  plata: "Plata",
+  bronce: "Bronce",
+}
+
+function formatScore(value: number): string {
+  return value.toFixed(2)
+}
 
 function complete(question: V2Question, answer: V2Answer | undefined): boolean {
   if (!answer) return false
@@ -61,6 +78,7 @@ export function V2Flow() {
   const [instrumentId, setInstrumentId] = useState<string | null>(null)
   const [index, setIndex] = useState(0)
   const [answers, setAnswers] = useState<V2Answers>({})
+  const [preview, setPreview] = useState<V2ExampleCase | null>(null)
 
   const group = v2Index.groups.find((item) => item.id === groupId) ?? null
   const sequence = useMemo(() => {
@@ -84,7 +102,14 @@ export function V2Flow() {
     setScreen("ask")
   }
 
+  function openExample(example: V2ExampleCase) {
+    setPreview(example)
+    setInstrumentId(example.sectorId)
+    setScreen("done")
+  }
+
   function restart() {
+    setPreview(null)
     setAnswers({})
     setIndex(0)
     setGroupId(null)
@@ -99,7 +124,7 @@ export function V2Flow() {
   }
 
   if (screen === "intro") {
-    return <Intro onStart={() => setScreen("pick")} />
+    return <Intro onStart={() => setScreen("pick")} onExample={openExample} />
   }
 
   if (screen === "pick" || !instrumentId) {
@@ -135,31 +160,7 @@ export function V2Flow() {
   }
 
   if (screen === "done" || !question) {
-    return (
-      <main className="relative mx-auto flex min-h-screen w-full max-w-lg flex-col justify-center gap-6 px-4 py-8">
-        <FinishConfetti />
-        <SessionTrail
-          activeId="n2"
-          progress={100}
-          steps={[
-            { id: "n1", name: "General", color: INSTRUMENT_1.color },
-            { id: "n2", name: "Específico", color: INSTRUMENT_2.color },
-          ]}
-        />
-        <div className="space-y-2">
-          <p className="text-sm font-medium" style={{ color: INSTRUMENT_2.color }}>
-            Resultado
-          </p>
-          <h1 className="text-3xl font-semibold">Próximamente</h1>
-          <p className="leading-relaxed text-muted-foreground">
-            {v2InstrumentLabel(instrumentId)}. La calificación de esta versión todavía no está.
-          </p>
-        </div>
-        <Button type="button" className="h-12 rounded-2xl text-white" style={{ backgroundColor: INSTRUMENT_1.color }} onClick={restart}>
-          Volver a empezar
-        </Button>
-      </main>
-    )
+    return <DoneScreen instrumentId={instrumentId} sequence={sequence} answers={answers} preview={preview} onRestart={restart} />
   }
 
   const position = sequence.filter((item) => item.level === question.level).findIndex((item) => item.id === question.id) + 1
@@ -212,6 +213,244 @@ export function V2Flow() {
   )
 }
 
+function liveScoreOrNull(sequence: V2Question[], answers: V2Answers): V2LiveScore | null {
+  // scoreLive throws when a scored answer is missing: only score a session that has answers.
+  if (Object.keys(answers).length === 0) return null
+  try {
+    return scoreLive(sequence, answers)
+  } catch {
+    return null
+  }
+}
+
+const PENTAGON_PILLARS = [
+  { id: "ED-01", label: "Trámites" },
+  { id: "ED-02", label: "Seguridad" },
+  { id: "ED-03", label: "Autoridad" },
+  { id: "ED-04", label: "Infraestructura" },
+  { id: "ED-05", label: "Justicia" },
+]
+
+function livePentagonAxes(sequence: V2Question[], answers: V2Answers): PentagonAxis[] | null {
+  const axes: PentagonAxis[] = []
+  for (const pillar of PENTAGON_PILLARS) {
+    const question = sequence.find((item) => item.id === pillar.id)
+    const answer = answers[pillar.id]
+    if (!question || !answer || (answer.kind !== "single" && answer.kind !== "text")) return null
+    const option = question.options?.find((item) => item.value === answer.optionValue)
+    if (!option || option.score === null) return null
+    axes.push({ label: pillar.label, value: option.score })
+  }
+  return axes
+}
+
+interface ScoreRow {
+  label: string
+  hint: string
+  value: string
+}
+
+function scoreRow(label: string, hint: string, value: number | null): ScoreRow | null {
+  if (value === null) return null
+  return { label, hint, value: formatScore(value) }
+}
+
+function ScoreRows({ rows }: { rows: ScoreRow[] }) {
+  return (
+    <dl className="divide-y rounded-2xl border">
+      {rows.map((row) => (
+        <div key={row.label} className="flex items-start justify-between gap-4 px-4 py-3">
+          <div>
+            <dt className="text-base font-medium">{row.label}</dt>
+            <p className="mt-0.5 text-sm leading-snug text-muted-foreground">{row.hint}</p>
+          </div>
+          <dd className="text-base font-semibold tabular-nums">{row.value}</dd>
+        </div>
+      ))}
+    </dl>
+  )
+}
+
+function DoneScreen({
+  instrumentId,
+  sequence,
+  answers,
+  preview,
+  onRestart,
+}: {
+  instrumentId: string | null
+  sequence: V2Question[]
+  answers: V2Answers
+  preview: V2ExampleCase | null
+  onRestart: () => void
+}) {
+  const sectorLabel = instrumentId ? v2InstrumentLabel(instrumentId) : ""
+  const example = useMemo(() => (preview ? scoreExample(preview) : null), [preview])
+  const live = useMemo(() => (preview ? null : liveScoreOrNull(sequence, answers)), [preview, sequence, answers])
+
+  let heading = "Tu resultado"
+  let rows: ScoreRow[] = []
+  let note: string | null = null
+
+  if (preview && example) {
+    heading = preview.company
+    rows = [
+      scoreRow("Entorno", "Qué tan claro es operar aquí: trámites, seguridad, autoridad, servicios y justicia.", example.estadoDerecho),
+      scoreRow("Innovación", "Cuánto renuevas equipo, procesos o la forma de dar el servicio.", example.innovacion),
+      scoreRow("Comercial", "Qué tan propio es lo que vendes y qué tan exigente es quien te compra.", example.comercial),
+      scoreRow("Madurez que reportas", "Junta las tres anteriores. Es la nota de lo que ve la dirección.", example.ismsNivel1),
+      scoreRow("Uso de tecnología", "Qué tanto aprovechas la tecnología que ya tienes en la operación.", example.satNivel2),
+      scoreRow("Madurez de conjunto", "Junta lo que dice la dirección con lo que se ve en la operación.", example.ismsNivel2),
+    ].filter((row): row is ScoreRow => row !== null)
+  } else if (live) {
+    rows = [
+      scoreRow("Entorno", "Qué tan claro es operar aquí: trámites, seguridad, autoridad, servicios y justicia.", live.estadoDerecho),
+      scoreRow("Innovación", "Cuánto renuevas equipo, procesos o la forma de dar el servicio.", live.innovacion),
+      scoreRow("Comercial", "Qué tan propio es lo que vendes y qué tan exigente es quien te compra.", live.comercial),
+      scoreRow("Madurez que reportas", "Junta las tres anteriores. Es la nota de lo que ve la dirección.", live.ismsNivel1),
+      scoreRow("Uso de tecnología", "Qué tanto aprovechas la tecnología que ya tienes en la operación.", live.satNivel2),
+      scoreRow("Madurez de conjunto", "Junta lo que dice la dirección con lo que se ve en la operación.", live.ismsNivel2),
+      scoreRow("Brecha", "Si da positivo, la dirección se ve por encima de la operación. Si da negativo, al revés.", live.ib),
+    ].filter((row): row is ScoreRow => row !== null)
+  } else {
+    note = "No hay respuestas para calificar."
+  }
+
+  const pentagonAxes = preview
+    ? PENTAGON_PILLARS.map((pillar, i) => ({ label: pillar.label, value: preview.ed[i] }))
+    : livePentagonAxes(sequence, answers)
+
+  const level = levelOnScreen(preview, example, live, instrumentId)
+
+  return (
+    <main className="relative mx-auto flex min-h-screen w-full max-w-lg flex-col justify-center gap-6 px-4 py-8">
+      <FinishConfetti />
+      <SessionTrail
+        activeId="n2"
+        progress={100}
+        steps={[
+          { id: "n1", name: "General", color: INSTRUMENT_1.color },
+          { id: "n2", name: "Específico", color: INSTRUMENT_2.color },
+        ]}
+      />
+      <div className="space-y-2">
+        <p className="text-sm font-medium" style={{ color: INSTRUMENT_2.color }}>
+          {preview ? "Ejemplo" : "Resultado"}
+        </p>
+        <h1 className="text-2xl font-semibold text-balance">{heading}</h1>
+        <p className="text-base leading-relaxed text-muted-foreground">{sectorLabel}</p>
+      </div>
+      {level ? <LevelCard step={level} /> : null}
+      {pentagonAxes ? <ScorePentagon axes={pentagonAxes} caption="Tu entorno para operar" /> : null}
+      {rows.length > 0 ? <ScoreRows rows={rows} /> : null}
+      {note ? <p className="text-base leading-relaxed text-muted-foreground">{note}</p> : null}
+      <Button type="button" className="h-12 rounded-2xl text-white" style={{ backgroundColor: INSTRUMENT_1.color }} onClick={onRestart}>
+        Volver a empezar
+      </Button>
+    </main>
+  )
+}
+
+function levelOnScreen(
+  preview: V2ExampleCase | null,
+  example: { band: V2Band } | null,
+  live: V2LiveScore | null,
+  instrumentId: string | null,
+): V2LevelStep | null {
+  if (preview && example) {
+    return v2Roadmap(preview.sectorId).find((step) => step.band === example.band) ?? null
+  }
+  if (!live || !instrumentId) return null
+  const score = live.ismsNivel2 ?? live.ismsNivel1
+  return levelStepFor(score, v2Roadmap(instrumentId))
+}
+
+const LEVEL_METAL: Record<V2Band, { ink: string; wash: string }> = {
+  bronce: { ink: "#8C5A2B", wash: "#F6E7D6" },
+  plata: { ink: "#5F6B7A", wash: "#EEF1F4" },
+  oro: { ink: "#8A6A12", wash: "#FBF3D0" },
+  platino: { ink: "#3E4C5E", wash: "#E7EEF5" },
+}
+
+function CircleStar({ className }: { className?: string }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M11.051 7.616a1 1 0 0 1 1.909.024l.737 1.452a1 1 0 0 0 .737.535l1.634.256a1 1 0 0 1 .588 1.806l-1.172 1.168a1 1 0 0 0-.282.866l.259 1.613a1 1 0 0 1-1.541 1.134l-1.465-.75a1 1 0 0 0-.912 0l-1.465.75a1 1 0 0 1-1.539-1.133l.258-1.613a1 1 0 0 0-.282-.867l-1.156-1.152a1 1 0 0 1 .572-1.822l1.633-.256a1 1 0 0 0 .737-.535z" />
+    </svg>
+  )
+}
+
+function presentSteps(actions: string[]) {
+  const own: string[] = []
+  const shared: string[] = []
+  const plain: string[] = []
+  for (const action of actions) {
+    const inHouse = action.match(/^Capa A\s*\([^)]*\):\s*(.+)$/i)
+    const withOthers = action.match(/^Capa B\s*\([^)]*\):\s*(.+)$/i)
+    if (inHouse?.[1]) own.push(inHouse[1])
+    else if (withOthers?.[1]) shared.push(withOthers[1])
+    else plain.push(action)
+  }
+  return { own, shared, plain }
+}
+
+function StepList({ items }: { items: string[] }) {
+  return (
+    <ul className="list-disc space-y-2 pl-5 text-left text-base leading-relaxed">
+      {items.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  )
+}
+
+function LevelCard({ step }: { step: V2LevelStep }) {
+  const metal = LEVEL_METAL[step.band]
+  const steps = presentSteps(step.actions)
+  return (
+    <section className="space-y-4">
+      <div className="flex flex-col items-center gap-2 text-center">
+        <div
+          className="flex size-16 items-center justify-center rounded-full"
+          style={{ backgroundColor: metal.wash, color: metal.ink }}
+        >
+          <CircleStar className="size-9" />
+        </div>
+        <p className="text-3xl font-semibold" style={{ color: metal.ink }}>
+          {BAND_LABELS[step.band]}
+        </p>
+      </div>
+      <div className="space-y-3">
+        <p className="text-center text-sm font-medium text-muted-foreground">Siguientes pasos</p>
+        {steps.plain.length > 0 ? <StepList items={steps.plain} /> : null}
+        {steps.own.length > 0 ? (
+          <div className="space-y-2">
+            <p className="text-sm font-medium">En tu empresa</p>
+            <StepList items={steps.own} />
+          </div>
+        ) : null}
+        {steps.shared.length > 0 ? (
+          <div className="space-y-2">
+            <p className="text-sm font-medium">Con otras empresas de la región</p>
+            <StepList items={steps.shared} />
+          </div>
+        ) : null}
+      </div>
+    </section>
+  )
+}
+
 function FinishConfetti() {
   const [size, setSize] = useState({ width: 0, height: 0 })
 
@@ -237,7 +476,7 @@ function FinishConfetti() {
   )
 }
 
-function Intro({ onStart }: { onStart: () => void }) {
+function Intro({ onStart, onExample }: { onStart: () => void; onExample: (example: V2ExampleCase) => void }) {
   const generalCount = v2N1Questions.length - 1
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -264,7 +503,7 @@ function Intro({ onStart }: { onStart: () => void }) {
           </div>
           <p className="leading-relaxed text-muted-foreground">
             Primero contestas el instrumento general, común a todas las empresas. Después eliges el sector y contestas el
-            específico: {generalCount} preguntas comunes y 19 del sector. La calificación todavía no está.
+            específico: {generalCount} preguntas comunes y 19 del sector.
           </p>
           <div className="flex flex-col gap-2">
             <Button
@@ -276,6 +515,16 @@ function Intro({ onStart }: { onStart: () => void }) {
             >
               Comenzar evaluación
             </Button>
+            {V2_EXAMPLES.map((example) => (
+              <button
+                key={example.key}
+                type="button"
+                className="text-sm text-muted-foreground underline"
+                onClick={() => onExample(example)}
+              >
+                Ejemplo: {example.company}
+              </button>
+            ))}
             <a href="/v1" className="text-sm text-muted-foreground underline">
               Versión anterior
             </a>

@@ -483,22 +483,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Control Manual / Reactivo: Verificación dimensional con calibrador/micrómetro y registro manual en papel de scrap.",
+          "label": "Verificación dimensional con calibrador/micrómetro y registro manual en papel de scrap.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Control Estadístico Básico (SPC en Excel): Cálculo mensual de Cpk en cotas críticas y registro de mermas al final del turno.",
+          "label": "Cálculo mensual de Cpk en cotas críticas y registro de mermas al final del turno.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Control Estadístico Digital Integrado: Software SPC en piso de planta con gráficos X-bar/R automáticos (Cpk >= 1.33).",
+          "label": "Software SPC en piso de planta con gráficos X-bar/R automáticos (Cpk >= 1.33).",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Six Sigma / Cero Defectos (Cpk >= 1.67 en 100% de cotas críticas): Poka-yokes automatizados en celda y < 50 PPMs de scrap.",
+          "label": "Poka-yokes automatizados en celda y < 50 PPMs de scrap.",
           "score": null
         }
       ]
@@ -517,22 +517,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Trazabilidad en Papel / Hoja de Viajero: Identificación mediante tarjetas físicas; información no digitalizada.",
+          "label": "Identificación mediante tarjetas físicas; información no digitalizada.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Trazabilidad por Lote en ERP: Código de barras por contenedor de insumo cargado al ERP al cierre de turno.",
+          "label": "Código de barras por contenedor de insumo cargado al ERP al cierre de turno.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Trazabilidad Digital Serie/QR pieza por pieza: Marcado DataMatrix o QR directo en pieza con lectura en cada estación.",
+          "label": "Marcado DataMatrix o QR directo en pieza con lectura en cada estación.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Trazabilidad 4.0 Bidireccional (MES-ERP-IoT): Vinculación en tiempo real de lote, parámetros de máquina (presión, temp) y operador.",
+          "label": "Vinculación en tiempo real de lote, parámetros de máquina (presión, temp) y operador.",
           "score": null
         }
       ]
@@ -739,6 +739,48 @@
           "label": "Interés en Consorcio de Formación Técnica: Compartir costos de programas de capacitación en Electromovilidad, CNC y PLC.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Implementar arquitectura de Gemelo Digital (Digital Twin) para optimización en tiempo real.",
+        "Digitalizar cálculo de huella de carbono por pieza para exportación T-MEC.",
+        "Integrar ciberseguridad industrial TISAX nivel 3 e inteligencia artificial en inspección 3D."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Implementar software SPC en piso de planta para automatización de gráficos Cpk X-bar/R.",
+        "Desplegar trazabilidad serie/QR pieza por pieza conectada directamente al sistema ERP.",
+        "Instalar sensores IoT de bajo costo en prensas e inyectoras para cálculo automatizado de OEE."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Digitalización inmediata de hojas de viajero mediante tablets resistentes en piso de planta.",
+        "Implementar módulo ligero de control de scrap y mermas en tiempo real vía app web.",
+        "Estandarizar catálogo digital de parámetros de máquina y hojas de instrucción de trabajo (SOP)."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Digitalizar inventarios de materia prima y WIP mediante lecturas básicas de código de barras.",
+        "Implementar control de mantenimiento preventivo digital (FMS básico) para evitar paros.",
+        "Capacitación directiva en hojas de cálculo SPC y preparación para auditoría ISO 9001."
       ]
     }
   ]

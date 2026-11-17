@@ -456,22 +456,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Control Básico / High Scrap (> 5%): Sin medición de kWh/kg; scrap superior al 5%; paros continuos por falta de control térmico.",
+          "label": "Sin medición de kWh/kg; scrap superior al 5%; paros continuos por falta de control térmico.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Control Moderado / Medium Scrap (3% a 5%): Registro manual de tiempos de ciclo; scrap entre 3% y 5%; consumo energético no optimizado.",
+          "label": "Registro manual de tiempos de ciclo; scrap entre 3% y 5%; consumo energético no optimizado.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Control Avanzado / Low Scrap (1.5% a 3%): Tiempos de ciclo monitoreados digitalmente; scrap controlado entre 1.5% y 3%; inyectoras servohidráulicas.",
+          "label": "Tiempos de ciclo monitoreados digitalmente; scrap controlado entre 1.5% y 3%; inyectoras servohidráulicas.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Excelencia en Moldeo / Scrap Mínimo (< 1.5%): Monitoreo automático de kWh/kg (< 0.6 kWh/kg); scrap por debajo del 1.5%; máquinas eléctricas con colchón de inyección controlado.",
+          "label": "Monitoreo automático de kWh/kg (< 0.6 kWh/kg); scrap por debajo del 1.5%; máquinas eléctricas con colchón de inyección controlado.",
           "score": null
         }
       ]
@@ -490,22 +490,22 @@
       "options": [
         {
           "value": "opt1",
-          "label": "Registro Manual en Hojas de Viajero en Papel: Parámetros de máquina anotados a mano; sin trazabilidad digital por lote de resina.",
+          "label": "Parámetros de máquina anotados a mano; sin trazabilidad digital por lote de resina.",
           "score": null
         },
         {
           "value": "opt2",
-          "label": "Trazabilidad Semidigital en Excel: Captura posterior de tiros totales y lotes de resina consumidos en hojas de cálculo.",
+          "label": "Captura posterior de tiros totales y lotes de resina consumidos en hojas de cálculo.",
           "score": null
         },
         {
           "value": "opt3",
-          "label": "Trazabilidad por Código de Barras / QR por Contenedor: Etiqueta QR por caja/contenedor vinculada a la orden de producción y lote de resina.",
+          "label": "Etiqueta QR por caja/contenedor vinculada a la orden de producción y lote de resina.",
           "score": null
         },
         {
           "value": "opt4",
-          "label": "Conectividad MES 4.0 en Tiempo Real: Captura automática de ciclo, temperatura y presión de cavidad desde la inyectora al ERP/MES.",
+          "label": "Captura automática de ciclo, temperatura y presión de cavidad desde la inyectora al ERP/MES.",
           "score": null
         }
       ]
@@ -712,6 +712,44 @@
           "label": "Sin Interés: Prefiere mantener negociaciones individuales directas con sus distribuidores actuales.",
           "score": null
         }
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "band": "platino",
+      "min": 75.0,
+      "max": null,
+      "actions": [
+        "Capa A (Digital/TI): Integración de sensores de presión de cavidad en tiempo real y módulo de IA para autorregulación de inyección en ERP/MES.",
+        "Capa B (Bienes de Club): Liderazgo en el Consorcio de Compras Consolidadas de Resinas y Certificación Sustentable ISCC PLUS."
+      ]
+    },
+    {
+      "band": "oro",
+      "min": 55.0,
+      "max": 75.0,
+      "actions": [
+        "Capa A (Digital/TI): Instalación de contador automático de ciclos por máquina con transmisión QR al ERP y software SPC para Cpk de peso de pieza.",
+        "Capa B (Bienes de Club): Uso del Tooling Hub Comunitario para mantenimiento de moldes de colada caliente."
+      ]
+    },
+    {
+      "band": "plata",
+      "min": 35.0,
+      "max": 55.0,
+      "actions": [
+        "Capa A (Digital/TI): App móvil en tablet para registro digital de parámetros de moldeo y hoja de viajero por lote de resina.",
+        "Capa B (Bienes de Club): Envíos de resina PCR al Laboratorio Comunitario ISO 17025 para caracterización de MFI y curva de reología."
+      ]
+    },
+    {
+      "band": "bronce",
+      "min": 0.0,
+      "max": 35.0,
+      "actions": [
+        "Capa A (Digital/TI): Capacitación básica en estandarización de parámetros de moldeo, control de scrap y registros digitales de producción.",
+        "Capa B (Bienes de Club): Incorporación al Consorcio de Compras Consolidadas de Resinas y Masterbatch."
       ]
     }
   ]
