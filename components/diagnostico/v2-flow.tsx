@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils"
 import { v2Index, v2InstrumentLabel, v2N1Questions, v2QuestionsBySector, v2Roadmap } from "@/lib/methodology/v2-bank"
 import { V2_EXAMPLES, scoreExample } from "@/lib/methodology/v2-examples"
 import type { V2ExampleCase } from "@/lib/methodology/v2-examples"
+import { buildReport } from "@/lib/methodology/v2-report"
 import { levelStepFor, scoreLive } from "@/lib/methodology/v2-score"
 import type { V2Band, V2LevelStep, V2LiveScore } from "@/lib/methodology/v2-score"
 import type { V2Answer, V2Answers, V2Question } from "@/lib/methodology/v2-types"
@@ -80,6 +81,7 @@ export function V2Flow() {
   const [index, setIndex] = useState(0)
   const [answers, setAnswers] = useState<V2Answers>({})
   const [preview, setPreview] = useState<V2ExampleCase | null>(null)
+  const [sampleName, setSampleName] = useState<string | null>(null)
 
   const group = v2Index.groups.find((item) => item.id === groupId) ?? null
   const sequence = useMemo(() => {
@@ -104,13 +106,16 @@ export function V2Flow() {
   }
 
   function openExample(example: V2ExampleCase) {
-    setPreview(example)
+    setPreview(null)
+    setSampleName(example.company)
     setInstrumentId(example.sectorId)
+    setAnswers(exampleFill(example))
     setScreen("done")
   }
 
   function restart() {
     setPreview(null)
+    setSampleName(null)
     setAnswers({})
     setIndex(0)
     setGroupId(null)
@@ -161,7 +166,16 @@ export function V2Flow() {
   }
 
   if (screen === "done" || !question) {
-    return <DoneScreen instrumentId={instrumentId} sequence={sequence} answers={answers} preview={preview} onRestart={restart} />
+    return (
+      <DoneScreen
+        instrumentId={instrumentId}
+        sequence={sequence}
+        answers={answers}
+        preview={preview}
+        sampleName={sampleName}
+        onRestart={restart}
+      />
+    )
   }
 
   const position = sequence.filter((item) => item.level === question.level).findIndex((item) => item.id === question.id) + 1
@@ -245,44 +259,19 @@ function livePentagonAxes(sequence: V2Question[], answers: V2Answers): PentagonA
   return axes
 }
 
-interface ScoreRow {
-  label: string
-  hint: string
-  value: string
-}
-
-function scoreRow(label: string, hint: string, value: number | null): ScoreRow | null {
-  if (value === null) return null
-  return { label, hint, value: formatScore(value) }
-}
-
-function ScoreRows({ rows }: { rows: ScoreRow[] }) {
-  return (
-    <dl className="divide-y rounded-2xl border">
-      {rows.map((row) => (
-        <div key={row.label} className="flex items-start justify-between gap-4 px-4 py-3">
-          <div>
-            <dt className="text-base font-medium">{row.label}</dt>
-            <p className="mt-0.5 text-sm leading-snug text-muted-foreground">{row.hint}</p>
-          </div>
-          <dd className="text-base font-semibold tabular-nums">{row.value}</dd>
-        </div>
-      ))}
-    </dl>
-  )
-}
-
 function DoneScreen({
   instrumentId,
   sequence,
   answers,
   preview,
+  sampleName,
   onRestart,
 }: {
   instrumentId: string | null
   sequence: V2Question[]
   answers: V2Answers
   preview: V2ExampleCase | null
+  sampleName: string | null
   onRestart: () => void
 }) {
   const sectorLabel = instrumentId ? v2InstrumentLabel(instrumentId) : ""
@@ -290,30 +279,13 @@ function DoneScreen({
   const live = useMemo(() => (preview ? null : liveScoreOrNull(sequence, answers)), [preview, sequence, answers])
 
   let heading = "Tu resultado"
-  let rows: ScoreRow[] = []
   let note: string | null = null
 
   if (preview && example) {
     heading = preview.company
-    rows = [
-      scoreRow("Entorno", "Qué tan claro es operar aquí: trámites, seguridad, autoridad, servicios y justicia.", example.estadoDerecho),
-      scoreRow("Innovación", "Cuánto renuevas equipo, procesos o la forma de dar el servicio.", example.innovacion),
-      scoreRow("Comercial", "Qué tan propio es lo que vendes y qué tan exigente es quien te compra.", example.comercial),
-      scoreRow("Madurez que reportas", "Junta las tres anteriores. Es la nota de lo que ve la dirección.", example.ismsNivel1),
-      scoreRow("Uso de tecnología", "Qué tanto aprovechas la tecnología que ya tienes en la operación.", example.satNivel2),
-      scoreRow("Madurez de conjunto", "Junta lo que dice la dirección con lo que se ve en la operación.", example.ismsNivel2),
-    ].filter((row): row is ScoreRow => row !== null)
-  } else if (live) {
-    rows = [
-      scoreRow("Entorno", "Qué tan claro es operar aquí: trámites, seguridad, autoridad, servicios y justicia.", live.estadoDerecho),
-      scoreRow("Innovación", "Cuánto renuevas equipo, procesos o la forma de dar el servicio.", live.innovacion),
-      scoreRow("Comercial", "Qué tan propio es lo que vendes y qué tan exigente es quien te compra.", live.comercial),
-      scoreRow("Madurez que reportas", "Junta las tres anteriores. Es la nota de lo que ve la dirección.", live.ismsNivel1),
-      scoreRow("Uso de tecnología", "Qué tanto aprovechas la tecnología que ya tienes en la operación.", live.satNivel2),
-      scoreRow("Madurez de conjunto", "Junta lo que dice la dirección con lo que se ve en la operación.", live.ismsNivel2),
-      scoreRow("Brecha", "Si da positivo, la dirección se ve por encima de la operación. Si da negativo, al revés.", live.ib),
-    ].filter((row): row is ScoreRow => row !== null)
-  } else {
+  } else if (sampleName) {
+    heading = sampleName
+  } else if (!live) {
     note = "No hay respuestas para calificar."
   }
 
@@ -322,9 +294,29 @@ function DoneScreen({
     : livePentagonAxes(sequence, answers)
 
   const level = levelOnScreen(preview, example, live, instrumentId)
+  const score = example ?? live
+  const finalScore = score?.ismsNivel2 ?? score?.ismsNivel1 ?? null
+  const finalCopy = score?.ismsNivel2 != null
+    ? {
+        label: "Madurez de conjunto",
+        hint: "Esta es la nota de la empresa. Junta lo que dice la dirección con lo que se ve en la operación.",
+      }
+    : {
+        label: "Madurez que reportas",
+        hint: "Esta es la nota de lo que ve la dirección. Todavía no se junta con la operación.",
+      }
+  const parts = score
+    ? [
+        bar("Entorno", "Trámites, seguridad, autoridad, servicios y justicia.", score.estadoDerecho, "#C2410C"),
+        bar("Innovación", "Cuánto renuevas equipo, procesos o la forma de dar el servicio.", score.innovacion, "#0F766E"),
+        bar("Comercial", "Qué tan propio es lo que vendes y qué tan exigente es quien te compra.", score.comercial, "#6D28D9"),
+        bar("Uso de tecnología", "Qué tanto aprovechas la tecnología que ya tienes.", score.satNivel2, "#1D4ED8"),
+      ].filter((item): item is ScoreBar => item !== null)
+    : []
+  const report = live && score ? buildReport(sequence, answers, score.ib) : null
 
   return (
-    <main className="relative mx-auto flex min-h-screen w-full max-w-lg flex-col justify-center gap-6 px-4 py-8">
+    <main className="relative mx-auto flex min-h-screen w-full max-w-lg flex-col gap-8 px-4 py-8">
       <FinishConfetti />
       <SessionTrail
         activeId="n2"
@@ -341,9 +333,26 @@ function DoneScreen({
         <h1 className="text-2xl font-semibold text-balance">{heading}</h1>
         <p className="text-base leading-relaxed text-muted-foreground">{sectorLabel}</p>
       </div>
-      {level ? <LevelCard step={level} /> : null}
-      {pentagonAxes ? <ScorePentagon axes={pentagonAxes} caption="Tu entorno para operar" /> : null}
-      {rows.length > 0 ? <ScoreRows rows={rows} /> : null}
+      {finalScore != null ? (
+        <FinalScore step={level} value={finalScore} label={finalCopy.label} hint={finalCopy.hint} />
+      ) : null}
+      {parts.length > 0 ? (
+        <section className="space-y-4">
+          <h2 className="text-base font-semibold">De dónde sale</h2>
+          <ScoreBars rows={parts} />
+          {score?.ismsNivel1 != null && score.satNivel2 != null ? (
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              La dirección reporta {formatScore(score.ismsNivel1)}. La operación, {formatScore(score.satNivel2)}.
+              {score.ib != null && report?.gapZone
+                ? ` La brecha es ${formatScore(score.ib)}: ${report.gapZone}.`
+                : ""}
+            </p>
+          ) : null}
+        </section>
+      ) : null}
+      {pentagonAxes ? <ScorePentagon axes={pentagonAxes} caption="El entorno, en detalle" /> : null}
+      {report ? <DetailedReport report={report} /> : null}
+      {level ? <StepsCard step={level} extra={report?.signals ?? []} /> : null}
       {note ? <p className="text-base leading-relaxed text-muted-foreground">{note}</p> : null}
       <Button type="button" className="h-12 rounded-2xl text-white" style={{ backgroundColor: INSTRUMENT_1.color }} onClick={onRestart}>
         Volver a empezar
@@ -416,24 +425,136 @@ function StepList({ items }: { items: string[] }) {
   )
 }
 
-function LevelCard({ step }: { step: V2LevelStep }) {
-  const metal = LEVEL_METAL[step.band]
-  const steps = presentSteps(step.actions)
+interface ScoreBar {
+  label: string
+  hint: string
+  value: number
+  color: string
+}
+
+function bar(label: string, hint: string, value: number | null, color: string): ScoreBar | null {
+  if (value === null) return null
+  return { label, hint, value, color }
+}
+
+function ScoreBars({ rows }: { rows: ScoreBar[] }) {
   return (
-    <section className="space-y-4">
-      <div className="flex flex-col items-center gap-2 text-center">
-        <div
-          className="flex size-16 items-center justify-center rounded-full"
-          style={{ backgroundColor: metal.wash, color: metal.ink }}
-        >
+    <div className="space-y-4">
+      {rows.map((row) => (
+        <div key={row.label}>
+          <div className="flex items-baseline justify-between gap-3">
+            <p className="text-base font-medium">{row.label}</p>
+            <p className="text-base font-semibold tabular-nums">{formatScore(row.value)}</p>
+          </div>
+          <div className="mt-1.5 h-2 overflow-hidden rounded-full bg-muted">
+            <div className="h-full rounded-full" style={{ width: `${Math.max(0, Math.min(100, row.value))}%`, backgroundColor: row.color }} />
+          </div>
+          <p className="mt-1 text-sm leading-snug text-muted-foreground">{row.hint}</p>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+function Callout({ title, body }: { title: string; body: string }) {
+  return (
+    <div className="rounded-2xl border px-4 py-3">
+      <p className="text-sm font-medium text-muted-foreground">{title}</p>
+      <p className="mt-1 text-base leading-relaxed">{body}</p>
+    </div>
+  )
+}
+
+function DetailedReport({ report }: { report: ReturnType<typeof buildReport> }) {
+  return (
+    <div className="space-y-8">
+      {report.underuse || report.frontier || report.control || report.traceability ? (
+        <section className="space-y-4">
+          <h2 className="text-base font-semibold">La operación</h2>
+          {report.underuse ? (
+            <Callout
+              title="Subuso de tecnología"
+              body={
+                report.underuse.adornment
+                  ? `Se aprovecha ${formatScore(report.underuse.used)} y queda ${formatScore(report.underuse.idle)} sin usar. Pasa de 40: la tecnología está de adorno y toca capacitar a quien ya la tiene.`
+                  : `Se aprovecha ${formatScore(report.underuse.used)}. Queda ${formatScore(report.underuse.idle)} sin usar.`
+              }
+            />
+          ) : null}
+          {report.frontier ? (
+            <Callout
+              title="Distancia con los líderes"
+              body={
+                report.frontier.behind
+                  ? `La frontera está a ${formatScore(report.frontier.delta)} puntos. Pasa de 50: hay riesgo de quedarse atrás.`
+                  : `La frontera está a ${formatScore(report.frontier.delta)} puntos.`
+              }
+            />
+          ) : null}
+          {report.control ? <ScoreBars rows={[bar("Control de la operación", report.control.label, report.control.score, "#0F766E")!]} /> : null}
+          {report.traceability ? <ScoreBars rows={[bar("Trazabilidad", report.traceability.label, report.traceability.score, "#1D4ED8")!]} /> : null}
+        </section>
+      ) : null}
+      {report.sophistication.length > 0 ? (
+        <section className="space-y-3">
+          <h2 className="text-base font-semibold">Hacia dónde puede moverse</h2>
+          {report.sophistication.map((item) => (
+            <Callout key={item.title} title={item.title} body={item.label} />
+          ))}
+        </section>
+      ) : null}
+      {report.clubs.length > 0 ? (
+        <section className="space-y-3">
+          <h2 className="text-base font-semibold">Qué puede compartir</h2>
+          {report.clubs.map((item) => (
+            <Callout key={item.title} title={item.title} body={item.label} />
+          ))}
+        </section>
+      ) : null}
+      {report.demand ? <Callout title="Lo que quiere atender ya" body={report.demand} /> : null}
+    </div>
+  )
+}
+
+function FinalScore({
+  step,
+  value,
+  label,
+  hint,
+}: {
+  step: V2LevelStep | null
+  value: number
+  label: string
+  hint: string
+}) {
+  const metal = step ? LEVEL_METAL[step.band] : { ink: "#1F4B99", wash: "#E8EEF8" }
+  return (
+    <section className="space-y-3 rounded-3xl px-4 py-8 text-center" style={{ backgroundColor: metal.wash }}>
+      {step ? (
+        <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-white" style={{ color: metal.ink }}>
           <CircleStar className="size-9" />
         </div>
-        <p className="text-3xl font-semibold" style={{ color: metal.ink }}>
+      ) : null}
+      {step ? (
+        <p className="text-sm font-medium" style={{ color: metal.ink }}>
           {BAND_LABELS[step.band]}
         </p>
-      </div>
-      <div className="space-y-3">
-        <p className="text-center text-sm font-medium text-muted-foreground">Siguientes pasos</p>
+      ) : null}
+      <p className="text-5xl font-semibold tabular-nums tracking-tight" style={{ color: metal.ink }}>
+        {formatScore(value)}
+      </p>
+      <p className="text-base font-medium">{label}</p>
+      <p className="mx-auto max-w-sm text-sm leading-relaxed text-muted-foreground">{hint}</p>
+    </section>
+  )
+}
+
+function StepsCard({ step, extra }: { step: V2LevelStep; extra: string[] }) {
+  const steps = presentSteps(step.actions)
+  return (
+    <section className="space-y-3 border-t pt-8">
+      <h2 className="text-center text-base font-semibold">Siguientes pasos</h2>
+      {extra.length > 0 ? <StepList items={extra} /> : null}
         {steps.plain.length > 0 ? <StepList items={steps.plain} /> : null}
         {steps.own.length > 0 ? (
           <div className="space-y-2">
@@ -447,9 +568,65 @@ function LevelCard({ step }: { step: V2LevelStep }) {
             <StepList items={steps.shared} />
           </div>
         ) : null}
-      </div>
     </section>
   )
+}
+
+function exampleFill(example: V2ExampleCase): V2Answers {
+  const questions = [...v2N1Questions, ...(v2QuestionsBySector[example.sectorId] ?? [])]
+  const answers: V2Answers = {}
+  for (const question of questions) answers[question.id] = autonomousAnswer(question, example.sectorId, example.expected.band)
+  example.ed.forEach((score, index) => {
+    answers[`ED-0${index + 1}`] = { kind: "single", optionValue: optionWorth(questions, `ED-0${index + 1}`, score, false) }
+  })
+  example.ino.forEach((score, index) => {
+    answers[`INO-0${index + 1}`] = { kind: "single", optionValue: optionWorth(questions, `INO-0${index + 1}`, score, true) }
+  })
+  example.com.forEach((score, index) => {
+    answers[`COM-0${index + 1}`] = { kind: "single", optionValue: optionWorth(questions, `COM-0${index + 1}`, score, true) }
+  })
+  answers["MOD0-WEB-05"] = { kind: "single", optionValue: "opt2" }
+  return answers
+}
+
+function optionWorth(questions: V2Question[], id: string, wanted: number, ordinal: boolean): string {
+  const options = questions.find((question) => question.id === id)?.options ?? []
+  const printed = options.find((option) => option.score === wanted)
+  if (printed) return printed.value
+  if (ordinal) {
+    const index = [25, 50, 75, 100].indexOf(wanted)
+    if (options[index]) return options[index].value
+  }
+  return options[0]?.value ?? "opt1"
+}
+
+function autonomousAnswer(question: V2Question, sectorId: string, band: V2Band): V2Answer {
+  if (question.id === "MOD0-WEB-01") return { kind: "single", optionValue: sectorId }
+  if (question.id === "MOD0-WEB-02") {
+    const size = band === "bronce" ? 0 : band === "oro" || band === "platino" ? 2 : 1
+    return { kind: "single", optionValue: question.options?.[size]?.value ?? "opt2" }
+  }
+  if (question.type === "multi_select" && question.factors?.length) {
+    const count = band === "bronce" ? 1 : band === "oro" || band === "platino" ? 4 : 3
+    return { kind: "checks", selected: question.factors.slice(0, count).map((factor) => factor.id) }
+  }
+  if (question.type === "rank" && question.factors?.length) {
+    const factors = [...question.factors]
+    if (band === "oro" || band === "platino") factors.reverse()
+    else if (band !== "bronce") {
+      const first = factors.shift()
+      if (first) factors.push(first)
+    }
+    return { kind: "rank", ranks: Object.fromEntries(factors.map((factor, index) => [factor.id, index + 1])) }
+  }
+  const choices = (question.options ?? []).filter((option) => option.value !== question.text?.optionValue)
+  const pool = choices.length ? choices : (question.options ?? [])
+  const index =
+    band === "bronce" ? 0 : band === "oro" || band === "platino" ? Math.max(0, pool.length - 2) : Math.floor((pool.length - 1) / 2)
+  const option = pool[Math.min(index, 4)] ?? pool[0]
+  if (!option) return { kind: "single", optionValue: "opt1" }
+  if (question.type === "single_select_text") return { kind: "text", optionValue: option.value, text: "" }
+  return { kind: "single", optionValue: option.value }
 }
 
 function FinishConfetti() {

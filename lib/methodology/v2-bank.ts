@@ -14,7 +14,9 @@ import medico from "@/content/methodology/v2/n2/medico-hospitalario.json"
 import metal from "@/content/methodology/v2/n2/metalmecanica.json"
 import muebles from "@/content/methodology/v2/n2/muebles.json"
 import plasticos from "@/content/methodology/v2/n2/plasticos.json"
+import inmobiliario from "@/content/methodology/v2/n2/inmobiliario.json"
 import quimica from "@/content/methodology/v2/n2/quimica.json"
+import sofom from "@/content/methodology/v2/n2/sofom.json"
 import textiles from "@/content/methodology/v2/n2/textiles.json"
 import tics from "@/content/methodology/v2/n2/tics.json"
 import turismo from "@/content/methodology/v2/n2/turismo.json"
@@ -35,8 +37,10 @@ const documents = {
   "medico-hospitalario": medico,
   metalmecanica: metal,
   muebles,
+  inmobiliario,
   plasticos,
   quimica,
+  sofom,
   textiles,
   tics,
   turismo,

@@ -123,6 +123,12 @@ function satSlot(id: string): number | null {
 
 const FIVE_STEP = [20, 40, 60, 80, 100]
 
+export function techItemScore(question: V2Question, answer: V2Answers[string] | undefined): number | null {
+  const slot = satSlot(question.id)
+  if (slot === null) return null
+  return satItemScore(question, answer, slot)
+}
+
 function satItemScore(question: V2Question, answer: V2Answers[string] | undefined, slot: number): number | null {
   if (!answer) return null
   if (slot === 5) return P5_FALLBACK

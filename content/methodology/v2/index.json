@@ -6,7 +6,7 @@
   "sectorQuestionId": "MOD0-WEB-01",
   "counts": {
     "n1": 22,
-    "n2": 342
+    "n2": 380
   },
   "groups": [
     {
@@ -103,6 +103,20 @@
       "label": "Tecnologías de la información, software y servicios digitales",
       "instruments": [
         "tics"
+      ]
+    },
+    {
+      "id": "inmobiliario",
+      "label": "Desarrollo e intermediación inmobiliaria",
+      "instruments": [
+        "inmobiliario"
+      ]
+    },
+    {
+      "id": "sofom",
+      "label": "SOFOMES y servicios financieros",
+      "instruments": [
+        "sofom"
       ]
     }
   ],
@@ -214,6 +228,18 @@
       "label": "18. Tecnologías de la Información, Software y Servicios Digitales",
       "questionCount": 19,
       "file": "n2/tics.json"
+    },
+    {
+      "id": "inmobiliario",
+      "label": "19. Desarrollo e Intermediación Inmobiliaria",
+      "questionCount": 19,
+      "file": "n2/inmobiliario.json"
+    },
+    {
+      "id": "sofom",
+      "label": "20. SOFOMES y Servicios Financieros no Bancarios",
+      "questionCount": 19,
+      "file": "n2/sofom.json"
     }
   ]
 }

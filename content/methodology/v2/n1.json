@@ -102,6 +102,16 @@
           "value": "tics",
           "label": "18. Tecnologías de la Información, Software y Servicios Digitales",
           "score": null
+        },
+        {
+          "value": "inmobiliario",
+          "label": "19. Desarrollo e Intermediación Inmobiliaria",
+          "score": null
+        },
+        {
+          "value": "sofom",
+          "label": "20. SOFOMES y Servicios Financieros no Bancarios",
+          "score": null
         }
       ]
     },

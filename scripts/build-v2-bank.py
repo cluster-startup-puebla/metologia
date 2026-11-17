@@ -30,6 +30,8 @@ FILES = {
     "turismo": "instrumento-nivel-2-turismo-puebla-tlaxcala-v5.md",
     "quimica": "instrumento-nivel-2-quimica-petroquimica-puebla-tlaxcala-v.md",
     "tics": "instrumento-nivel-2-tics-software-puebla-tlaxcala-v5.md",
+    "inmobiliario": "instrumento-nivel-2-inmobiliario-puebla-tlaxcala-v5.md",
+    "sofom": "instrumento-nivel-2-sofom-servicios-financieros-puebla-tla.md",
 }
 
 GROUPS = [
@@ -46,6 +48,8 @@ GROUPS = [
     {"id": "artes-graficas", "label": "Artes gráficas, impresión y empaques", "instruments": ["artes-graficas"]},
     {"id": "quimica", "label": "Industria química, petroquímica y resinas sintéticas", "instruments": ["quimica"]},
     {"id": "tics", "label": "Tecnologías de la información, software y servicios digitales", "instruments": ["tics"]},
+    {"id": "inmobiliario", "label": "Desarrollo e intermediación inmobiliaria", "instruments": ["inmobiliario"]},
+    {"id": "sofom", "label": "SOFOMES y servicios financieros", "instruments": ["sofom"]},
 ]
 
 QUESTION_START = re.compile(r"^\*\*\[(.+?)\]\s*(.*?)\*\*")
@@ -183,6 +187,15 @@ def parse_file(path: Path, level: str, sector_id: str | None) -> list[dict]:
             current = None
             return
         widget = current["widget"]
+        guide = f"{current.get('prompt') or ''} {current.get('microcopy') or ''}"
+        if (
+            str(current["id"]).endswith("TECH-01")
+            and options
+            and not factors
+            and re.search(r"casilla|todas las que apliquen", guide, re.I)
+        ):
+            factors = [{"id": f"f{index}", "label": option["label"]} for index, option in enumerate(options, start=1)]
+            options = []
         kind = question_type(widget, options, factors)
         if kind == "rank" and str(current["id"]).endswith("TECH-01"):
             kind = "multi_select"
@@ -263,7 +276,30 @@ def parse_file(path: Path, level: str, sector_id: str | None) -> list[dict]:
             index = len(current["_factors"]) + 1
             current["_factors"].append({"id": f"f{index}", "label": label})
     flush()
+    align_frontier_with_sibling(questions)
     return questions
+
+
+def align_frontier_with_sibling(questions: list[dict]) -> None:
+    """P3 lists the frontier first and prints no points. P4 in the same file does, best first."""
+    frontier = next((question for question in questions if str(question["id"]).endswith("TECH-03")), None)
+    bet = next((question for question in questions if str(question["id"]).endswith("TECH-04")), None)
+    if not frontier or not bet:
+        return
+    frontier_options = frontier.get("options") or []
+    bet_scores = [option.get("score") for option in bet.get("options") or []]
+    if len(frontier_options) != 5 or any(option.get("score") is not None for option in frontier_options):
+        return
+    if len(bet_scores) < 2 or any(score is None for score in bet_scores):
+        return
+    if bet_scores[0] > bet_scores[-1]:
+        scale = [100, 80, 60, 40, 20]
+    elif bet_scores[0] < bet_scores[-1]:
+        scale = [20, 40, 60, 80, 100]
+    else:
+        return
+    for option, score in zip(frontier_options, scale):
+        option["score"] = score
 
 
 def parse_roadmap(path: Path) -> list[dict]:
@@ -353,6 +389,14 @@ def main() -> None:
     if "tics" not in existing_values:
         sector_question["options"].append(
             {"value": "tics", "label": "18. Tecnologías de la Información, Software y Servicios Digitales", "score": None}
+        )
+    if "inmobiliario" not in existing_values:
+        sector_question["options"].append(
+            {"value": "inmobiliario", "label": "19. Desarrollo e Intermediación Inmobiliaria", "score": None}
+        )
+    if "sofom" not in existing_values:
+        sector_question["options"].append(
+            {"value": "sofom", "label": "20. SOFOMES y Servicios Financieros no Bancarios", "score": None}
         )
 
     instruments = []
